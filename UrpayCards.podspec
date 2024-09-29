@@ -9,35 +9,26 @@
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UrpayCards.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+UrpayCards is a framework designed for iOS applications to handle card management.
+It provides features such as card addition, deletion, and transaction management for Urpay services.
+  DESC
 
   s.homepage         = 'https://github.com/iAhmedWahdan/UrpayCards'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'iAhmedWahdan' => 'ahmednasrwahdan@gmail.com' }
   s.source           = { :git => 'https://github.com/iAhmedWahdan/UrpayCards.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/iahmedwahdan'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
-  s.source_files = 'UrpayCards/Classes/**/*'
-  s.resources = ['UrpayCards/Classes/**/*.xib']
+  # Include only Swift files in source_files
+  s.source_files = 'Classes/**/*.swift'
   
-  # s.resource_bundles = {
-  #   'UrpayCards' => ['UrpayCards/Assets/*.png']
-  # }
+  # Add .xib files in resources
+  s.resources = ['Classes/**/*.xib']
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # Specify Swift version
+  s.swift_versions = ['5.0']
 end
