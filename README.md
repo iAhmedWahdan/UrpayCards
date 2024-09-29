@@ -22,7 +22,7 @@ pod 'UrpayCards'
 
 ## Author
 
-iAhmedWahdan, awahdan.c@neoleap.com.sa
+iAhmedWahdan, ahmednasrwahdan@gmail.com
 
 ## License
 
