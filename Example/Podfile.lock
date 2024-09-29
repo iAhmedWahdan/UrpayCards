@@ -1,0 +1,16 @@
+PODS:
+  - UrpayCards (0.1.0)
+
+DEPENDENCIES:
+  - UrpayCards (from `../`)
+
+EXTERNAL SOURCES:
+  UrpayCards:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UrpayCards: 8bccb48d17f2d5451e897d55d20d62909d13a3f8
+
+PODFILE CHECKSUM: cc41b3de22dada2eec7b2acb4b4bb418ff2336a8
+
+COCOAPODS: 1.15.2

@@ -1,0 +1,6 @@
+framework module Pods_UrpayCards_Example {
+  umbrella header "Pods-UrpayCards_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

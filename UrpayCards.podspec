@@ -24,13 +24,14 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/iAhmedWahdan/UrpayCards'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'iAhmedWahdan' => 'awahdan.c@neoleap.com.sa' }
+  s.author           = { 'iAhmedWahdan' => 'ahmednasrwahdan@gmail.com' }
   s.source           = { :git => 'https://github.com/iAhmedWahdan/UrpayCards.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'https://twitter.com/iahmedwahdan'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'UrpayCards/Classes/**/*'
+  s.resources = ['UrpayCards/Classes/**/*.xib']
   
   # s.resource_bundles = {
   #   'UrpayCards' => ['UrpayCards/Assets/*.png']
