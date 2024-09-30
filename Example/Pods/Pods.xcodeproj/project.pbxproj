@@ -13,6 +13,7 @@
 		7EC0E1CC3A928F071B5C69FDB6209A68 /* UrpayCards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 647860FAD78125F6A4C7674B6E6A2017 /* UrpayCards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8113E150EE22C22B2B4F12230E28287E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9EF72FAC7A2C398F27FBBDED48089643 /* UrpayCards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F4E8D7A1E6ABFD5D1AA71C4471E552 /* UrpayCards-dummy.m */; };
+		C11755FD2CAA91D500684AE1 /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11755FC2CAA91D500684AE1 /* JSONUtility.swift */; };
 		C1B713AB2CA968420092113E /* UrpayCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B713A92CA968420092113E /* UrpayCards.swift */; };
 		C1B713AC2CA968420092113E /* UrpayCards.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B713AA2CA968420092113E /* UrpayCards.xib */; };
 		C1B713B12CA973500092113E /* Encodable+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B713AE2CA973500092113E /* Encodable+Parameters.swift */; };
@@ -21,6 +22,8 @@
 		C1B713B62CA975660092113E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B713B52CA975660092113E /* NavigationController.swift */; };
 		C1B713B82CA976F50092113E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B713B72CA976F50092113E /* ThemeManager.swift */; };
 		C1B713BA2CA981940092113E /* ThemeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B713B92CA981940092113E /* ThemeConfig.swift */; };
+		C1CBC1B12CAAC10000475450 /* AdaptiveCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CBC1B02CAAC10000475450 /* AdaptiveCollectionViewLayout.swift */; };
+		C1CBC1B22CAAC10000475450 /* AdaptiveCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CBC1B02CAAC10000475450 /* AdaptiveCollectionViewLayout.swift */; };
 		C87E24CE05D4532E68EB2C5CC86A789B /* Pods-UrpayCards_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 130852B28C31521C7539EEE4E32407B8 /* Pods-UrpayCards_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6922A37BBDE529AAFE091CC1529F26D /* Pods-UrpayCards_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BEC17959ED1E82B7FE9EA4F4E4D1CA9 /* Pods-UrpayCards_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5A4CF9D8854878FEAA11B236EDB751F /* Pods-UrpayCards_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564E06D037CC6582E298699C675DB75 /* Pods-UrpayCards_Example-dummy.m */; };
@@ -73,14 +76,16 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EA1537629A5BF81C9D5359C951CA5E7 /* Pods-UrpayCards_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UrpayCards_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B94DE6908C29270A92AD4E1B8B240C0F /* Pods-UrpayCards_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UrpayCards_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C11755FC2CAA91D500684AE1 /* JSONUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSONUtility.swift; path = ../JSONUtility.swift; sourceTree = "<group>"; };
 		C1B713A92CA968420092113E /* UrpayCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UrpayCards.swift; path = ../UrpayCards.swift; sourceTree = "<group>"; };
 		C1B713AA2CA968420092113E /* UrpayCards.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UrpayCards.xib; path = ../UrpayCards.xib; sourceTree = "<group>"; };
 		C1B713AE2CA973500092113E /* Encodable+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Encodable+Parameters.swift"; path = "../Encodable+Parameters.swift"; sourceTree = "<group>"; };
-		C1B713AF2CA973500092113E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../NetworkManager.swift; sourceTree = "<group>"; };
+		C1B713AF2CA973500092113E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../NetworkManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		C1B713B02CA973500092113E /* RequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestConfig.swift; path = ../RequestConfig.swift; sourceTree = "<group>"; };
-		C1B713B52CA975660092113E /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C1B713B52CA975660092113E /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = ../NavigationController.swift; sourceTree = "<group>"; };
 		C1B713B72CA976F50092113E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeManager.swift; path = ../ThemeManager.swift; sourceTree = "<group>"; };
 		C1B713B92CA981940092113E /* ThemeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeConfig.swift; path = ../ThemeConfig.swift; sourceTree = "<group>"; };
+		C1CBC1B02CAAC10000475450 /* AdaptiveCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdaptiveCollectionViewLayout.swift; path = ../AdaptiveCollectionViewLayout.swift; sourceTree = "<group>"; };
 		C9D88EC773A7D15BA6A6ADE5E3365586 /* Pods-UrpayCards_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UrpayCards_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E551AB1634ED55BC51049D84E55F75 /* Pods-UrpayCards_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UrpayCards_Tests-Info.plist"; sourceTree = "<group>"; };
 		FE7436D28FBF8F7A32DD68E1313A94CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -193,13 +198,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1B713A82CA967CE0092113E /* Classes */ = {
+		C11755F62CAA8BAA00684AE1 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				C1B713B52CA975660092113E /* NavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C11755F92CAA917000684AE1 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1B713AF2CA973500092113E /* NetworkManager.swift */,
+				C1B713B02CA973500092113E /* RequestConfig.swift */,
+				C1B713AE2CA973500092113E /* Encodable+Parameters.swift */,
+				C11755FC2CAA91D500684AE1 /* JSONUtility.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C1B713A82CA967CE0092113E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C11755F62CAA8BAA00684AE1 /* Navigation */,
 				C1B713AD2CA96AF10092113E /* UrpayCardsVC */,
-				C1B713B42CA973550092113E /* NetworkManager */,
+				C11755F92CAA917000684AE1 /* NetworkManager */,
 				C1B713BC2CA994690092113E /* ThemeConfig */,
+				C1CBC1B32CAAC14B00475450 /* Utilita */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -213,16 +238,6 @@
 			path = UrpayCardsVC;
 			sourceTree = "<group>";
 		};
-		C1B713B42CA973550092113E /* NetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				C1B713AF2CA973500092113E /* NetworkManager.swift */,
-				C1B713B02CA973500092113E /* RequestConfig.swift */,
-				C1B713AE2CA973500092113E /* Encodable+Parameters.swift */,
-			);
-			path = NetworkManager;
-			sourceTree = "<group>";
-		};
 		C1B713BC2CA994690092113E /* ThemeConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +245,14 @@
 				C1B713B72CA976F50092113E /* ThemeManager.swift */,
 			);
 			path = ThemeConfig;
+			sourceTree = "<group>";
+		};
+		C1CBC1B32CAAC14B00475450 /* Utilita */ = {
+			isa = PBXGroup;
+			children = (
+				C1CBC1B02CAAC10000475450 /* AdaptiveCollectionViewLayout.swift */,
+			);
+			path = Utilita;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -374,6 +397,9 @@
 					3EC18F0E27E41D1BAD5B8E951D7E264F = {
 						LastSwiftMigration = 1600;
 					};
+					7F49385F7EEFBCBB2736AD7D29E7EA4D = {
+						LastSwiftMigration = 1600;
+					};
 				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
@@ -434,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CBC1B22CAAC10000475450 /* AdaptiveCollectionViewLayout.swift in Sources */,
 				E5A4CF9D8854878FEAA11B236EDB751F /* Pods-UrpayCards_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +475,9 @@
 				C1B713B62CA975660092113E /* NavigationController.swift in Sources */,
 				9EF72FAC7A2C398F27FBBDED48089643 /* UrpayCards-dummy.m in Sources */,
 				C1B713BA2CA981940092113E /* ThemeConfig.swift in Sources */,
+				C1CBC1B12CAAC10000475450 /* AdaptiveCollectionViewLayout.swift in Sources */,
 				C1B713AB2CA968420092113E /* UrpayCards.swift in Sources */,
+				C11755FD2CAA91D500684AE1 /* JSONUtility.swift in Sources */,
 				C1B713B82CA976F50092113E /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9D88EC773A7D15BA6A6ADE5E3365586 /* Pods-UrpayCards_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -562,6 +592,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -732,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D988E3912F376EEB5379E4F2B920DD1 /* Pods-UrpayCards_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -754,6 +787,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

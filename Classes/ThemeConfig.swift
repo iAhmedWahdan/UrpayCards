@@ -17,6 +17,7 @@ public struct ThemeConfig {
     public var font: UIFont
     public var navigationBarFont: UIFont
     public var statusTextColor: UIColor
+    public var navigationTitle: String
 
     // Initialize with default values
     public init(
@@ -26,7 +27,8 @@ public struct ThemeConfig {
         cardBackgroundColor: UIColor = .systemBlue,
         font: UIFont = UIFont.systemFont(ofSize: 16),
         navigationBarFont: UIFont = UIFont.systemFont(ofSize: 17, weight: .bold),
-        statusTextColor: UIColor = .green
+        statusTextColor: UIColor = .green,
+        navigationTitle: String = "Urpay Cards"
     ) {
         self.navigationBarColor = navigationBarColor
         self.backgroundColor = backgroundColor
@@ -35,5 +37,6 @@ public struct ThemeConfig {
         self.font = font
         self.navigationBarFont = navigationBarFont
         self.statusTextColor = statusTextColor
+        self.navigationTitle = navigationTitle
     }
 }

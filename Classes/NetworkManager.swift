@@ -21,11 +21,10 @@ final class NetworkManager {
         session = URLSession(configuration: configuration)
     }
     
-    // Generic request handler for any Codable response
-    func sendRequest<T: Codable>(
-        endpoint: RequestConfig,
-        responseModel: T.Type
-    ) async throws -> Result<T, APIError> {
+    // Generic request handler using JSONUtility for response parsing
+    func sendRequest(
+        endpoint: RequestConfig
+    ) async throws -> Result<JSON, APIError> {
         
         // Construct the full URL
         guard let url = URL(string: baseURL + endpoint.path) else {
@@ -53,11 +52,9 @@ final class NetworkManager {
                 return .failure(.invalidResponse)
             }
             
-            // Decode the response data into the expected model
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            let decodedResponse = try decoder.decode(responseModel, from: data)
-            return .success(decodedResponse)
+            // Use JSONUtility to parse the response data into a JSON object
+            let jsonResponse = try JSON(data: data)
+            return .success(jsonResponse)
             
         } catch {
             return .failure(.requestFailed(error))

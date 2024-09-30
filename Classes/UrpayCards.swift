@@ -20,9 +20,9 @@ public class UrpayCards: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Urpay Cards"
-        
         ThemeManager.shared.applyTheme(to: self)
+        
+        navigationItem.title = ThemeConfig.shared.navigationTitle
         
         // Set up the cardView and start the animation
         setupCardView()
