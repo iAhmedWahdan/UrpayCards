@@ -13,6 +13,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTheme()
+    }
+    
+    func configureTheme() {
+        let customTheme = ThemeConfig(
+            navigationBarColor: .darkGray,
+            backgroundColor: .black,
+            titleTextColor: .white,
+            cardBackgroundColor: .lightGray,
+            font: UIFont.systemFont(ofSize: 16),
+            navigationBarFont: UIFont.systemFont(ofSize: 18, weight: .bold),
+            statusTextColor: .red
+        )
+        
+        // Apply the custom theme
+        UrpayCards.configureTheme(customTheme)
     }
     
     @IBAction func didTapPayButton(_ sender: Any) {

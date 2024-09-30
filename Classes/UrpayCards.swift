@@ -14,8 +14,15 @@ public class UrpayCards: UIViewController {
     // Static reference to hold the UIWindow so it doesn't get deallocated
     private static var urpayWindow: UIWindow?
     
+    public static func configureTheme(_ config: ThemeConfig) {
+        ThemeManager.shared.updateTheme(config: config)
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Urpay Cards"
+        
+        ThemeManager.shared.applyTheme(to: self)
         
         // Set up the cardView and start the animation
         setupCardView()
@@ -60,8 +67,9 @@ public class UrpayCards: UIViewController {
         
         // Load the UrpayCards XIB from the bundle
         let viewController = UrpayCards(nibName: "UrpayCards", bundle: Bundle(for: UrpayCards.self))
+        let navigationController = NavigationController(rootViewController: viewController)
         
-        urpayWindow?.rootViewController = viewController
+        urpayWindow?.rootViewController = navigationController
         urpayWindow?.makeKeyAndVisible()
     }
     
