@@ -13,6 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C1C595D32CAD6D3B00B0BEB3 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C595D22CAD6D3B00B0BEB3 /* AppColors.swift */; };
+		C1C60E142CAECA3C00EC75AF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C60E132CAECA3C00EC75AF /* PassKit.framework */; };
 		E1C52C29D69BED51E5125184 /* Pods_UrpayCards_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9DC472B4AC7682B43F790A /* Pods_UrpayCards_Example.framework */; };
 		EC474A0A2043BAFAA39C3717 /* Pods_UrpayCards_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CDBD9FFDA0F9752C1EC266 /* Pods_UrpayCards_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,9 @@
 		6AF8E5828AAD92E4658958BC /* Pods-UrpayCards_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Tests/Pods-UrpayCards_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		73920EA9EB8D2C9BFC7E6FA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		90FA5A44AD578F1DF04BF3D9 /* Pods-UrpayCards_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Example.debug.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C595D22CAD6D3B00B0BEB3 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		C1C60E122CAECA2300EC75AF /* UrpayCards_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UrpayCards_Example.entitlements; sourceTree = "<group>"; };
+		C1C60E132CAECA3C00EC75AF /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		C43A1F74CD907B6AD84B5EBC /* Pods-UrpayCards_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Example.release.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE4C4D317FA719A8CBBF64FA /* Pods-UrpayCards_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Tests.release.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Tests/Pods-UrpayCards_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FE9DC472B4AC7682B43F790A /* Pods_UrpayCards_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C60E142CAECA3C00EC75AF /* PassKit.framework in Frameworks */,
 				E1C52C29D69BED51E5125184 /* Pods_UrpayCards_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +89,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				C1C60E122CAECA2300EC75AF /* UrpayCards_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for UrpayCards */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -108,6 +115,7 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				C1C595D22CAD6D3B00B0BEB3 /* AppColors.swift */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -153,6 +161,7 @@
 		E4B1B87DDFE4601F2EC00338 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1C60E132CAECA3C00EC75AF /* PassKit.framework */,
 				FE9DC472B4AC7682B43F790A /* Pods_UrpayCards_Example.framework */,
 				45CDBD9FFDA0F9752C1EC266 /* Pods_UrpayCards_Tests.framework */,
 			);
@@ -333,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C595D32CAD6D3B00B0BEB3 /* AppColors.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -480,6 +490,7 @@
 			baseConfigurationReference = 90FA5A44AD578F1DF04BF3D9 /* Pods-UrpayCards_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UrpayCards_Example.entitlements;
 				DEVELOPMENT_TEAM = 3DWD24U3GX;
 				INFOPLIST_FILE = UrpayCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -497,6 +508,7 @@
 			baseConfigurationReference = C43A1F74CD907B6AD84B5EBC /* Pods-UrpayCards_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UrpayCards_Example.entitlements;
 				DEVELOPMENT_TEAM = 3DWD24U3GX;
 				INFOPLIST_FILE = UrpayCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

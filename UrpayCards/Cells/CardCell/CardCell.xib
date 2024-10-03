@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCell" customModule="UrpayCards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y06-04-TIn">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nuskCard" translatesAutoresizingMaskIntoConstraints="NO" id="pnC-3V-bK6">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="200"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyX-3a-nJG">
+                                <rect key="frame" x="10" y="129.66666666666666" width="290" height="55.333333333333343"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HmT-oM-O9a">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="55.333333333333336"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dJ2-UL-N9R">
+                                                <rect key="frame" x="20" y="8" width="82.333333333333329" height="39.333333333333336"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORm-R6-csI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.333333333333329" height="14.333333333333334"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** 1254" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA8-3Z-eom">
+                                                        <rect key="frame" x="0.0" y="16.333333333333343" width="82.333333333333329" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mada" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-dU-qZ0">
+                                                <rect key="frame" x="209" y="8" width="61" height="39.333333333333336"/>
+                                            </imageView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HmT-oM-O9a" secondAttribute="trailing" id="JBo-2J-lom"/>
+                                    <constraint firstItem="HmT-oM-O9a" firstAttribute="leading" secondItem="JyX-3a-nJG" secondAttribute="leading" id="KB7-q1-TWC"/>
+                                    <constraint firstItem="HmT-oM-O9a" firstAttribute="top" secondItem="JyX-3a-nJG" secondAttribute="top" id="LGc-vw-SZk"/>
+                                    <constraint firstAttribute="bottom" secondItem="HmT-oM-O9a" secondAttribute="bottom" id="bfY-BM-xXQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lbs-KF-Dha">
+                                <rect key="frame" x="16" y="16" width="278" height="37"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nuskLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hdQ-Ok-Lcn">
+                                        <rect key="frame" x="0.0" y="8" width="51" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="mjX-sT-Xh8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_urpayLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6zn-lQ-kzw">
+                                        <rect key="frame" x="201" y="0.0" width="77" height="37"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pnC-3V-bK6" firstAttribute="top" secondItem="Y06-04-TIn" secondAttribute="top" id="BRr-74-403"/>
+                            <constraint firstItem="Lbs-KF-Dha" firstAttribute="leading" secondItem="Y06-04-TIn" secondAttribute="leading" constant="16" id="Ms4-NW-a5q"/>
+                            <constraint firstItem="pnC-3V-bK6" firstAttribute="leading" secondItem="Y06-04-TIn" secondAttribute="leading" id="OQC-Bz-rXO"/>
+                            <constraint firstAttribute="trailing" secondItem="pnC-3V-bK6" secondAttribute="trailing" id="W2o-K7-pLr"/>
+                            <constraint firstAttribute="trailing" secondItem="JyX-3a-nJG" secondAttribute="trailing" constant="10" id="WOU-UD-msD"/>
+                            <constraint firstItem="Lbs-KF-Dha" firstAttribute="top" secondItem="Y06-04-TIn" secondAttribute="top" constant="16" id="dO2-oP-Apf"/>
+                            <constraint firstItem="JyX-3a-nJG" firstAttribute="leading" secondItem="Y06-04-TIn" secondAttribute="leading" constant="10" id="eTz-6A-fc2"/>
+                            <constraint firstAttribute="trailing" secondItem="Lbs-KF-Dha" secondAttribute="trailing" constant="16" id="nKX-yY-PnV"/>
+                            <constraint firstAttribute="bottom" secondItem="JyX-3a-nJG" secondAttribute="bottom" constant="15" id="u7a-Ad-de4"/>
+                            <constraint firstAttribute="bottom" secondItem="pnC-3V-bK6" secondAttribute="bottom" id="wWX-O4-4DF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Y06-04-TIn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3jp-MC-urq"/>
+                <constraint firstItem="Y06-04-TIn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rti-fE-Lmn"/>
+                <constraint firstAttribute="bottom" secondItem="Y06-04-TIn" secondAttribute="bottom" id="dq7-up-WIl"/>
+                <constraint firstAttribute="trailing" secondItem="Y06-04-TIn" secondAttribute="trailing" id="lj2-ZD-na2"/>
+            </constraints>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_mada" width="61" height="22"/>
+        <image name="ic_nuskCard" width="311" height="197"/>
+        <image name="ic_nuskLogo" width="51" height="21"/>
+        <image name="ic_urpayLogo" width="77" height="37"/>
+    </resources>
+</document>

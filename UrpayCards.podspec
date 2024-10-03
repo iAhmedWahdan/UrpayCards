@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -23,11 +23,15 @@ It provides features such as card addition, deletion, and transaction management
 
   s.ios.deployment_target = '13.0'
 
-  # Include only Swift files in source_files
-  s.source_files = 'Classes/**/*.swift'
-  
-  # Add .xib files in resources
-  s.resources = ['Classes/**/*.xib']
+  # Specify the source files (Swift files)
+  s.source_files = 'UrpayCards/**/*.swift'
+
+  # Include .xib files as resources
+  s.resources = [
+    'UrpayCards/**/*.xib',
+    'UrpayCards/Assets/**/*.{png,jpg,xcassets}',  # Include images from Assets folder
+    'UrpayCards/Assets/Colors/*.json'             # Include color definitions or files
+  ]
 
   # Specify Swift version
   s.swift_versions = ['5.0']
