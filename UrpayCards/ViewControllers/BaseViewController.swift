@@ -12,45 +12,71 @@ public class BaseViewController: UIViewController {
     
     var cancellables = Set<AnyCancellable>()
     
+    // Loading indicator management
+    var isLoading: Bool = false {
+        didSet {
+            updateLoadingIndicator()
+        }
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        bindViewModel()
     }
     
-    // Method to configure the theme using the ThemeManager
-    public func configureTheme(_ config: ThemeConfig) {
-        ThemeManager.shared.updateTheme(config: config)
-        ThemeManager.shared.applyTheme(to: self)
+    // MARK: - UI Setup
+    
+    func setupUI() {
+        // Set up default UI elements here
     }
     
-    // Session management methods
-    public static var urpayWindow: UIWindow?
+    // MARK: - ViewModel Binding
     
-    // Allow starting session without requiring a theme
-    public static func startSession(storyboardName: String = "Cards", viewControllerIdentifier: String = "UrpayCards") {
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
-            print("No active window scene found")
-            return
-        }
-        
-        urpayWindow = UIWindow(windowScene: windowScene)
-        let bundle = Bundle(for: BaseViewController.self)
-        let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
-        
-        if let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier) as? BaseViewController {
-            let navigationController = NavigationController(rootViewController: viewController)
-            urpayWindow?.rootViewController = navigationController
-            urpayWindow?.makeKeyAndVisible()
+    func bindViewModel() {
+        // Bind to ViewModel properties here
+    }
+    
+    // MARK: - Loading Indicator
+    
+    private func updateLoadingIndicator() {
+        if isLoading {
+            // Show loading indicator
         } else {
-            print("Failed to instantiate view controller with identifier \(viewControllerIdentifier)")
+            // Hide loading indicator
         }
     }
     
-    public static func stopSession() {
-        urpayWindow?.isHidden = true
-        urpayWindow = nil
+    // MARK: - Error Handling
+    
+    func handleError(_ error: Error) {
+        let alert = UIAlertController(
+            title: "Error",
+            message: error.localizedDescription,
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
     
-    // Method to clean up Combine subscriptions
+    // MARK: - Alert Handling
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
+    // MARK: - Combine Subscriptions
+    
+    deinit {
+        cancelSubscriptions()
+    }
+    
     public func cancelSubscriptions() {
         cancellables.removeAll()
     }

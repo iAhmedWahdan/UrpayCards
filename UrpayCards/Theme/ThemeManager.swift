@@ -24,7 +24,6 @@ internal class ThemeManager {
 
     // Apply the theme to a view controller
     func applyTheme(to viewController: UIViewController) {
-        viewController.navigationItem.title = config.navigationTitle
         viewController.view.backgroundColor = config.backgroundColor
         viewController.navigationController?.navigationBar.barTintColor = config.navigationBarColor
         viewController.navigationController?.navigationBar.titleTextAttributes = [

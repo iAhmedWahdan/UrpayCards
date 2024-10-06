@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTheme()
+        configureApplePay()
     }
     
     func configureTheme() {
@@ -29,11 +30,19 @@ class ViewController: UIViewController {
         )
         
         // Apply the custom theme
-        UrpayCards.configureTheme(customTheme)
+        UrpayCardsSDK.configureTheme(customTheme)
+    }
+    
+    func configureApplePay() {
+        UrpayCardsSDK.configureApplePay(
+            merchantId: "merchant.com.urpay.cardsSDK",
+            currencyCode: "SAR",
+            countryCode: "SA"
+        )
     }
     
     @IBAction func didTapPayButton(_ sender: Any) {
-        UrpayCards.startSession()
+        UrpayCardsSDK.startSession()
     }
     
 }

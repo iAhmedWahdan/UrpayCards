@@ -14,7 +14,7 @@ class OptionCell: UITableViewCell {
     
     func configure(with option: OptionModel) {
         nameLabel.text = option.title
-        let bundle = Bundle(for: UrpayCards.self)
+        let bundle = Bundle(for: UrpayCardsViewController.self)
         
         if let image = UIImage(named: option.imageName, in: bundle, compatibleWith: nil) {
             iconImageView.image = image
@@ -24,6 +24,4 @@ class OptionCell: UITableViewCell {
             iconImageView.image = nil // Or a fallback image
         }
     }
-
-
 }
