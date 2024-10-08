@@ -81,3 +81,42 @@ public class BaseViewController: UIViewController {
         cancellables.removeAll()
     }
 }
+
+extension BaseViewController: UIViewControllerTransitioningDelegate {
+    
+    // MARK: - Instantiate View Controller
+    
+    func instantiateViewController<T: UIViewController>(storyboardName: String, viewControllerClass: T.Type) -> T? {
+        let bundle = Bundle(for: viewControllerClass)
+        let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
+        let identifier = String(describing: viewControllerClass)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as? T {
+            return viewController
+        } else {
+            print("Failed to instantiate \(identifier) from storyboard \(storyboardName)")
+            return nil
+        }
+    }
+    
+    // MARK: - Present View Controller
+    
+    func presentViewController(_ viewController: UIViewController, withCustomPresentation: Bool = false) {
+        if withCustomPresentation {
+            viewController.modalPresentationStyle = .custom
+            viewController.transitioningDelegate = self
+        }
+        self.present(viewController, animated: true)
+    }
+    
+    // MARK: - UIViewControllerTransitioningDelegate
+    
+    public func presentationController(forPresented presented: UIViewController,
+                                       presenting: UIViewController?,
+                                       source: UIViewController) -> UIPresentationController? {
+        let slideUpPresentationController = SlideUpPresentationController(presentedViewController: presented, presenting: presenting)
+        // Configure properties if needed
+        slideUpPresentationController.allowsDismissing = true
+        return slideUpPresentationController
+    }
+    
+}

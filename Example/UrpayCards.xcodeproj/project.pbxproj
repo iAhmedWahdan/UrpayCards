@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BCD56AA5D35B45A64B991F0 /* UrpayCards.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UrpayCards.podspec; path = ../UrpayCards.podspec; sourceTree = "<group>"; };
+		0BCD56AA5D35B45A64B991F0 /* UrpayCards.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UrpayCards.podspec; path = ../UrpayCards.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		45CDBD9FFDA0F9752C1EC266 /* Pods_UrpayCards_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478DE7EED7249B60255463F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* UrpayCards_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrpayCards_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };

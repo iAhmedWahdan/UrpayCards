@@ -14,7 +14,7 @@ class OptionCell: UITableViewCell {
     
     func configure(with option: OptionModel) {
         nameLabel.text = option.title
-        let bundle = Bundle(for: UrpayCardsViewController.self)
+        let bundle = Bundle(for: CardsViewController.self)
         
         if let image = UIImage(named: option.imageName, in: bundle, compatibleWith: nil) {
             iconImageView.image = image

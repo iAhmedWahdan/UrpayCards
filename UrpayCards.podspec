@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -32,7 +32,7 @@ It provides features such as card addition, deletion, and transaction management
     'UrpayCards/Assets/**/*.{png,jpg,xcassets}',  # Include images from Assets folder
     'UrpayCards/Assets/Colors/*.json'             # Include color definitions or files
   ]
-
+  
   # Specify Swift version
   s.swift_versions = ['5.0']
 end

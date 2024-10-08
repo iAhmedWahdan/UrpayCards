@@ -23,15 +23,15 @@ public class UrpayCardsSDK {
         }
 
         urpayWindow = UIWindow(windowScene: windowScene)
-        let bundle = Bundle(for: UrpayCardsViewController.self)
+        let bundle = Bundle(for: CardsViewController.self)
         let storyboard = UIStoryboard(name: "Cards", bundle: bundle)
 
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "UrpayCardsViewController") as? UrpayCardsViewController {
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "CardsViewController") as? CardsViewController {
             let navigationController = NavigationController(rootViewController: viewController)
             urpayWindow?.rootViewController = navigationController
             urpayWindow?.makeKeyAndVisible()
         } else {
-            print("Failed to instantiate UrpayCardsViewController")
+            print("Failed to instantiate CardsViewController")
         }
     }
 

@@ -1,5 +1,5 @@
 //
-//  UrpayCardsViewController.swift
+//  CardsViewController.swift
 //  UrpayCards
 //
 //  Created by Ahmed Wahdan on 29/09/2024.
@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import PassKit
 
-class UrpayCardsViewController: BaseViewController {
+class CardsViewController: BaseViewController {
     
     // MARK: - IBOutlets
     
@@ -22,7 +22,7 @@ class UrpayCardsViewController: BaseViewController {
     
     // MARK: - Properties
     
-    private var viewModel = UrpayCardsViewModel()
+    private var viewModel = CardsViewModel()
     
     // MARK: - Lifecycle
     
@@ -69,7 +69,7 @@ class UrpayCardsViewController: BaseViewController {
     private func configureCollectionView() {
         cardsCollectionView.dataSource = self
         cardsCollectionView.delegate = self
-        let bundle = Bundle(for: UrpayCardsViewController.self)
+        let bundle = Bundle(for: CardsViewController.self)
         cardsCollectionView.register(
             UINib(nibName: CardCell.className, bundle: bundle),
             forCellWithReuseIdentifier: CardCell.className
@@ -87,7 +87,7 @@ class UrpayCardsViewController: BaseViewController {
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        let bundle = Bundle(for: UrpayCardsViewController.self)
+        let bundle = Bundle(for: CardsViewController.self)
         tableView.register(
             UINib(nibName: OptionCell.className, bundle: bundle),
             forCellReuseIdentifier: OptionCell.className
@@ -148,18 +148,6 @@ class UrpayCardsViewController: BaseViewController {
             .store(in: &cancellables)
     }
     
-    private func bindPaymentStatus() {
-        viewModel.$lastPaymentWasSuccessful
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] success in
-                guard let self = self else { return }
-                if success {
-                    showAlert(title: "Payment Successful", message: "Your payment was processed successfully.")
-                }
-            }
-            .store(in: &cancellables)
-    }
-    
     // MARK: - Actions
     
     @IBAction func viewBalance(_ sender: UIButton) {
@@ -167,24 +155,17 @@ class UrpayCardsViewController: BaseViewController {
     }
     
     @IBAction func addAppleWallet(_ sender: UIControl) {
-        let amount = NSDecimalNumber(string: "10.00") // Replace with the actual amount
-        viewModel.payWithApplePay(amount: amount, from: self)
-//        if let selectedCard = viewModel.selectedCard {
-//            viewModel.addToAppleWallet(card: selectedCard, from: self)
-//        } else {
-//            handleError(NSError(domain: "NoSelectedCardError", code: 0, userInfo: [NSLocalizedDescriptionKey: "No card selected. Please select a card to add to Apple Wallet."]))
-//        }
-    }
-    
-    @IBAction func payWithApplePay(_ sender: UIButton) {
-        let amount = NSDecimalNumber(string: "10.00") // Replace with the actual amount
-        viewModel.payWithApplePay(amount: amount, from: self)
+        if let selectedCard = viewModel.selectedCard {
+            viewModel.addToAppleWallet(card: selectedCard, from: self)
+        } else {
+            handleError(NSError(domain: "NoSelectedCardError", code: 0, userInfo: [NSLocalizedDescriptionKey: "No card selected. Please select a card to add to Apple Wallet."]))
+        }
     }
 }
 
 // MARK: - UICollectionView DataSource & Delegate
 
-extension UrpayCardsViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension CardsViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.cards.count
@@ -223,7 +204,7 @@ extension UrpayCardsViewController: UICollectionViewDataSource, UICollectionView
 
 // MARK: - UITableView DataSource & Delegate
 
-extension UrpayCardsViewController: UITableViewDelegate, UITableViewDataSource {
+extension CardsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.options.count
@@ -244,8 +225,7 @@ extension UrpayCardsViewController: UITableViewDelegate, UITableViewDataSource {
     private func handleOptionSelection(_ option: OptionModel) {
         switch option.type {
         case .addMoney:
-            // Implement add money functionality
-            print("Add Money selected")
+            showPaymentMethods()
         case .cardInformation:
             // Implement card information functionality
             print("Card Information selected")
@@ -258,6 +238,33 @@ extension UrpayCardsViewController: UITableViewDelegate, UITableViewDataSource {
         case .cardBenefits:
             // Implement card benefits functionality
             print("Card Benefits selected")
+        }
+    }
+    
+    func showPaymentMethods() {
+        if let paymentMethodsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: PaymentMethodsVC.self) {
+            // If PaymentMethodsVC has a completion handler property
+            paymentMethodsVC.completionHandler = { method in
+                // Your code to handle the selected payment method
+                switch method.type {
+                case .bankCard:
+                    print("bank card")
+                case .accountDetails:
+                    print("account details")
+                case .cashDeposit:
+                    print("cash deposit")
+                case .applePay:
+                    self.showAmount()
+                }
+            }
+            // Present the view controller with custom presentation
+            presentViewController(paymentMethodsVC, withCustomPresentation: true)
+        }
+    }
+    
+    func showAmount() {
+        if let amountViewController = instantiateViewController(storyboardName: "Cards", viewControllerClass: AmountViewController.self) {
+            self.show(amountViewController, sender: nil)
         }
     }
 }
