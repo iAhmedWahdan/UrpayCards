@@ -20,10 +20,14 @@ class CardsViewModel: ObservableObject {
     @Published var options: [OptionModel] = []
     @Published var isLoading: Bool = false
     @Published var error: Error?
-    var selectedCard: CardModel?
+    @Published var lastPaymentWasSuccessful: Bool = false
+    
     
     // MARK: - Properties
     
+    var selectedCard: CardModel?
+    
+    private let applePayHandler = ApplePayHandler()
     private let appleWalletHandler = AppleWalletHandler()
     private var cancellables = Set<AnyCancellable>()
     
@@ -87,5 +91,47 @@ class CardsViewModel: ObservableObject {
             // Handle Apple Wallet not available
             self.error = NSError(domain: "AppleWalletError", code: 2, userInfo: [NSLocalizedDescriptionKey: "Apple Wallet is not available on this device."])
         }
+    }
+    
+    
+    // MARK: - Apple Pay Integration
+    
+    func payWithApplePay(amount: NSDecimalNumber, from viewController: UIViewController) {
+        let keychain = KeychainHelper.shared
+        
+        if let merchantIdData = keychain.load(key: "merchantId"),
+           let currencyCodeData = keychain.load(key: "currencyCode"),
+           let countryCodeData = keychain.load(key: "countryCode"),
+           let merchantId = String(data: merchantIdData, encoding: .utf8),
+           let currencyCode = String(data: currencyCodeData, encoding: .utf8),
+           let countryCode = String(data: countryCodeData, encoding: .utf8) {
+            
+            // Pass the retrieved values to the view controller
+            let supportedNetworks: [PKPaymentNetwork] = [.visa, .masterCard, .amex]
+            
+            applePayHandler.startPayment(
+                amount: amount,
+                supportedNetworks: supportedNetworks,
+                countryCode: countryCode,
+                currencyCode: currencyCode,
+                merchantIdentifier: merchantId,
+                viewController: viewController
+            ) { [weak self] (success, error) in
+                DispatchQueue.main.async {
+                    if success {
+                        // Payment was successful
+                        self?.lastPaymentWasSuccessful = true
+                    } else {
+                        // Payment failed
+                        self?.lastPaymentWasSuccessful = false
+                        self?.error = error
+                    }
+                }
+            }
+        } else {
+            // Handle the case where configuration is missing
+            self.error = NSError(domain: "Apple Pay Error", code: 1, userInfo: [NSLocalizedDescriptionKey: "Apple Pay not configured. Please call configureApplePay before starting the session."])
+        }
+        
     }
 }

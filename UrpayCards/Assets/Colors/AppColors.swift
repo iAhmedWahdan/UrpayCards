@@ -23,5 +23,14 @@ extension UIColor {
     
     static let c515151 = UIColor(named: "515151", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
 
+    static let c535354 = UIColor(named: "535354", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
+    
+    static let c77664E = UIColor(named: "77664E", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
+    
+    static let cB59064 = UIColor(named: "B59064", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
+    
+    static let cF05454 = UIColor(named: "F05454", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
+    
+    static let c2BB784 = UIColor(named: "2BB784", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
     
 }

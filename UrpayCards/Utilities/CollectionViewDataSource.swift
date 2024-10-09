@@ -28,3 +28,11 @@ class CollectionViewDataSource<Model, Cell: UICollectionViewCell>: NSObject, UIC
     }
 }
 
+extension UICollectionView {
+    func register<Cell: UICollectionViewCell>(cellType: Cell.Type) {
+        let bundle = Bundle(for: Cell.self)
+        let nib = UINib(nibName: String(describing: Cell.self), bundle: bundle)
+        register(nib, forCellWithReuseIdentifier: String(describing: Cell.self))
+    }
+}
+

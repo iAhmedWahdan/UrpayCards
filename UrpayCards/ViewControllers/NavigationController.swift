@@ -11,7 +11,7 @@ public class NavigationController: UINavigationController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-
+        delegate = self
         // Apply the theme to the navigation controller
         applyTheme()
     }
@@ -47,5 +47,20 @@ public class NavigationController: UINavigationController {
         
         navigationBar.standardAppearance = standardAppearance
         navigationBar.scrollEdgeAppearance = scrollEdgeAppearance
+    }
+}
+
+extension NavigationController: UINavigationControllerDelegate {
+    
+    public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        viewControllers.forEach { vc in
+            vc.navigationItem.backBarButtonItem = emptyBackButtonItem
+        }
+    }
+    
+    var emptyBackButtonItem: UIBarButtonItem {
+        let item = UIBarButtonItem()
+        item.title = ""
+        return item
     }
 }

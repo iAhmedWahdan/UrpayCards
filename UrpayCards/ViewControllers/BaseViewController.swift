@@ -31,6 +31,37 @@ public class BaseViewController: UIViewController {
         // Set up default UI elements here
     }
     
+    // MARK: - Navigation Bar Appearance
+    
+    func setNavigationBarColor(_ color: UIColor,
+                               titleTextColor: UIColor = .white,
+                               titleFont: UIFont? = nil,
+                               prefersLargeTitles: Bool = false) {
+        guard let navigationController = self.navigationController else { return }
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = color
+        appearance.shadowColor = .clear
+        
+        // Title text attributes
+        var titleAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: titleTextColor
+        ]
+        if let titleFont = titleFont {
+            titleAttributes[.font] = titleFont
+        }
+        
+        appearance.titleTextAttributes = titleAttributes
+        appearance.largeTitleTextAttributes = titleAttributes
+        
+        navigationController.navigationBar.standardAppearance = appearance
+        navigationController.navigationBar.scrollEdgeAppearance = appearance
+        navigationController.navigationBar.compactAppearance = appearance
+        navigationController.navigationBar.tintColor = titleTextColor
+        navigationController.navigationBar.prefersLargeTitles = prefersLargeTitles
+    }
+    
     // MARK: - ViewModel Binding
     
     func bindViewModel() {
@@ -50,12 +81,14 @@ public class BaseViewController: UIViewController {
     // MARK: - Error Handling
     
     func handleError(_ error: Error) {
+        let message: String = error.localizedDescription
+        
         let alert = UIAlertController(
-            title: "Error",
-            message: error.localizedDescription,
+            title: NSLocalizedString("Error", comment: "Error alert title"),
+            message: message,
             preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK button title"), style: .default))
         present(alert, animated: true)
     }
     

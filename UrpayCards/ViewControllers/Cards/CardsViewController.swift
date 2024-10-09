@@ -13,22 +13,36 @@ class CardsViewController: BaseViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var cardsCollectionView: UICollectionView!
-    @IBOutlet weak var balanceLabel: CurrencyLabel!
-    @IBOutlet weak var balanceButton: UIButton!
-    @IBOutlet weak var appleWalletButton: UIControl!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var cardsCollectionView: UICollectionView!
+    @IBOutlet var balanceLabel: CurrencyLabel!
+    @IBOutlet var balanceButton: UIButton!
+    @IBOutlet var appleWalletButton: UIControl!
+    @IBOutlet var tableView: UITableView!
     
     // MARK: - Properties
     
     private var viewModel = CardsViewModel()
+    
+    private var tableViewDataSource: TableViewDataSource<OptionModel, OptionCell>!
+    private var tableViewDelegate: TableViewDelegate<OptionModel>!
+    private var collectionViewDataSource: CollectionViewDataSource<CardModel, CardCell>!
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // ViewModel already initialized
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavigationBarColor(UIColor.c292929)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        applyTheme()
     }
     
     override func setupUI() {
@@ -46,6 +60,7 @@ class CardsViewController: BaseViewController {
         bindOptions()
         bindError()
         bindLoading()
+        bindPaymentStatus()
     }
     
     // MARK: - UI Configuration
@@ -67,13 +82,7 @@ class CardsViewController: BaseViewController {
     }
     
     private func configureCollectionView() {
-        cardsCollectionView.dataSource = self
-        cardsCollectionView.delegate = self
-        let bundle = Bundle(for: CardsViewController.self)
-        cardsCollectionView.register(
-            UINib(nibName: CardCell.className, bundle: bundle),
-            forCellWithReuseIdentifier: CardCell.className
-        )
+        cardsCollectionView.register(cellType: CardCell.self)
         
         let layout = AdaptiveCollectionViewLayout()
         layout.scrollDirection = .horizontal
@@ -82,16 +91,28 @@ class CardsViewController: BaseViewController {
             height: cardsCollectionView.frame.height - 8
         )
         cardsCollectionView.collectionViewLayout = layout
+        
+        collectionViewDataSource = CollectionViewDataSource(models: viewModel.cards) { cell, card in
+            cell.configure(with: card)
+        }
+        cardsCollectionView.dataSource = collectionViewDataSource
+        
+        cardsCollectionView.delegate = self
     }
     
     private func configureTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
-        let bundle = Bundle(for: CardsViewController.self)
-        tableView.register(
-            UINib(nibName: OptionCell.className, bundle: bundle),
-            forCellReuseIdentifier: OptionCell.className
-        )
+        tableView.register(cellType: OptionCell.self)
+        
+        tableViewDataSource = TableViewDataSource(models: viewModel.options) { cell, option in
+            cell.configure(with: option)
+        }
+        tableView.dataSource = tableViewDataSource
+        
+        tableViewDelegate = TableViewDelegate(models: viewModel.options) { [weak self] option in
+            self?.handleOptionSelection(option)
+        }
+        
+        tableView.delegate = tableViewDelegate
     }
     
     // MARK: - ViewModel Binding
@@ -114,7 +135,8 @@ class CardsViewController: BaseViewController {
     private func bindCards() {
         viewModel.$cards
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] _ in
+            .sink { [weak self] cards in
+                self?.collectionViewDataSource.models = cards
                 self?.cardsCollectionView.reloadData()
             }
             .store(in: &cancellables)
@@ -123,7 +145,8 @@ class CardsViewController: BaseViewController {
     private func bindOptions() {
         viewModel.$options
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] _ in
+            .sink { [weak self] options in
+                self?.tableViewDataSource.models = options
                 self?.tableView.reloadData()
             }
             .store(in: &cancellables)
@@ -148,6 +171,18 @@ class CardsViewController: BaseViewController {
             .store(in: &cancellables)
     }
     
+    private func bindPaymentStatus() {
+        viewModel.$lastPaymentWasSuccessful
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] success in
+                guard let self = self else { return }
+                if success {
+                    showAlert(title: "Payment Successful", message: "Your payment was processed successfully.")
+                }
+            }
+            .store(in: &cancellables)
+    }
+    
     // MARK: - Actions
     
     @IBAction func viewBalance(_ sender: UIButton) {
@@ -163,25 +198,9 @@ class CardsViewController: BaseViewController {
     }
 }
 
-// MARK: - UICollectionView DataSource & Delegate
+// MARK: - UICollectionView Delegate
 
-extension CardsViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.cards.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCell.className, for: indexPath) as! CardCell
-        let card = viewModel.cards[indexPath.row]
-        cell.configure(with: card)
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel.selectedCard = viewModel.cards[indexPath.row]
-        // Optionally, perform any action when a card is selected
-    }
+extension CardsViewController: UICollectionViewDelegate {
     
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         updateSelectedCard()
@@ -202,36 +221,18 @@ extension CardsViewController: UICollectionViewDataSource, UICollectionViewDeleg
     }
 }
 
-// MARK: - UITableView DataSource & Delegate
+// MARK: - UITableView handleOptionSelection
 
-extension CardsViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.options.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: OptionCell.className, for: indexPath) as! OptionCell
-        let option = viewModel.options[indexPath.row]
-        cell.configure(with: option)
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let option = viewModel.options[indexPath.row]
-        handleOptionSelection(option)
-    }
+extension CardsViewController {
     
     private func handleOptionSelection(_ option: OptionModel) {
         switch option.type {
         case .addMoney:
             showPaymentMethods()
         case .cardInformation:
-            // Implement card information functionality
-            print("Card Information selected")
+            showCardInformation()
         case .cardSettings:
-            // Implement card settings functionality
-            print("Card Settings selected")
+            showCardSettings()
         case .qrCodeCashWithdrawal:
             // Implement QR code cash withdrawal functionality
             print("QR Code Cash Withdrawal selected")
@@ -264,7 +265,23 @@ extension CardsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func showAmount() {
         if let amountViewController = instantiateViewController(storyboardName: "Cards", viewControllerClass: AmountViewController.self) {
+            amountViewController.completionHandler = { amount in
+                let amount = NSDecimalNumber(string: amount)
+                self.viewModel.payWithApplePay(amount: amount, from: self)
+            }
             self.show(amountViewController, sender: nil)
+        }
+    }
+    
+    func showCardInformation() {
+        if let cardInformationVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: CardInformationVC.self) {
+            self.show(cardInformationVC, sender: nil)
+        }
+    }
+    
+    func showCardSettings() {
+        if let cardSettingsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: CardSettingsVC.self) {
+            self.show(cardSettingsVC, sender: nil)
         }
     }
 }

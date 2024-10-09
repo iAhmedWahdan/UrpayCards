@@ -25,10 +25,30 @@ internal class ThemeManager {
     // Apply the theme to a view controller
     func applyTheme(to viewController: UIViewController) {
         viewController.view.backgroundColor = config.backgroundColor
-        viewController.navigationController?.navigationBar.barTintColor = config.navigationBarColor
-        viewController.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: config.titleTextColor,
-            NSAttributedString.Key.font: config.navigationBarFont
+        self.setNavigationBarColor(viewController: viewController)
+    }
+    
+    func setNavigationBarColor(viewController: UIViewController) {
+        guard let navigationController = viewController.navigationController else { return }
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = config.navigationBarColor
+        appearance.shadowColor = .clear
+        
+        // Title text attributes
+        var titleAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: config.titleTextColor
         ]
+        titleAttributes[.font] = config.navigationBarFont
+        
+        appearance.titleTextAttributes = titleAttributes
+        appearance.largeTitleTextAttributes = titleAttributes
+        
+        navigationController.navigationBar.standardAppearance = appearance
+        navigationController.navigationBar.scrollEdgeAppearance = appearance
+        navigationController.navigationBar.compactAppearance = appearance
+        navigationController.navigationBar.tintColor = config.titleTextColor
+        navigationController.navigationBar.prefersLargeTitles = false
     }
 }

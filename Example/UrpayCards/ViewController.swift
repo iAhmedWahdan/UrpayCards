@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     func configureTheme() {
         let customTheme = ThemeConfig(
-            navigationBarColor: UIColor.c292929,
+            navigationBarColor: UIColor.c151515,
             backgroundColor: UIColor.c151515,
             titleTextColor: .white,
             cardBackgroundColor: .lightGray,

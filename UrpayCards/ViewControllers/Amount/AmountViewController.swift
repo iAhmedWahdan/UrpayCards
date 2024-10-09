@@ -11,6 +11,8 @@ class AmountViewController: BaseViewController {
     
     @IBOutlet var amountTextField: CurrencyTextField!
 
+    var completionHandler: ((_ amount: String) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Amount"
@@ -21,6 +23,10 @@ class AmountViewController: BaseViewController {
         amountTextField.becomeFirstResponder()
     }
 
+    @IBAction func doneTapped() {
+        self.completionHandler?(amountTextField.text ?? "")
+        navigationController?.popViewController(animated: false)
+    }
 }
 
 // MARK: - Override the transitioning delegate method

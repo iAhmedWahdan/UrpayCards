@@ -27,3 +27,11 @@ class TableViewDataSource<Model, Cell: UITableViewCell>: NSObject, UITableViewDa
         return cell
     }
 }
+
+extension UITableView {
+    func register<Cell: UITableViewCell>(cellType: Cell.Type) {
+        let bundle = Bundle(for: Cell.self)
+        let nib = UINib(nibName: String(describing: Cell.self), bundle: bundle)
+        register(nib, forCellReuseIdentifier: String(describing: Cell.self))
+    }
+}
