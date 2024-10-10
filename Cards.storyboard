@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYS-eN-lEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1216" y="-498"/>
+            <point key="canvasLocation" x="-1129" y="-194"/>
         </scene>
         <!--Card InformationVC-->
         <scene sceneID="ZkX-W6-0z5">
@@ -580,7 +580,133 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bA-P8-xtk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="147"/>
+            <point key="canvasLocation" x="370" y="147"/>
+        </scene>
+        <!--Card BenefitsVC-->
+        <scene sceneID="D9e-LO-9UK">
+            <objects>
+                <viewController storyboardIdentifier="CardBenefitsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I0o-yp-o57" customClass="CardBenefitsVC" customModule="UrpayCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1W-w3-aiI">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="geE-ma-gcS">
+                                <rect key="frame" x="0.0" y="62" width="440" height="860"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUX-gl-F4W">
+                                        <rect key="frame" x="30" y="30" width="380" height="800"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgBenefits" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-yx-JQb">
+                                                <rect key="frame" x="0.0" y="0.0" width="380" height="800"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eJl-YE-MTn">
+                                                <rect key="frame" x="0.0" y="0.0" width="380" height="800"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mada Digital Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuO-Pf-WwI">
+                                                        <rect key="frame" x="20" y="30" width="340" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JZz-Ls-ADe">
+                                                        <rect key="frame" x="20" y="78.666666666666686" width="340" height="553.33333333333326"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </tableView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G9P-l3-yKP">
+                                                        <rect key="frame" x="20" y="652" width="340" height="128"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zy-4x-x8a" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="340" height="56"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="56" id="nsc-YF-1a8"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Close">
+                                                                    <color key="titleColor" name="AE926A"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="AE926A"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="doneTapped" destination="yFx-LI-4P9" eventType="touchUpInside" id="JNN-5B-XOO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSu-Ea-Jou" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="72" width="340" height="56"/>
+                                                                <color key="backgroundColor" name="AE926A"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="56" id="IBq-LN-lKD"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Request Card">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="doneTapped" destination="yFx-LI-4P9" eventType="touchUpInside" id="MpX-D9-tDz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="30" left="20" bottom="20" right="20"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ncM-yx-JQb" secondAttribute="trailing" id="44m-ep-tvE"/>
+                                            <constraint firstItem="eJl-YE-MTn" firstAttribute="leading" secondItem="gUX-gl-F4W" secondAttribute="leading" id="GWA-xU-6d8"/>
+                                            <constraint firstAttribute="bottom" secondItem="ncM-yx-JQb" secondAttribute="bottom" id="ISG-va-G9j"/>
+                                            <constraint firstItem="ncM-yx-JQb" firstAttribute="leading" secondItem="gUX-gl-F4W" secondAttribute="leading" id="O04-EP-qzd"/>
+                                            <constraint firstItem="ncM-yx-JQb" firstAttribute="top" secondItem="gUX-gl-F4W" secondAttribute="top" id="XSW-5y-SRo"/>
+                                            <constraint firstAttribute="bottom" secondItem="eJl-YE-MTn" secondAttribute="bottom" id="bMU-XS-w80"/>
+                                            <constraint firstItem="eJl-YE-MTn" firstAttribute="top" secondItem="gUX-gl-F4W" secondAttribute="top" id="egO-b9-p1T"/>
+                                            <constraint firstAttribute="trailing" secondItem="eJl-YE-MTn" secondAttribute="trailing" id="fiv-kq-hzW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="30" left="30" bottom="30" right="30"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZMQ-xs-yKY"/>
+                        <color key="backgroundColor" name="151515"/>
+                        <constraints>
+                            <constraint firstItem="ZMQ-xs-yKY" firstAttribute="trailing" secondItem="geE-ma-gcS" secondAttribute="trailing" id="0S5-xw-gfv"/>
+                            <constraint firstItem="geE-ma-gcS" firstAttribute="leading" secondItem="ZMQ-xs-yKY" secondAttribute="leading" id="8pL-Uh-Qhe"/>
+                            <constraint firstItem="ZMQ-xs-yKY" firstAttribute="bottom" secondItem="geE-ma-gcS" secondAttribute="bottom" id="kBr-Hw-f53"/>
+                            <constraint firstItem="geE-ma-gcS" firstAttribute="top" secondItem="ZMQ-xs-yKY" secondAttribute="top" id="mkw-6g-O1G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JZz-Ls-ADe" id="JU1-no-xtt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDm-fa-FoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="147"/>
         </scene>
         <!--Cards View Controller-->
         <scene sceneID="U28-cj-QUk">
@@ -822,7 +948,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4hk-P4-DHp"/>
-                        <color key="backgroundColor" name="232526"/>
+                        <color key="backgroundColor" name="151515"/>
                         <constraints>
                             <constraint firstItem="fPg-Zp-SOz" firstAttribute="leading" secondItem="4hk-P4-DHp" secondAttribute="leading" id="C3k-5y-oqi"/>
                             <constraint firstItem="4hk-P4-DHp" firstAttribute="bottom" secondItem="fPg-Zp-SOz" secondAttribute="bottom" id="E3L-Js-OEa"/>
@@ -836,7 +962,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SgJ-fA-moY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="397" y="-498"/>
+            <point key="canvasLocation" x="370" y="-498"/>
         </scene>
         <!--Amount View Controller-->
         <scene sceneID="hSC-OR-NhY">
@@ -992,10 +1118,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l83-29-sdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115" y="-492"/>
+            <point key="canvasLocation" x="1126" y="-498"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bgBenefits" width="308" height="615"/>
         <image name="document.on.document.fill" catalog="system" width="112" height="128"/>
         <image name="eye.slash.fill" catalog="system" width="128" height="96"/>
         <image name="ic_appleWallet" width="42" height="42"/>
@@ -1007,9 +1134,6 @@
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="151515">
             <color red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="232526">
-            <color red="0.13725490196078433" green="0.14509803921568629" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="292929">
             <color red="0.16078431372549021" green="0.16078431372549021" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -43,7 +43,13 @@
 		BD124CA32B790A2DEB262D50057730B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108C58A12848FB976110C208F5899857 /* BaseViewController.swift */; };
 		BF4290C1F5CB939E52B437CF70620122 /* IntrinsicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9061716D7619AAB6C06061A72F24879 /* IntrinsicScrollView.swift */; };
 		C10AA8082CB66F1800D9EC64 /* CardSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10AA8072CB66F1800D9EC64 /* CardSettingsVC.swift */; };
+		C10AA80B2CB6A3E200D9EC64 /* QRCodeScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */; };
 		C10CC5EA2CB416A400E5BDD9 /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10CC5E92CB416A400E5BDD9 /* Cards.storyboard */; };
+		C1B4EFD32CB7DB8F003CC01B /* CardBenefitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */; };
+		C1B4EFD72CB7E1F7003CC01B /* CardBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */; };
+		C1B4EFD82CB7E1F7003CC01B /* CardBenefitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */; };
+		C1B4EFDC2CB7E4AD003CC01B /* CardBenefitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFDB2CB7E4AD003CC01B /* CardBenefitsViewModel.swift */; };
+		C1B4EFDE2CB7E7BC003CC01B /* CardBenefitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFDD2CB7E7BC003CC01B /* CardBenefitModel.swift */; };
 		C1F80EE92CB5143F006C27CB /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F80EE82CB5143F006C27CB /* TableViewDataSource.swift */; };
 		C1F80EEB2CB51474006C27CB /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F80EEA2CB51474006C27CB /* CollectionViewDataSource.swift */; };
 		C1F80EED2CB514CE006C27CB /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F80EEC2CB514CE006C27CB /* CollectionViewDelegate.swift */; };
@@ -145,7 +151,13 @@
 		BA51DE2A99CC56654A131E32B2F30DC1 /* RequestConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
 		BBB0BC759E3D87DD08BF72FDEA74D913 /* OptionModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OptionModel.swift; sourceTree = "<group>"; };
 		C10AA8072CB66F1800D9EC64 /* CardSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSettingsVC.swift; sourceTree = "<group>"; };
+		C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerVC.swift; sourceTree = "<group>"; };
 		C10CC5E92CB416A400E5BDD9 /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
+		C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitsVC.swift; sourceTree = "<group>"; };
+		C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitCell.swift; sourceTree = "<group>"; };
+		C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardBenefitCell.xib; sourceTree = "<group>"; };
+		C1B4EFDB2CB7E4AD003CC01B /* CardBenefitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitsViewModel.swift; sourceTree = "<group>"; };
+		C1B4EFDD2CB7E7BC003CC01B /* CardBenefitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitModel.swift; sourceTree = "<group>"; };
 		C1F80EE82CB5143F006C27CB /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		C1F80EEA2CB51474006C27CB /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		C1F80EEC2CB514CE006C27CB /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
@@ -417,6 +429,50 @@
 			path = CardSettings;
 			sourceTree = "<group>";
 		};
+		C10AA8092CB6A3C400D9EC64 /* QRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */,
+			);
+			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
+		C1B4EFD12CB7DB5F003CC01B /* CardBenefits */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */,
+				C1B4EFDA2CB7E479003CC01B /* Models */,
+				C1B4EFD92CB7E465003CC01B /* ViewModels */,
+				C1B4EFD42CB7E198003CC01B /* Cells */,
+			);
+			path = CardBenefits;
+			sourceTree = "<group>";
+		};
+		C1B4EFD42CB7E198003CC01B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */,
+				C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C1B4EFD92CB7E465003CC01B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4EFDB2CB7E4AD003CC01B /* CardBenefitsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C1B4EFDA2CB7E479003CC01B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1B4EFDD2CB7E7BC003CC01B /* CardBenefitModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C1F80EF42CB54D07006C27CB /* CardInformation */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,11 +582,13 @@
 			children = (
 				108C58A12848FB976110C208F5899857 /* BaseViewController.swift */,
 				F79E3C2663E4984C1D1F5E2FC45AEFDA /* NavigationController.swift */,
-				C10AA8062CB66EE700D9EC64 /* CardSettings */,
 				BBFD600394C4B2E950EC41FB4B5124AA /* Cards */,
 				2499895DAF031329677DE87503E37E92 /* PaymentMethods */,
 				0E214E399287C25B475799181419CB39 /* Amount */,
 				C1F80EF42CB54D07006C27CB /* CardInformation */,
+				C10AA8062CB66EE700D9EC64 /* CardSettings */,
+				C10AA8092CB6A3C400D9EC64 /* QRCodeScanner */,
+				C1B4EFD12CB7DB5F003CC01B /* CardBenefits */,
 			);
 			name = ViewControllers;
 			path = UrpayCards/ViewControllers;
@@ -706,6 +764,7 @@
 				A2E93C25D6834DA7C1174D039B7A5FD1 /* CardCell.xib in Resources */,
 				C1F80F002CB567BB006C27CB /* AMToasterAssets.xcassets in Resources */,
 				FD29D628074053BC0D7A368DF4E0047A /* Colors.xcassets in Resources */,
+				C1B4EFD82CB7E1F7003CC01B /* CardBenefitCell.xib in Resources */,
 				BB930841F07BFD7FF44217BEE5C37CF5 /* OptionCell.xib in Resources */,
 				C10CC5EA2CB416A400E5BDD9 /* Cards.storyboard in Resources */,
 				C1F80F022CB567E3006C27CB /* AMToaster.xib in Resources */,
@@ -730,8 +789,10 @@
 			files = (
 				FC232242267A3A1DDBD45A8E21C3824B /* AdaptiveCollectionViewLayout.swift in Sources */,
 				39009CE01E14A33CE4D5C8BDB58501AA /* AMControlView.swift in Sources */,
+				C1B4EFD32CB7DB8F003CC01B /* CardBenefitsVC.swift in Sources */,
 				EC7555098DDC3145CDD8B8AA30CA1052 /* AmountViewController.swift in Sources */,
 				E7FE8866BF2624F795DCEAEA1962948B /* AMScaleButton.swift in Sources */,
+				C1B4EFDE2CB7E7BC003CC01B /* CardBenefitModel.swift in Sources */,
 				F55194D52E0F96EB883EF45D6198DCAC /* AppColors.swift in Sources */,
 				3C3991F1D0B050DF501F6E28BEADC3D9 /* ApplePayHandler.swift in Sources */,
 				67C0711C3A068B16945B33F5A64DFE07 /* AppleWalletHandler.swift in Sources */,
@@ -745,6 +806,7 @@
 				3C7BD9E169C962ACF1680F55374DAE65 /* CurrencyTextField.swift in Sources */,
 				12E102D29EAC7F8AB390CF3BC057CA4C /* Encodable+Parameters.swift in Sources */,
 				6A2BE8D358D6906FB5770B83EF488924 /* IntrinsicContainerView.swift in Sources */,
+				C10AA80B2CB6A3E200D9EC64 /* QRCodeScannerVC.swift in Sources */,
 				BF4290C1F5CB939E52B437CF70620122 /* IntrinsicScrollView.swift in Sources */,
 				FE5F1F1F6BBDD1E33B6FA99C46BECD2C /* IntrinsicTableView.swift in Sources */,
 				C1F80EF12CB5220D006C27CB /* DecimalTextField.swift in Sources */,
@@ -755,6 +817,8 @@
 				02FE728A4532AA1978EB276B5D0B900C /* NSObject+Extensions.swift in Sources */,
 				D1B74F5130C6AAE361194EEA434D3341 /* OptionCell.swift in Sources */,
 				91755B04ADF92DF5F75DFE3620186428 /* OptionModel.swift in Sources */,
+				C1B4EFD72CB7E1F7003CC01B /* CardBenefitCell.swift in Sources */,
+				C1B4EFDC2CB7E4AD003CC01B /* CardBenefitsViewModel.swift in Sources */,
 				5E7E0A095444AA6D609C4A7AE57DC353 /* PaymentMethodCell.swift in Sources */,
 				C1F80EFE2CB5678A006C27CB /* AMToaster.swift in Sources */,
 				4F9671A98B7A27D17297E1F4D4F08ACA /* PaymentMethodModel.swift in Sources */,

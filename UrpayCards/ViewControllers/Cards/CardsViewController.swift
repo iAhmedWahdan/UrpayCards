@@ -234,11 +234,9 @@ extension CardsViewController {
         case .cardSettings:
             showCardSettings()
         case .qrCodeCashWithdrawal:
-            // Implement QR code cash withdrawal functionality
-            print("QR Code Cash Withdrawal selected")
+            showQRCodeScanner()
         case .cardBenefits:
-            // Implement card benefits functionality
-            print("Card Benefits selected")
+            showCardBenefits()
         }
     }
     
@@ -282,6 +280,22 @@ extension CardsViewController {
     func showCardSettings() {
         if let cardSettingsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: CardSettingsVC.self) {
             self.show(cardSettingsVC, sender: nil)
+        }
+    }
+    
+    func showQRCodeScanner() {
+        let qrScannerVC = QRCodeScannerVC { [weak self] qrCode in
+            // Handle the scanned QR code
+            print("Scanned QR Code: \(qrCode)")
+            self?.dismiss(animated: true, completion: nil)
+        }
+        qrScannerVC.modalPresentationStyle = .fullScreen
+        present(qrScannerVC, animated: true)
+    }
+    
+    func showCardBenefits() {
+        if let cardBenefitsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: CardBenefitsVC.self) {
+            self.show(cardBenefitsVC, sender: nil)
         }
     }
 }

@@ -120,6 +120,9 @@ class AMToaster: UIView {
                 centerXAnchor.constraint(equalTo: window.centerXAnchor),
                 leadingAnchor.constraint(greaterThanOrEqualTo: window.leadingAnchor, constant: 10),
                 trailingAnchor.constraint(lessThanOrEqualTo: window.trailingAnchor, constant: -10)
+                //Full width
+//                leadingAnchor.constraint(equalTo: window.leadingAnchor, constant: 10),
+//                trailingAnchor.constraint(equalTo: window.trailingAnchor, constant: -10)
             ]
         )
         
