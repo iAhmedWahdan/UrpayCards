@@ -45,6 +45,9 @@
 		C10AA8082CB66F1800D9EC64 /* CardSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10AA8072CB66F1800D9EC64 /* CardSettingsVC.swift */; };
 		C10AA80B2CB6A3E200D9EC64 /* QRCodeScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */; };
 		C10CC5EA2CB416A400E5BDD9 /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10CC5E92CB416A400E5BDD9 /* Cards.storyboard */; };
+		C17490082CB80E3300384D39 /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17490072CB80E3300384D39 /* CaptureSessionManager.swift */; };
+		C174900A2CB80E6300384D39 /* QRUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17490092CB80E6300384D39 /* QRUIManager.swift */; };
+		C174900C2CB80EA200384D39 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174900B2CB80EA200384D39 /* AlertHelper.swift */; };
 		C1B4EFD32CB7DB8F003CC01B /* CardBenefitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */; };
 		C1B4EFD72CB7E1F7003CC01B /* CardBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */; };
 		C1B4EFD82CB7E1F7003CC01B /* CardBenefitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */; };
@@ -153,6 +156,9 @@
 		C10AA8072CB66F1800D9EC64 /* CardSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSettingsVC.swift; sourceTree = "<group>"; };
 		C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerVC.swift; sourceTree = "<group>"; };
 		C10CC5E92CB416A400E5BDD9 /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
+		C17490072CB80E3300384D39 /* CaptureSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSessionManager.swift; sourceTree = "<group>"; };
+		C17490092CB80E6300384D39 /* QRUIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRUIManager.swift; sourceTree = "<group>"; };
+		C174900B2CB80EA200384D39 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitsVC.swift; sourceTree = "<group>"; };
 		C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitCell.swift; sourceTree = "<group>"; };
 		C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardBenefitCell.xib; sourceTree = "<group>"; };
@@ -433,6 +439,9 @@
 			isa = PBXGroup;
 			children = (
 				C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */,
+				C17490072CB80E3300384D39 /* CaptureSessionManager.swift */,
+				C17490092CB80E6300384D39 /* QRUIManager.swift */,
+				C174900B2CB80EA200384D39 /* AlertHelper.swift */,
 			);
 			path = QRCodeScanner;
 			sourceTree = "<group>";
@@ -804,12 +813,14 @@
 				C753A096F83C43C92151EFFFB38BB259 /* CardsViewModel.swift in Sources */,
 				6132BC9DA86497E4A1EC5D09E5185700 /* CurrencyLabel.swift in Sources */,
 				3C7BD9E169C962ACF1680F55374DAE65 /* CurrencyTextField.swift in Sources */,
+				C17490082CB80E3300384D39 /* CaptureSessionManager.swift in Sources */,
 				12E102D29EAC7F8AB390CF3BC057CA4C /* Encodable+Parameters.swift in Sources */,
 				6A2BE8D358D6906FB5770B83EF488924 /* IntrinsicContainerView.swift in Sources */,
 				C10AA80B2CB6A3E200D9EC64 /* QRCodeScannerVC.swift in Sources */,
 				BF4290C1F5CB939E52B437CF70620122 /* IntrinsicScrollView.swift in Sources */,
 				FE5F1F1F6BBDD1E33B6FA99C46BECD2C /* IntrinsicTableView.swift in Sources */,
 				C1F80EF12CB5220D006C27CB /* DecimalTextField.swift in Sources */,
+				C174900C2CB80EA200384D39 /* AlertHelper.swift in Sources */,
 				7EB2E9FED02CE8F1DAA632279A1AB02E /* JSONUtility.swift in Sources */,
 				956A1C5ECA780F2FD3588F4DA89EB4BC /* KeychainHelper.swift in Sources */,
 				CDB92224E63A2EAC13979C2D803DE8F2 /* NavigationController.swift in Sources */,
@@ -819,6 +830,7 @@
 				91755B04ADF92DF5F75DFE3620186428 /* OptionModel.swift in Sources */,
 				C1B4EFD72CB7E1F7003CC01B /* CardBenefitCell.swift in Sources */,
 				C1B4EFDC2CB7E4AD003CC01B /* CardBenefitsViewModel.swift in Sources */,
+				C174900A2CB80E6300384D39 /* QRUIManager.swift in Sources */,
 				5E7E0A095444AA6D609C4A7AE57DC353 /* PaymentMethodCell.swift in Sources */,
 				C1F80EFE2CB5678A006C27CB /* AMToaster.swift in Sources */,
 				4F9671A98B7A27D17297E1F4D4F08ACA /* PaymentMethodModel.swift in Sources */,
