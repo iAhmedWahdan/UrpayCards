@@ -97,7 +97,7 @@ class QRCodeScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
            let stringValue = metadataObject.stringValue {
             captureSessionManager.stopRunning()
             completionHandler?(stringValue)
-            dismiss(animated: true)
+            //dismiss(animated: true)
         }
     }
     
