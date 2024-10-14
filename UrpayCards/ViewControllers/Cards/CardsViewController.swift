@@ -38,6 +38,7 @@ class CardsViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setNavigationBarColor(UIColor.c292929)
+        //self.isLoading = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -243,7 +244,8 @@ extension CardsViewController {
     func showPaymentMethods() {
         if let paymentMethodsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: PaymentMethodsVC.self) {
             // If PaymentMethodsVC has a completion handler property
-            paymentMethodsVC.completionHandler = { method in
+            paymentMethodsVC.completionHandler = { [weak self] method in
+                guard let self else { return }
                 // Your code to handle the selected payment method
                 switch method.type {
                 case .bankCard:
@@ -263,7 +265,8 @@ extension CardsViewController {
     
     func showAmount() {
         if let amountViewController = instantiateViewController(storyboardName: "Cards", viewControllerClass: AmountViewController.self) {
-            amountViewController.completionHandler = { amount in
+            amountViewController.completionHandler = { [weak self] amount in
+                guard let self else { return }
                 let amount = NSDecimalNumber(string: amount)
                 self.viewModel.payWithApplePay(amount: amount, from: self)
             }
@@ -285,9 +288,10 @@ extension CardsViewController {
     
     func showQRCodeScanner() {
         let qrScannerVC = QRCodeScannerVC { [weak self] qrCode in
+            guard let self else { return }
             // Handle the scanned QR code
             print("Scanned QR Code: \(qrCode)")
-            self?.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         }
         qrScannerVC.modalPresentationStyle = .fullScreen
         present(qrScannerVC, animated: true)

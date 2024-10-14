@@ -48,6 +48,8 @@
 		C17490082CB80E3300384D39 /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17490072CB80E3300384D39 /* CaptureSessionManager.swift */; };
 		C174900A2CB80E6300384D39 /* QRUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17490092CB80E6300384D39 /* QRUIManager.swift */; };
 		C174900C2CB80EA200384D39 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174900B2CB80EA200384D39 /* AlertHelper.swift */; };
+		C1A151DD2CBD07A1003DBEDA /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A151DC2CBD07A1003DBEDA /* LoadingIndicatorView.swift */; };
+		C1A151DF2CBD0AB1003DBEDA /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A151DE2CBD0AB1003DBEDA /* LoadingSpinner.swift */; };
 		C1B4EFD32CB7DB8F003CC01B /* CardBenefitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */; };
 		C1B4EFD72CB7E1F7003CC01B /* CardBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */; };
 		C1B4EFD82CB7E1F7003CC01B /* CardBenefitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */; };
@@ -159,6 +161,8 @@
 		C17490072CB80E3300384D39 /* CaptureSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSessionManager.swift; sourceTree = "<group>"; };
 		C17490092CB80E6300384D39 /* QRUIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRUIManager.swift; sourceTree = "<group>"; };
 		C174900B2CB80EA200384D39 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		C1A151DC2CBD07A1003DBEDA /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		C1A151DE2CBD0AB1003DBEDA /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
 		C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitsVC.swift; sourceTree = "<group>"; };
 		C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitCell.swift; sourceTree = "<group>"; };
 		C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardBenefitCell.xib; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 				C1F80EEE2CB51501006C27CB /* TableViewDelegate.swift */,
 				C1F80EEA2CB51474006C27CB /* CollectionViewDataSource.swift */,
 				C1F80EEC2CB514CE006C27CB /* CollectionViewDelegate.swift */,
+				C1A151DC2CBD07A1003DBEDA /* LoadingIndicatorView.swift */,
+				C1A151DE2CBD0AB1003DBEDA /* LoadingSpinner.swift */,
 				C1F80EFC2CB5677F006C27CB /* AMToaster */,
 			);
 			name = Utilities;
@@ -808,6 +814,7 @@
 				C1F80EF62CB54D37006C27CB /* CardInformationVC.swift in Sources */,
 				BD124CA32B790A2DEB262D50057730B6 /* BaseViewController.swift in Sources */,
 				30CF277E266E47BDB23D13EFADDD1B50 /* CardCell.swift in Sources */,
+				C1A151DF2CBD0AB1003DBEDA /* LoadingSpinner.swift in Sources */,
 				3DCCBCE9B78FBC9CDA420A076FB4E5B7 /* CardModel.swift in Sources */,
 				0F131F3400DA04C410CE00033D75CDC1 /* CardsViewController.swift in Sources */,
 				C753A096F83C43C92151EFFFB38BB259 /* CardsViewModel.swift in Sources */,
@@ -842,6 +849,7 @@
 				94EC73B9FE5BB7700898EC47EDF87A33 /* ThemeConfig.swift in Sources */,
 				93737A9BFFB9A52DEA1DE0098C74FB05 /* ThemeManager.swift in Sources */,
 				C1F80EED2CB514CE006C27CB /* CollectionViewDelegate.swift in Sources */,
+				C1A151DD2CBD07A1003DBEDA /* LoadingIndicatorView.swift in Sources */,
 				AA1A7FC24EEFB102155B372A27D43C59 /* UIPanGestureRecognizer.swift in Sources */,
 				73828996277C0622F6BF927117898218 /* UIScrollView+Extensions.swift in Sources */,
 				C1F80EEB2CB51474006C27CB /* CollectionViewDataSource.swift in Sources */,

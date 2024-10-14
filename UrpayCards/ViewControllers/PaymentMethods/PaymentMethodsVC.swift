@@ -122,7 +122,8 @@ extension PaymentMethodsVC: UITableViewDataSource, UITableViewDelegate {
         case .cashDeposit:
             print("cash deposit")
         case .applePay:
-            dismiss(animated: true) {
+            dismiss(animated: true) { [weak self] in
+                guard let self else { return }
                 self.completionHandler?(method)
             }
         }

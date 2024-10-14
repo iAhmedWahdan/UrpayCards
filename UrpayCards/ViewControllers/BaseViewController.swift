@@ -19,6 +19,8 @@ public class BaseViewController: UIViewController {
         }
     }
     
+    private var loadingIndicatorView: LoadingIndicatorView?
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -72,10 +74,20 @@ public class BaseViewController: UIViewController {
     
     private func updateLoadingIndicator() {
         if isLoading {
-            // Show loading indicator
+            showLoadingIndicator()
         } else {
-            // Hide loading indicator
+            hideLoadingIndicator()
         }
+    }
+    
+    func showLoadingIndicator() {
+        let spinner = LoadingSpinner.show(title: "Loading...")
+        spinner.innerColor = .white
+        spinner.outerColor = .cB59064
+    }
+    
+    func hideLoadingIndicator() {
+        LoadingSpinner.hide()
     }
     
     // MARK: - Error Handling
