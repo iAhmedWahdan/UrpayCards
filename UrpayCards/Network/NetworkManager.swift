@@ -14,7 +14,7 @@ final class NetworkManager {
     private let session: URLSession
     private let baseURL: String
     
-    private init(baseURL: String = "https://walletsit.neoleap.com.sa") {
+    private init(baseURL: String = "https://apigw-uat.neoleap.com.sa/nusuk-issuing") {
         self.baseURL = baseURL
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30.0

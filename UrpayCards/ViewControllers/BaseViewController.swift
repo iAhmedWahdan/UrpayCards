@@ -27,13 +27,13 @@ public class BaseViewController: UIViewController {
         bindViewModel()
     }
     
-    // MARK: - UI Setup
+    // MARK:- UI Setup
     
     func setupUI() {
         // Set up default UI elements here
     }
     
-    // MARK: - Navigation Bar Appearance
+    // MARK:- Navigation Bar Appearance
     
     func setNavigationBarColor(_ color: UIColor,
                                titleTextColor: UIColor = .white,
@@ -64,13 +64,13 @@ public class BaseViewController: UIViewController {
         navigationController.navigationBar.prefersLargeTitles = prefersLargeTitles
     }
     
-    // MARK: - ViewModel Binding
+    // MARK:- ViewModel Binding
     
     func bindViewModel() {
         // Bind to ViewModel properties here
     }
     
-    // MARK: - Loading Indicator
+    // MARK:- Loading Indicator
     
     private func updateLoadingIndicator() {
         if isLoading {
@@ -90,21 +90,13 @@ public class BaseViewController: UIViewController {
         LoadingSpinner.hide()
     }
     
-    // MARK: - Error Handling
+    // MARK:- Error Handling
     
     func handleError(_ error: Error) {
-        let message: String = error.localizedDescription
-        
-        let alert = UIAlertController(
-            title: NSLocalizedString("Error", comment: "Error alert title"),
-            message: message,
-            preferredStyle: .alert
-        )
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK button title"), style: .default))
-        present(alert, animated: true)
+        AMToaster.toast(error, type: .error)
     }
     
-    // MARK: - Alert Handling
+    // MARK:- Alert Handling
     
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(
@@ -116,7 +108,7 @@ public class BaseViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    // MARK: - Combine Subscriptions
+    // MARK:- Combine Subscriptions
     
     deinit {
         cancelSubscriptions()
@@ -129,7 +121,7 @@ public class BaseViewController: UIViewController {
 
 extension BaseViewController: UIViewControllerTransitioningDelegate {
     
-    // MARK: - Instantiate View Controller
+    // MARK:- Instantiate View Controller
     
     func instantiateViewController<T: UIViewController>(storyboardName: String, viewControllerClass: T.Type) -> T? {
         let bundle = Bundle(for: viewControllerClass)
@@ -143,7 +135,7 @@ extension BaseViewController: UIViewControllerTransitioningDelegate {
         }
     }
     
-    // MARK: - Present View Controller
+    // MARK:- Present View Controller
     
     func presentViewController(_ viewController: UIViewController, withCustomPresentation: Bool = false) {
         if withCustomPresentation {
@@ -153,7 +145,7 @@ extension BaseViewController: UIViewControllerTransitioningDelegate {
         self.present(viewController, animated: true)
     }
     
-    // MARK: - UIViewControllerTransitioningDelegate
+    // MARK:- UIViewControllerTransitioningDelegate
     
     public func presentationController(forPresented presented: UIViewController,
                                        presenting: UIViewController?,

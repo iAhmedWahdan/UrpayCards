@@ -31,12 +31,17 @@ class CardsViewModel: ObservableObject {
     private let appleWalletHandler = AppleWalletHandler()
     private var cancellables = Set<AnyCancellable>()
     
+    var formattedBalanceDisplay: String {
+        return isBalanceHidden ? "*******" : String(format: "%.2f SAR", balance)
+    }
+    
     // MARK: - Initialization
     
     init() {
         fetchCards()
         fetchBalance()
         setupOptions()
+        updateAuthToken()
     }
     
     // MARK: - Methods
@@ -50,7 +55,6 @@ class CardsViewModel: ObservableObject {
     func fetchBalance() {
         // Fetch or simulate balance
         self.balance = 9175.99
-        updateBalanceDisplay()
     }
     
     func setupOptions() {
@@ -59,15 +63,6 @@ class CardsViewModel: ObservableObject {
     
     func toggleBalanceVisibility() {
         isBalanceHidden.toggle()
-        updateBalanceDisplay()
-    }
-    
-    private func updateBalanceDisplay() {
-        if isBalanceHidden {
-            balanceDisplay = "*******"
-        } else {
-            balanceDisplay = String(format: "%.2f SAR", balance)
-        }
     }
     
     // MARK: - Apple Wallet Integration
@@ -77,19 +72,17 @@ class CardsViewModel: ObservableObject {
         let cardSuffix = String(card.cardNumber.suffix(4))
         
         if appleWalletHandler.isPassKitAvailable() {
-            // Check if the card is already added
             if appleWalletHandler.isCardAdded(cardSuffix: cardSuffix) {
-                self.error = NSError(domain: "AppleWalletError", code: 3, userInfo: [NSLocalizedDescriptionKey: "Card is already added to Apple Wallet."])
+                self.error = WalletError.cardAlreadyAdded
                 return
             }
+            
             let result = appleWalletHandler.initiateRequest(cardHolderName: cardHolderName, cardSuffix: cardSuffix, from: viewController)
             if !result {
-                // Handle failure to initiate request
-                self.error = NSError(domain: "AppleWalletError", code: 1, userInfo: [NSLocalizedDescriptionKey: "Failed to initiate Apple Wallet request."])
+                self.error = WalletError.initiationFailed
             }
         } else {
-            // Handle Apple Wallet not available
-            self.error = NSError(domain: "AppleWalletError", code: 2, userInfo: [NSLocalizedDescriptionKey: "Apple Wallet is not available on this device."])
+            self.error = WalletError.appleWalletUnavailable
         }
     }
     
@@ -97,41 +90,69 @@ class CardsViewModel: ObservableObject {
     // MARK: - Apple Pay Integration
     
     func payWithApplePay(amount: NSDecimalNumber, from viewController: UIViewController) {
-        let keychain = KeychainHelper.shared
-        
-        if let merchantIdData = keychain.load(key: "merchantId"),
-           let currencyCodeData = keychain.load(key: "currencyCode"),
-           let countryCodeData = keychain.load(key: "countryCode"),
-           let merchantId = String(data: merchantIdData, encoding: .utf8),
-           let currencyCode = String(data: currencyCodeData, encoding: .utf8),
-           let countryCode = String(data: countryCodeData, encoding: .utf8) {
-            
-            // Pass the retrieved values to the view controller
-            let supportedNetworks: [PKPaymentNetwork] = [.visa, .masterCard, .amex]
-            
-            applePayHandler.startPayment(
-                amount: amount,
-                supportedNetworks: supportedNetworks,
-                countryCode: countryCode,
-                currencyCode: currencyCode,
-                merchantIdentifier: merchantId,
-                viewController: viewController
-            ) { [weak self] (success, error) in
-                DispatchQueue.main.async {
-                    if success {
-                        // Payment was successful
-                        self?.lastPaymentWasSuccessful = true
-                    } else {
-                        // Payment failed
-                        self?.lastPaymentWasSuccessful = false
-                        self?.error = error
-                    }
-                }
-            }
-        } else {
-            // Handle the case where configuration is missing
+        guard let applePayConfig = ApplePayConfiguration.getConfiguration() else {
+            // Handle missing configuration case
             self.error = NSError(domain: "Apple Pay Error", code: 1, userInfo: [NSLocalizedDescriptionKey: "Apple Pay not configured. Please call configureApplePay before starting the session."])
+            return
         }
         
+        // Supported payment networks
+        let supportedNetworks: [PKPaymentNetwork] = [.visa, .masterCard, .amex]
+        
+        applePayHandler.startPayment(
+            amount: amount,
+            supportedNetworks: supportedNetworks,
+            countryCode: applePayConfig.countryCode,
+            currencyCode: applePayConfig.currencyCode,
+            merchantIdentifier: applePayConfig.merchantId,
+            viewController: viewController
+        ) { [weak self] (success, error) in
+            DispatchQueue.main.async {
+                if success {
+                    // Payment was successful
+                    self?.lastPaymentWasSuccessful = true
+                } else {
+                    // Payment failed
+                    self?.lastPaymentWasSuccessful = false
+                    self?.error = error
+                }
+            }
+        }
     }
+    
+    
+    func updateAuthToken() {
+        
+        let request = UpdateAuthToken(
+            grant_type: "client_credentials",
+            client_id: "539078621c9a41c8aa370152946cad9a",
+            client_secret: "OTcyYjUzMTctNDJiYy00YzRiLWFjMGUtODc5MGUxYzA3YmI3"
+        )
+        
+        Task {
+            do {
+                self.isLoading = true
+                defer { self.isLoading = false }
+                
+                let result = try await CardAuthService.updateAuthToken(request: request)
+                switch result {
+                case .success(let tokenResponse):
+                    DispatchQueue.main.async {
+                        print("updateAuthToken successful: \(tokenResponse)")
+                    }
+                case .failure(let error):
+                    DispatchQueue.main.async {
+                        print("updateAuthToken failed: \(error.localizedDescription)")
+                        self.error = error
+                    }
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    print("Error during updateAuthToken: \(error.localizedDescription)")
+                    self.error = error
+                }
+            }
+        }
+    }
+    
 }

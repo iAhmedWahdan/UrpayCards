@@ -39,7 +39,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="f4X-gJ-69G">
                                         <rect key="frame" x="0.0" y="0.0" width="440" height="645.33333333333337"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgV-ep-wI1">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgV-ep-wI1" customClass="ContinerView" customModule="UrpayCards" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="440" height="257"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wwu-oT-oFq">
@@ -143,28 +143,28 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nyf-AR-eCw">
                                                 <rect key="frame" x="0.0" y="297" width="440" height="348.33333333333326"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDh-4B-IbJ">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDh-4B-IbJ" customClass="ContinerView" customModule="UrpayCards" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="8" width="408" height="320.33333333333331"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="von-Qd-mVk">
                                                                 <rect key="frame" x="0.0" y="0.0" width="408" height="320.33333333333331"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xD0-4G-dWt">
-                                                                        <rect key="frame" x="16" y="20" width="376" height="66.333333333333329"/>
+                                                                        <rect key="frame" x="16" y="20" width="376" height="67.333333333333329"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-hy-qy4">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="51"/>
                                                                                 <subviews>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eOb-c4-62n">
-                                                                                        <rect key="frame" x="0.0" y="6.3333333333333144" width="149.66666666666666" height="37"/>
+                                                                                        <rect key="frame" x="0.0" y="7" width="149.66666666666666" height="37"/>
                                                                                         <subviews>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59Y-o9-GEu">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59Y-o9-GEu" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="149.66666666666666" height="12"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                                                                                <color key="textColor" name="77664E"/>
+                                                                                                <color key="textColor" name="AE926A"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4575 5356 3454 1254" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-lM-dES">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4575 5356 3454 1254" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-lM-dES" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="20" width="149.66666666666666" height="17"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                                                                 <color key="textColor" name="AE926A"/>
@@ -172,12 +172,15 @@
                                                                                             </label>
                                                                                         </subviews>
                                                                                     </stackView>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E65-9G-1kE" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
-                                                                                        <rect key="frame" x="279.66666666666669" y="2.6666666666666856" width="96.333333333333314" height="44.333333333333336"/>
-                                                                                        <color key="backgroundColor" name="77664E"/>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E65-9G-1kE" customClass="PrimaryButton" customModule="UrpayCards" customModuleProvider="target">
+                                                                                        <rect key="frame" x="284" y="3.3333333333333144" width="92" height="44"/>
+                                                                                        <color key="backgroundColor" name="AE926A"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="44" id="CWc-5u-eU3"/>
+                                                                                        </constraints>
                                                                                         <color key="tintColor" name="292929"/>
                                                                                         <inset key="contentEdgeInsets" minX="16" minY="10" maxX="16" maxY="10"/>
-                                                                                        <state key="normal" title="Copy" image="document.on.document.fill" catalog="system">
+                                                                                        <state key="normal" title="Copy" image="ic_copy">
                                                                                             <color key="titleColor" name="292929"/>
                                                                                         </state>
                                                                                         <userDefinedRuntimeAttributes>
@@ -192,8 +195,8 @@
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-3A-jXn">
-                                                                                <rect key="frame" x="0.0" y="66" width="376" height="0.3333333333333286"/>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-3A-jXn" customClass="LineView" customModule="UrpayCards" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="67" width="376" height="0.3333333333333286"/>
                                                                                 <color key="backgroundColor" name="AE926A"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="0.5" id="RhT-W2-f23"/>
@@ -202,21 +205,21 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lVJ-UE-aZr">
-                                                                        <rect key="frame" x="16" y="102.33333333333331" width="376" height="61"/>
+                                                                        <rect key="frame" x="16" y="103.33333333333333" width="376" height="60.666666666666671"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b68-UT-TG6">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="44.333333333333336"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                                                                 <subviews>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bDe-SK-IPC">
                                                                                         <rect key="frame" x="0.0" y="3.6666666666666856" width="117" height="37"/>
                                                                                         <subviews>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardholder name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAm-AG-8fG">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardholder name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAm-AG-8fG" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="117" height="12"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                                                                                <color key="textColor" name="77664E"/>
+                                                                                                <color key="textColor" name="AE926A"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHMED WAHDAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTX-oA-4Yw">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHMED WAHDAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTX-oA-4Yw" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="20" width="117" height="17"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                                                                 <color key="textColor" name="AE926A"/>
@@ -224,12 +227,15 @@
                                                                                             </label>
                                                                                         </subviews>
                                                                                     </stackView>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMB-Cy-c7Z" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
-                                                                                        <rect key="frame" x="279.66666666666669" y="0.0" width="96.333333333333314" height="44.333333333333336"/>
-                                                                                        <color key="backgroundColor" name="77664E"/>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMB-Cy-c7Z" customClass="PrimaryButton" customModule="UrpayCards" customModuleProvider="target">
+                                                                                        <rect key="frame" x="284" y="0.0" width="92" height="44"/>
+                                                                                        <color key="backgroundColor" name="AE926A"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="44" id="7DV-pn-XaH"/>
+                                                                                        </constraints>
                                                                                         <color key="tintColor" name="292929"/>
                                                                                         <inset key="contentEdgeInsets" minX="16" minY="10" maxX="16" maxY="10"/>
-                                                                                        <state key="normal" title="Copy" image="document.on.document.fill" catalog="system">
+                                                                                        <state key="normal" title="Copy" image="ic_copy">
                                                                                             <color key="titleColor" name="292929"/>
                                                                                         </state>
                                                                                         <userDefinedRuntimeAttributes>
@@ -241,8 +247,8 @@
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7I-gB-GQa">
-                                                                                <rect key="frame" x="0.0" y="60.333333333333314" width="376" height="0.6666666666666643"/>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7I-gB-GQa" customClass="LineView" customModule="UrpayCards" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="60.000000000000057" width="376" height="0.6666666666666643"/>
                                                                                 <color key="backgroundColor" name="AE926A"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="0.5" id="cC4-l1-oGW"/>
@@ -251,21 +257,21 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="int-8I-2mY">
-                                                                        <rect key="frame" x="16" y="179.33333333333337" width="376" height="60.666666666666657"/>
+                                                                        <rect key="frame" x="16" y="180" width="376" height="60.333333333333343"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BzC-HA-ZZj">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="44.333333333333336"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                                                                 <subviews>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yt5-kV-MJ6">
-                                                                                        <rect key="frame" x="0.0" y="3.6666666666666288" width="55.666666666666664" height="37"/>
+                                                                                        <rect key="frame" x="0.0" y="3.3333333333333712" width="55.666666666666664" height="37"/>
                                                                                         <subviews>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzY-kY-ehE">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzY-kY-ehE" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="12"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                                                                                <color key="textColor" name="77664E"/>
+                                                                                                <color key="textColor" name="AE926A"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07/29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byr-rQ-EHi">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07/29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byr-rQ-EHi" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="20" width="55.666666666666664" height="17"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                                                                 <color key="textColor" name="AE926A"/>
@@ -273,12 +279,15 @@
                                                                                             </label>
                                                                                         </subviews>
                                                                                     </stackView>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-h5-oBu" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
-                                                                                        <rect key="frame" x="279.66666666666669" y="0.0" width="96.333333333333314" height="44.333333333333336"/>
-                                                                                        <color key="backgroundColor" name="77664E"/>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-h5-oBu" customClass="PrimaryButton" customModule="UrpayCards" customModuleProvider="target">
+                                                                                        <rect key="frame" x="284" y="0.0" width="92" height="44"/>
+                                                                                        <color key="backgroundColor" name="AE926A"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="44" id="5TE-Az-MiX"/>
+                                                                                        </constraints>
                                                                                         <color key="tintColor" name="292929"/>
                                                                                         <inset key="contentEdgeInsets" minX="16" minY="10" maxX="16" maxY="10"/>
-                                                                                        <state key="normal" title="Copy" image="document.on.document.fill" catalog="system">
+                                                                                        <state key="normal" title="Copy" image="ic_copy">
                                                                                             <color key="titleColor" name="292929"/>
                                                                                         </state>
                                                                                         <userDefinedRuntimeAttributes>
@@ -290,8 +299,8 @@
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oo2-9H-XX2">
-                                                                                <rect key="frame" x="0.0" y="60.333333333333258" width="376" height="0.3333333333333357"/>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oo2-9H-XX2" customClass="LineView" customModule="UrpayCards" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="60" width="376" height="0.3333333333333357"/>
                                                                                 <color key="backgroundColor" name="AE926A"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="0.5" id="tfw-EQ-Gb2"/>
@@ -300,21 +309,21 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jSO-s7-EOw">
-                                                                        <rect key="frame" x="16" y="256" width="376" height="44.333333333333314"/>
+                                                                        <rect key="frame" x="16" y="256.33333333333337" width="376" height="44"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0vl-nH-alv">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="44.333333333333336"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                                                                 <subviews>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VBZ-qA-h91">
                                                                                         <rect key="frame" x="0.0" y="3.6666666666666288" width="26.666666666666668" height="37"/>
                                                                                         <subviews>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="865-76-zej">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="865-76-zej" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="26.666666666666668" height="12"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                                                                                <color key="textColor" name="77664E"/>
+                                                                                                <color key="textColor" name="AE926A"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="354" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bE-kt-pce">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="354" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bE-kt-pce" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                                 <rect key="frame" x="0.0" y="20" width="26.666666666666668" height="17"/>
                                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                                                                 <color key="textColor" name="AE926A"/>
@@ -322,12 +331,15 @@
                                                                                             </label>
                                                                                         </subviews>
                                                                                     </stackView>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj7-Ri-qaH" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
-                                                                                        <rect key="frame" x="279.66666666666669" y="0.0" width="96.333333333333314" height="44.333333333333336"/>
-                                                                                        <color key="backgroundColor" name="77664E"/>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj7-Ri-qaH" customClass="PrimaryButton" customModule="UrpayCards" customModuleProvider="target">
+                                                                                        <rect key="frame" x="284" y="0.0" width="92" height="44"/>
+                                                                                        <color key="backgroundColor" name="AE926A"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="44" id="hn4-4j-GS0"/>
+                                                                                        </constraints>
                                                                                         <color key="tintColor" name="292929"/>
                                                                                         <inset key="contentEdgeInsets" minX="16" minY="10" maxX="16" maxY="10"/>
-                                                                                        <state key="normal" title="Copy" image="document.on.document.fill" catalog="system">
+                                                                                        <state key="normal" title="Copy" image="ic_copy">
                                                                                             <color key="titleColor" name="292929"/>
                                                                                         </state>
                                                                                         <userDefinedRuntimeAttributes>
@@ -345,7 +357,7 @@
                                                                 <edgeInsets key="layoutMargins" top="20" left="16" bottom="20" right="16"/>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="292929"/>
                                                         <constraints>
                                                             <constraint firstItem="von-Qd-mVk" firstAttribute="top" secondItem="IDh-4B-IbJ" secondAttribute="top" id="gO2-qL-kOd"/>
                                                             <constraint firstAttribute="bottom" secondItem="von-Qd-mVk" secondAttribute="bottom" id="jVW-4I-fhF"/>
@@ -401,7 +413,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ptj-Mu-nZP">
                                 <rect key="frame" x="0.0" y="61.999999999999972" width="440" height="397.33333333333326"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcT-G5-T0h">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcT-G5-T0h" customClass="ContinerView" customModule="UrpayCards" customModuleProvider="target">
                                         <rect key="frame" x="16" y="20" width="408" height="267.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fsn-cD-cBL">
@@ -416,14 +428,15 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ear-Dt-gec">
                                                                         <rect key="frame" x="0.0" y="0.0" width="376" height="50"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change PIN code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rez-lU-z0a">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change PIN code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rez-lU-z0a" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="16.666666666666671" width="114.33333333333333" height="17"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                                                                <color key="textColor" name="B59064"/>
+                                                                                <color key="textColor" name="AE926A"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tapArrow" translatesAutoresizingMaskIntoConstraints="NO" id="iuu-Ou-lhy">
                                                                                 <rect key="frame" x="355" y="15" width="21" height="20"/>
+                                                                                <color key="tintColor" name="AE926A"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                     </stackView>
@@ -437,9 +450,9 @@
                                                                 </constraints>
                                                                 <edgeInsets key="layoutMargins" top="12" left="0.0" bottom="12" right="0.0"/>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMq-iL-UMr">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMq-iL-UMr" customClass="LineView" customModule="UrpayCards" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="75" width="376" height="0.6666666666666714"/>
-                                                                <color key="backgroundColor" name="B59064"/>
+                                                                <color key="backgroundColor" name="AE926A"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="0.5" id="sgO-bH-PkS"/>
                                                                 </constraints>
@@ -452,10 +465,10 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0bb-Fx-7IQ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="376" height="31"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDb-hz-htR">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDb-hz-htR" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="7" width="64.666666666666671" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                                                        <color key="textColor" name="B59064"/>
+                                                                        <color key="textColor" name="AE926A"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RF4-2L-jWd">
@@ -467,9 +480,9 @@
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vw-Hi-EaJ">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vw-Hi-EaJ" customClass="LineView" customModule="UrpayCards" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="56.000000000000028" width="376" height="0.3333333333333357"/>
-                                                                <color key="backgroundColor" name="B59064"/>
+                                                                <color key="backgroundColor" name="AE926A"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="0.5" id="bbn-I0-leW"/>
                                                                 </constraints>
@@ -485,10 +498,10 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-rA-TdS">
                                                                         <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="35.333333333333336"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnT-0v-gQa">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnT-0v-gQa" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="17"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                                                                <color key="textColor" name="B59064"/>
+                                                                                <color key="textColor" name="AE926A"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deactivated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp1-bv-bA2">
@@ -514,7 +527,7 @@
                                                 <edgeInsets key="layoutMargins" top="25" left="16" bottom="25" right="16"/>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="292929"/>
                                         <constraints>
                                             <constraint firstItem="fsn-cD-cBL" firstAttribute="leading" secondItem="LcT-G5-T0h" secondAttribute="leading" id="3qg-Ba-SUx"/>
                                             <constraint firstAttribute="trailing" secondItem="fsn-cD-cBL" secondAttribute="trailing" id="7ld-L3-01f"/>
@@ -542,12 +555,13 @@
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tapArrow" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-na-f6n">
                                                         <rect key="frame" x="371" y="20" width="21" height="20"/>
+                                                        <color key="tintColor" name="AE926A"/>
                                                     </imageView>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="20" left="16" bottom="20" right="16"/>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="292929"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="AS2-zK-PBW" secondAttribute="bottom" id="1p3-Cq-1o1"/>
                                             <constraint firstAttribute="trailing" secondItem="AS2-zK-PBW" secondAttribute="trailing" id="VRe-E1-Ar0"/>
@@ -575,12 +589,61 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelView" destination="Rlu-qA-RoU" id="kX1-m4-isB"/>
                         <outlet property="statusLabel" destination="Rp1-bv-bA2" id="lQf-0F-Uh0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bA-P8-xtk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="370" y="147"/>
+        </scene>
+        <!--Security View Controller-->
+        <scene sceneID="rQy-rz-MCm">
+            <objects>
+                <viewController storyboardIdentifier="SecurityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YEu-xw-4FX" customClass="SecurityViewController" customModule="UrpayCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iDl-1y-3bk">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="rmE-hf-oDA">
+                                <rect key="frame" x="0.0" y="62" width="440" height="436"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_vpn" translatesAutoresizingMaskIntoConstraints="NO" id="HVj-HR-g2D">
+                                        <rect key="frame" x="129.66666666666666" y="100" width="180.99999999999997" height="181"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bhG-GH-x2b">
+                                        <rect key="frame" x="24" y="313" width="392" height="115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disable VPN!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2g-9y-Fs3" customClass="SecondaryLabel" customModule="UrpayCards" customModuleProvider="target">
+                                                <rect key="frame" x="75" y="0.0" width="242" height="50.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please turn off your VPN, Your privacy and security are still our top priorities!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjX-QT-Wzg" customClass="SecondaryLabel" customModule="UrpayCards" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="74.333333333333314" width="392" height="40.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="100" left="20" bottom="8" right="20"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Zf-jL-Ojm"/>
+                        <color key="backgroundColor" name="151515"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rmE-hf-oDA" secondAttribute="trailing" id="Lx6-8V-0SP"/>
+                            <constraint firstItem="rmE-hf-oDA" firstAttribute="leading" secondItem="iDl-1y-3bk" secondAttribute="leading" id="U3z-Zo-J7e"/>
+                            <constraint firstItem="rmE-hf-oDA" firstAttribute="top" secondItem="0Zf-jL-Ojm" secondAttribute="top" id="bJj-n4-omZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIA-Fw-42X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="795"/>
         </scene>
         <!--Card BenefitsVC-->
         <scene sceneID="D9e-LO-9UK">
@@ -593,16 +656,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="geE-ma-gcS">
                                 <rect key="frame" x="0.0" y="62" width="440" height="860"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUX-gl-F4W">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUX-gl-F4W" customClass="ContinerView" customModule="UrpayCards" customModuleProvider="target">
                                         <rect key="frame" x="30" y="30" width="380" height="800"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgBenefits" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-yx-JQb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgBenefits" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-yx-JQb">
                                                 <rect key="frame" x="0.0" y="0.0" width="380" height="800"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eJl-YE-MTn">
                                                 <rect key="frame" x="0.0" y="0.0" width="380" height="800"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mada Digital Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuO-Pf-WwI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mada Digital Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuO-Pf-WwI" customClass="SecondaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="30" width="340" height="28.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -615,7 +678,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G9P-l3-yKP">
                                                         <rect key="frame" x="20" y="652" width="340" height="128"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zy-4x-x8a" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zy-4x-x8a" customClass="OutlineButton" customModule="UrpayCards" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="340" height="56"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -642,7 +705,7 @@
                                                                     <action selector="doneTapped" destination="yFx-LI-4P9" eventType="touchUpInside" id="JNN-5B-XOO"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSu-Ea-Jou" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSu-Ea-Jou" customClass="PrimaryButton" customModule="UrpayCards" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="72" width="340" height="56"/>
                                                                 <color key="backgroundColor" name="AE926A"/>
                                                                 <constraints>
@@ -669,7 +732,7 @@
                                                 <edgeInsets key="layoutMargins" top="30" left="20" bottom="20" right="20"/>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="292929"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="ncM-yx-JQb" secondAttribute="trailing" id="44m-ep-tvE"/>
                                             <constraint firstItem="eJl-YE-MTn" firstAttribute="leading" secondItem="gUX-gl-F4W" secondAttribute="leading" id="GWA-xU-6d8"/>
@@ -722,7 +785,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OW2-YO-wg8">
                                         <rect key="frame" x="0.0" y="0.0" width="440" height="600"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqt-Wg-g0v">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqt-Wg-g0v" customClass="ContinerView" customModule="UrpayCards" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="440" height="420"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-e4-98u">
@@ -756,7 +819,7 @@
                                                                             </label>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uh-LY-8ac">
                                                                                 <rect key="frame" x="79.666666666666657" y="0.0" width="30" height="30"/>
-                                                                                <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="backgroundColor" name="151515"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="30" id="fsl-l3-Aqd"/>
                                                                                     <constraint firstAttribute="height" constant="30" id="s7a-h4-Mgg"/>
@@ -922,7 +985,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UFa-Sd-5Tv">
                                         <rect key="frame" x="0.0" y="0.0" width="440" height="193.66666666666666"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTS-ep-JQH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTS-ep-JQH" customClass="SecondaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="35" width="440" height="28.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1024,15 +1087,15 @@
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cP6-3r-60O">
                                                                         <rect key="frame" x="0.0" y="0.66666666666666607" width="17" height="19"/>
-                                                                        <color key="tintColor" name="77664E"/>
+                                                                        <color key="tintColor" name="AE926A"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="17" id="fhJ-5j-APH"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must be multiple of 100s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEq-kS-tvS">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must be multiple of 100s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEq-kS-tvS" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                         <rect key="frame" x="25" y="0.0" width="142.66666666666666" height="20.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                                                        <color key="textColor" name="77664E"/>
+                                                                        <color key="textColor" name="AE926A"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -1040,7 +1103,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ib5-O5-bzz">
                                                                 <rect key="frame" x="78.000000000000014" y="174.66666666666666" width="252.33333333333337" height="59.333333333333343"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining limit: 1,500.00 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmi-Xu-HdH">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining limit: 1,500.00 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmi-Xu-HdH" customClass="SecondaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                         <rect key="frame" x="30" y="0.0" width="192.33333333333334" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1049,12 +1112,12 @@
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-ue-8BG">
                                                                         <rect key="frame" x="0.0" y="29.000000000000028" width="252.33333333333334" height="4"/>
                                                                         <color key="progressTintColor" name="AE926A"/>
-                                                                        <color key="trackTintColor" name="515151"/>
+                                                                        <color key="trackTintColor" name="292929"/>
                                                                     </progressView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily limit: 20,000.00 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLL-Fx-25Z">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily limit: 20,000.00 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLL-Fx-25Z" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                         <rect key="frame" x="50.666666666666657" y="45.000000000000028" width="151" height="14.333333333333336"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                                                        <color key="textColor" name="77664E"/>
+                                                                        <color key="textColor" name="AE926A"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -1067,7 +1130,7 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clv-mJ-Znu" customClass="AMScaleButton" customModule="UrpayCards" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clv-mJ-Znu" customClass="PrimaryButton" customModule="UrpayCards" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="290" width="408" height="56"/>
                                                 <color key="backgroundColor" name="AE926A"/>
                                                 <constraints>
@@ -1123,14 +1186,15 @@
     </scenes>
     <resources>
         <image name="bgBenefits" width="308" height="615"/>
-        <image name="document.on.document.fill" catalog="system" width="112" height="128"/>
         <image name="eye.slash.fill" catalog="system" width="128" height="96"/>
         <image name="ic_appleWallet" width="42" height="42"/>
+        <image name="ic_copy" width="17" height="17"/>
         <image name="ic_mada" width="61" height="22"/>
         <image name="ic_nuskCard" width="311" height="197"/>
         <image name="ic_nuskLogo" width="51" height="21"/>
         <image name="ic_tapArrow" width="21" height="20"/>
         <image name="ic_urpayLogo" width="77" height="37"/>
+        <image name="ic_vpn" width="181" height="181"/>
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="151515">
             <color red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1138,14 +1202,8 @@
         <namedColor name="292929">
             <color red="0.16078431372549021" green="0.16078431372549021" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="515151">
-            <color red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="535354">
             <color red="0.32549019607843138" green="0.32549019607843138" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="77664E">
-            <color red="0.46666666666666667" green="0.40000000000000002" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="7D7D80">
             <color red="0.49019607843137253" green="0.49019607843137253" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

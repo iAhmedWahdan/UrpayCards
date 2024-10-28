@@ -20,12 +20,14 @@ class ViewController: UIViewController {
     func configureTheme() {
         let customTheme = ThemeConfig(
             navigationBarColor: UIColor.c151515,
+            navigationBarColor2: UIColor.c292929,
             backgroundColor: UIColor.c151515,
+            backgroundColor2: UIColor.c292929,
+            priamryColor: UIColor.cAE926A,
+            secondaryColor: UIColor.white,
             titleTextColor: .white,
-            cardBackgroundColor: .lightGray,
-            font: UIFont.systemFont(ofSize: 16),
+            cardBackgroundColor: .c292929,
             navigationBarFont: UIFont.systemFont(ofSize: 18, weight: .bold),
-            statusTextColor: .red,
             navigationTitle: "Cards"
         )
         

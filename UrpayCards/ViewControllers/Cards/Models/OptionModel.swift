@@ -5,7 +5,7 @@
 //  Created by Ahmed Wahdan on 03/10/2024.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - OptionModel
 
@@ -32,6 +32,21 @@ struct OptionModel: Identifiable {
         case cardSettings
         case qrCodeCashWithdrawal
         case cardBenefits
+        
+        var viewControllerType: UIViewController.Type? {
+            switch self {
+            case .addMoney:
+                return PaymentMethodsVC.self
+            case .cardInformation:
+                return CardInformationVC.self
+            case .cardSettings:
+                return CardSettingsVC.self
+            case .qrCodeCashWithdrawal:
+                return QRCodeScannerVC.self
+            case .cardBenefits:
+                return CardBenefitsVC.self
+            }
+        }
     }
 }
 

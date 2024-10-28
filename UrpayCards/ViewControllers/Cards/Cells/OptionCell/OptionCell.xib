@@ -40,7 +40,7 @@
                                                                     <constraint firstAttribute="width" constant="42" id="rUQ-o8-JvU"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjU-4g-IWG">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjU-4g-IWG" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                                 <rect key="frame" x="67" y="0.0" width="73" height="59"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" name="AE926A"/>
@@ -50,12 +50,13 @@
                                                     </stackView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tapArrow" translatesAutoresizingMaskIntoConstraints="NO" id="hsM-fR-RK6">
                                                         <rect key="frame" x="267" y="0.0" width="21" height="59"/>
+                                                        <color key="tintColor" name="AE926A"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-UB-bfi">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-UB-bfi" customClass="ContinerView" customModule="UrpayCards" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="73" width="288" height="1"/>
-                                                <color key="backgroundColor" name="24282D"/>
+                                                <color key="backgroundColor" name="292929"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="8QG-xu-cWh"/>
                                                 </constraints>
@@ -94,8 +95,8 @@
     <resources>
         <image name="ic_addMoney" width="43" height="42"/>
         <image name="ic_tapArrow" width="21" height="20"/>
-        <namedColor name="24282D">
-            <color red="0.14117647058823529" green="0.15686274509803921" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        <namedColor name="292929">
+            <color red="0.16078431372549021" green="0.16078431372549021" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="AE926A">
             <color red="0.68235294117647061" green="0.5725490196078431" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -23,6 +23,7 @@ class CurrencyLabel: UILabel {
     
     // Function to format the label's text
     private func formatText(amount: Double, currency: String) {
+        let theme = ThemeManager.shared.config
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.minimumFractionDigits = 2
@@ -41,13 +42,13 @@ class CurrencyLabel: UILabel {
             // Define attributes for the main part (before the decimal point)
             let mainAttributes: [NSAttributedString.Key: Any] = [
                 .font: UIFont.systemFont(ofSize: 42, weight: .semibold), // Larger font for the number
-                .foregroundColor: UIColor.white // White color for the text
+                .foregroundColor: theme.secondaryColor ?? UIColor.white // White color for the text
             ]
             
             // Define attributes for the smaller part (decimals and currency)
             let smallerAttributes: [NSAttributedString.Key: Any] = [
                 .font: UIFont.systemFont(ofSize: 24, weight: .semibold), // Smaller font for decimals and currency
-                .foregroundColor: UIColor.white // Light gray color for the smaller part
+                .foregroundColor: theme.secondaryColor ?? UIColor.white // Light gray color for the smaller part
             ]
             
             // Apply the main attributes to the number part

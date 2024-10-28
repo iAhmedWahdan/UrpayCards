@@ -45,11 +45,24 @@
 		C10AA8082CB66F1800D9EC64 /* CardSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10AA8072CB66F1800D9EC64 /* CardSettingsVC.swift */; };
 		C10AA80B2CB6A3E200D9EC64 /* QRCodeScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */; };
 		C10CC5EA2CB416A400E5BDD9 /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10CC5E92CB416A400E5BDD9 /* Cards.storyboard */; };
+		C1144D6E2CC0EE0E00943F28 /* VPNProxyDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1144D6D2CC0EE0E00943F28 /* VPNProxyDetection.swift */; };
+		C1144D702CC0FDDB00943F28 /* SecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1144D6F2CC0FDDB00943F28 /* SecurityViewController.swift */; };
+		C11B12DB2CBFC85B00831423 /* ApplePayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B12D92CBFC85B00831423 /* ApplePayConfiguration.swift */; };
+		C11B12DC2CBFC85B00831423 /* WalletError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B12DA2CBFC85B00831423 /* WalletError.swift */; };
+		C11B12EA2CBFDF1500831423 /* CardAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B12E92CBFDF1500831423 /* CardAuthService.swift */; };
+		C11B12EC2CBFE4C800831423 /* UpdateCardAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B12EB2CBFE4C800831423 /* UpdateCardAuthRequest.swift */; };
+		C14E8AC02CC7893F009D2688 /* ContinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14E8ABF2CC7893F009D2688 /* ContinerView.swift */; };
+		C14E8AC22CC78F9A009D2688 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14E8AC12CC78F9A009D2688 /* LineView.swift */; };
+		C14E8AC42CC7915E009D2688 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14E8AC32CC7915E009D2688 /* PrimaryLabel.swift */; };
+		C14E8AC62CC7942E009D2688 /* ScaleContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14E8AC52CC7942E009D2688 /* ScaleContainerView.swift */; };
+		C14E8AC82CC7960E009D2688 /* SecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14E8AC72CC7960E009D2688 /* SecondaryLabel.swift */; };
 		C17490082CB80E3300384D39 /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17490072CB80E3300384D39 /* CaptureSessionManager.swift */; };
 		C174900A2CB80E6300384D39 /* QRUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17490092CB80E6300384D39 /* QRUIManager.swift */; };
 		C174900C2CB80EA200384D39 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174900B2CB80EA200384D39 /* AlertHelper.swift */; };
 		C1A151DD2CBD07A1003DBEDA /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A151DC2CBD07A1003DBEDA /* LoadingIndicatorView.swift */; };
 		C1A151DF2CBD0AB1003DBEDA /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A151DE2CBD0AB1003DBEDA /* LoadingSpinner.swift */; };
+		C1A7378B2CC64C5800B78A46 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7378A2CC64C5800B78A46 /* PrimaryButton.swift */; };
+		C1A7378D2CC6567700B78A46 /* OutlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7378C2CC6567700B78A46 /* OutlineButton.swift */; };
 		C1B4EFD32CB7DB8F003CC01B /* CardBenefitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */; };
 		C1B4EFD72CB7E1F7003CC01B /* CardBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */; };
 		C1B4EFD82CB7E1F7003CC01B /* CardBenefitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */; };
@@ -158,11 +171,24 @@
 		C10AA8072CB66F1800D9EC64 /* CardSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSettingsVC.swift; sourceTree = "<group>"; };
 		C10AA80A2CB6A3E200D9EC64 /* QRCodeScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerVC.swift; sourceTree = "<group>"; };
 		C10CC5E92CB416A400E5BDD9 /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
+		C1144D6D2CC0EE0E00943F28 /* VPNProxyDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNProxyDetection.swift; sourceTree = "<group>"; };
+		C1144D6F2CC0FDDB00943F28 /* SecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityViewController.swift; sourceTree = "<group>"; };
+		C11B12D92CBFC85B00831423 /* ApplePayConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayConfiguration.swift; sourceTree = "<group>"; };
+		C11B12DA2CBFC85B00831423 /* WalletError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletError.swift; sourceTree = "<group>"; };
+		C11B12E92CBFDF1500831423 /* CardAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAuthService.swift; sourceTree = "<group>"; };
+		C11B12EB2CBFE4C800831423 /* UpdateCardAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCardAuthRequest.swift; sourceTree = "<group>"; };
+		C14E8ABF2CC7893F009D2688 /* ContinerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinerView.swift; sourceTree = "<group>"; };
+		C14E8AC12CC78F9A009D2688 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		C14E8AC32CC7915E009D2688 /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
+		C14E8AC52CC7942E009D2688 /* ScaleContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleContainerView.swift; sourceTree = "<group>"; };
+		C14E8AC72CC7960E009D2688 /* SecondaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryLabel.swift; sourceTree = "<group>"; };
 		C17490072CB80E3300384D39 /* CaptureSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSessionManager.swift; sourceTree = "<group>"; };
 		C17490092CB80E6300384D39 /* QRUIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRUIManager.swift; sourceTree = "<group>"; };
 		C174900B2CB80EA200384D39 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		C1A151DC2CBD07A1003DBEDA /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		C1A151DE2CBD0AB1003DBEDA /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+		C1A7378A2CC64C5800B78A46 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		C1A7378C2CC6567700B78A46 /* OutlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButton.swift; sourceTree = "<group>"; };
 		C1B4EFD22CB7DB8F003CC01B /* CardBenefitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitsVC.swift; sourceTree = "<group>"; };
 		C1B4EFD52CB7E1F7003CC01B /* CardBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBenefitCell.swift; sourceTree = "<group>"; };
 		C1B4EFD62CB7E1F7003CC01B /* CardBenefitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardBenefitCell.xib; sourceTree = "<group>"; };
@@ -339,6 +365,13 @@
 				39F94001C7DF2EFC6D8E6BB809F5959B /* AdaptiveCollectionViewLayout.swift */,
 				D77B9BD135AC435AEBFB3E7ED7BEC11B /* AMControlView.swift */,
 				71E3BF8DCACBB8CDE01437483B90A3AB /* AMScaleButton.swift */,
+				C1A7378A2CC64C5800B78A46 /* PrimaryButton.swift */,
+				C1A7378C2CC6567700B78A46 /* OutlineButton.swift */,
+				C14E8AC32CC7915E009D2688 /* PrimaryLabel.swift */,
+				C14E8AC72CC7960E009D2688 /* SecondaryLabel.swift */,
+				C14E8ABF2CC7893F009D2688 /* ContinerView.swift */,
+				C14E8AC52CC7942E009D2688 /* ScaleContainerView.swift */,
+				C14E8AC12CC78F9A009D2688 /* LineView.swift */,
 				CC3F16B3889C185C262394A9F8C6208E /* ApplePayHandler.swift */,
 				1CD4C49CE72934996F8EFFAB017AFCDF /* AppleWalletHandler.swift */,
 				4A86417C82E00B2855018E8030D68ADE /* CurrencyLabel.swift */,
@@ -359,6 +392,7 @@
 				C1F80EEC2CB514CE006C27CB /* CollectionViewDelegate.swift */,
 				C1A151DC2CBD07A1003DBEDA /* LoadingIndicatorView.swift */,
 				C1A151DE2CBD0AB1003DBEDA /* LoadingSpinner.swift */,
+				C1144D6D2CC0EE0E00943F28 /* VPNProxyDetection.swift */,
 				C1F80EFC2CB5677F006C27CB /* AMToaster */,
 			);
 			name = Utilities;
@@ -427,8 +461,9 @@
 			children = (
 				EEB56B6A7E86D9A6F324D6B7553B3650 /* CardsViewController.swift */,
 				CD3949C914F3501B8EE84925E4FB8C18 /* Cells */,
-				0346821A227EF31D483BD4869360CEF5 /* Models */,
 				39EBAD172D6277009825ADF01E224A4C /* ViewModels */,
+				0346821A227EF31D483BD4869360CEF5 /* Models */,
+				C11B12CA2CBF966000831423 /* Endpoints */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -450,6 +485,17 @@
 				C174900B2CB80EA200384D39 /* AlertHelper.swift */,
 			);
 			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
+		C11B12CA2CBF966000831423 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				C11B12D92CBFC85B00831423 /* ApplePayConfiguration.swift */,
+				C11B12DA2CBFC85B00831423 /* WalletError.swift */,
+				C11B12EB2CBFE4C800831423 /* UpdateCardAuthRequest.swift */,
+				C11B12E92CBFDF1500831423 /* CardAuthService.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 		C1B4EFD12CB7DB5F003CC01B /* CardBenefits */ = {
@@ -597,6 +643,7 @@
 			children = (
 				108C58A12848FB976110C208F5899857 /* BaseViewController.swift */,
 				F79E3C2663E4984C1D1F5E2FC45AEFDA /* NavigationController.swift */,
+				C1144D6F2CC0FDDB00943F28 /* SecurityViewController.swift */,
 				BBFD600394C4B2E950EC41FB4B5124AA /* Cards */,
 				2499895DAF031329677DE87503E37E92 /* PaymentMethods */,
 				0E214E399287C25B475799181419CB39 /* Amount */,
@@ -807,6 +854,7 @@
 				C1B4EFD32CB7DB8F003CC01B /* CardBenefitsVC.swift in Sources */,
 				EC7555098DDC3145CDD8B8AA30CA1052 /* AmountViewController.swift in Sources */,
 				E7FE8866BF2624F795DCEAEA1962948B /* AMScaleButton.swift in Sources */,
+				C14E8AC22CC78F9A009D2688 /* LineView.swift in Sources */,
 				C1B4EFDE2CB7E7BC003CC01B /* CardBenefitModel.swift in Sources */,
 				F55194D52E0F96EB883EF45D6198DCAC /* AppColors.swift in Sources */,
 				3C3991F1D0B050DF501F6E28BEADC3D9 /* ApplePayHandler.swift in Sources */,
@@ -814,13 +862,17 @@
 				C1F80EF62CB54D37006C27CB /* CardInformationVC.swift in Sources */,
 				BD124CA32B790A2DEB262D50057730B6 /* BaseViewController.swift in Sources */,
 				30CF277E266E47BDB23D13EFADDD1B50 /* CardCell.swift in Sources */,
+				C1144D6E2CC0EE0E00943F28 /* VPNProxyDetection.swift in Sources */,
 				C1A151DF2CBD0AB1003DBEDA /* LoadingSpinner.swift in Sources */,
+				C14E8AC82CC7960E009D2688 /* SecondaryLabel.swift in Sources */,
 				3DCCBCE9B78FBC9CDA420A076FB4E5B7 /* CardModel.swift in Sources */,
 				0F131F3400DA04C410CE00033D75CDC1 /* CardsViewController.swift in Sources */,
 				C753A096F83C43C92151EFFFB38BB259 /* CardsViewModel.swift in Sources */,
 				6132BC9DA86497E4A1EC5D09E5185700 /* CurrencyLabel.swift in Sources */,
 				3C7BD9E169C962ACF1680F55374DAE65 /* CurrencyTextField.swift in Sources */,
+				C14E8AC42CC7915E009D2688 /* PrimaryLabel.swift in Sources */,
 				C17490082CB80E3300384D39 /* CaptureSessionManager.swift in Sources */,
+				C11B12EA2CBFDF1500831423 /* CardAuthService.swift in Sources */,
 				12E102D29EAC7F8AB390CF3BC057CA4C /* Encodable+Parameters.swift in Sources */,
 				6A2BE8D358D6906FB5770B83EF488924 /* IntrinsicContainerView.swift in Sources */,
 				C10AA80B2CB6A3E200D9EC64 /* QRCodeScannerVC.swift in Sources */,
@@ -828,9 +880,11 @@
 				FE5F1F1F6BBDD1E33B6FA99C46BECD2C /* IntrinsicTableView.swift in Sources */,
 				C1F80EF12CB5220D006C27CB /* DecimalTextField.swift in Sources */,
 				C174900C2CB80EA200384D39 /* AlertHelper.swift in Sources */,
+				C11B12EC2CBFE4C800831423 /* UpdateCardAuthRequest.swift in Sources */,
 				7EB2E9FED02CE8F1DAA632279A1AB02E /* JSONUtility.swift in Sources */,
 				956A1C5ECA780F2FD3588F4DA89EB4BC /* KeychainHelper.swift in Sources */,
 				CDB92224E63A2EAC13979C2D803DE8F2 /* NavigationController.swift in Sources */,
+				C1144D702CC0FDDB00943F28 /* SecurityViewController.swift in Sources */,
 				1B4DEF567961844EE1D6680F62D026D9 /* NetworkManager.swift in Sources */,
 				02FE728A4532AA1978EB276B5D0B900C /* NSObject+Extensions.swift in Sources */,
 				D1B74F5130C6AAE361194EEA434D3341 /* OptionCell.swift in Sources */,
@@ -838,8 +892,13 @@
 				C1B4EFD72CB7E1F7003CC01B /* CardBenefitCell.swift in Sources */,
 				C1B4EFDC2CB7E4AD003CC01B /* CardBenefitsViewModel.swift in Sources */,
 				C174900A2CB80E6300384D39 /* QRUIManager.swift in Sources */,
+				C14E8AC02CC7893F009D2688 /* ContinerView.swift in Sources */,
 				5E7E0A095444AA6D609C4A7AE57DC353 /* PaymentMethodCell.swift in Sources */,
+				C11B12DB2CBFC85B00831423 /* ApplePayConfiguration.swift in Sources */,
+				C11B12DC2CBFC85B00831423 /* WalletError.swift in Sources */,
+				C1A7378D2CC6567700B78A46 /* OutlineButton.swift in Sources */,
 				C1F80EFE2CB5678A006C27CB /* AMToaster.swift in Sources */,
+				C1A7378B2CC64C5800B78A46 /* PrimaryButton.swift in Sources */,
 				4F9671A98B7A27D17297E1F4D4F08ACA /* PaymentMethodModel.swift in Sources */,
 				5C364D8ED308384343A9EF14EAFBEE7C /* PaymentMethodsVC.swift in Sources */,
 				C1F80EEF2CB51501006C27CB /* TableViewDelegate.swift in Sources */,
@@ -856,6 +915,7 @@
 				C10AA8082CB66F1800D9EC64 /* CardSettingsVC.swift in Sources */,
 				6B6A83AEEEABA57DEB65FC9020E632C3 /* UIView+Extensions.swift in Sources */,
 				C1F80EE92CB5143F006C27CB /* TableViewDataSource.swift in Sources */,
+				C14E8AC62CC7942E009D2688 /* ScaleContainerView.swift in Sources */,
 				43B427985D0DEB6FB9F8BE3D33286F83 /* UrpayCards-dummy.m in Sources */,
 				59D5C142FA44D5F0063C627E02E0FEF2 /* UrpayCardsSDK.swift in Sources */,
 			);

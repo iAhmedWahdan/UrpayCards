@@ -21,7 +21,7 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fwu-AC-wb2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZC6-1n-hyU" customClass="AMScaleView" customModule="UrpayCards" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZC6-1n-hyU" customClass="ScaleContainerView" customModule="UrpayCards" customModuleProvider="target">
                                 <rect key="frame" x="16" y="4" width="288" height="74"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="zGL-RJ-z0g">
@@ -37,7 +37,7 @@
                                                             <constraint firstAttribute="width" constant="42" id="gwz-YX-E1e"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abJ-ou-cVK">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abJ-ou-cVK" customClass="PrimaryLabel" customModule="UrpayCards" customModuleProvider="target">
                                                         <rect key="frame" x="50" y="0.0" width="214" height="42"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" name="AE926A"/>

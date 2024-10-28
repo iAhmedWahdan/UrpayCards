@@ -37,7 +37,8 @@ class CardsViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setNavigationBarColor(UIColor.c292929)
+        let theme = ThemeManager.shared.config
+        setNavigationBarColor(UIColor.navigationBarColor2)
         //self.isLoading = true
     }
     
@@ -70,8 +71,8 @@ class CardsViewController: BaseViewController {
         // Apply the current theme to UI elements
         let theme = ThemeManager.shared.config
         ThemeManager.shared.applyTheme(to: self)
-        navigationItem.title = theme.navigationTitle
         // Apply theme to other UI elements as needed
+        navigationItem.title = theme.navigationTitle
     }
     
     private func configureScrollView() {
@@ -119,16 +120,12 @@ class CardsViewController: BaseViewController {
     // MARK: - ViewModel Binding
     
     private func bindBalance() {
-        viewModel.$balanceDisplay
+        Publishers.CombineLatest(viewModel.$balance, viewModel.$isBalanceHidden)
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] balanceDisplay in
-                if self?.viewModel.isBalanceHidden == true {
-                    self?.balanceLabel.text = "*******"
-                    self?.balanceButton.setImage(UIImage(systemName: "eye.slash.fill"), for: .normal)
-                } else {
-                    self?.balanceLabel.updateAmount(self?.viewModel.balance ?? 0.0, currency: "SAR")
-                    self?.balanceButton.setImage(UIImage(systemName: "eye.fill"), for: .normal)
-                }
+            .sink { [weak self] balance, isBalanceHidden in
+                self?.balanceLabel.text = self?.viewModel.formattedBalanceDisplay
+                let imageName = isBalanceHidden ? "eye.slash.fill" : "eye.fill"
+                self?.balanceButton.setImage(UIImage(systemName: imageName), for: .normal)
             }
             .store(in: &cancellables)
     }
@@ -202,6 +199,10 @@ class CardsViewController: BaseViewController {
 // MARK: - UICollectionView Delegate
 
 extension CardsViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.updateAuthToken()
+    }
     
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         updateSelectedCard()

@@ -33,4 +33,7 @@ extension UIColor {
     
     static let c2BB784 = UIColor(named: "2BB784", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
     
+    static var navigationBarColor2: UIColor {
+        return ThemeConfig.shared.navigationBarColor2 ?? UIColor(named: "292929", in: Bundle(for: UrpayCardsSDK.self), compatibleWith: nil)!
+    }
 }

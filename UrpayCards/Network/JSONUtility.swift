@@ -167,6 +167,10 @@ public struct JSON {
         return type == .dictionary ? rawDictionary.mapValues { JSON($0) } : [:]
     }
     
+    public var doubleValue: Double {
+        return type == .number ? rawNumber.doubleValue : 0.0
+    }
+    
     // MARK: - Subscript support for accessing dictionary values
     public subscript(key: String) -> JSON {
         get {

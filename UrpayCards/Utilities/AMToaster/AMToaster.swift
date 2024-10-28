@@ -131,9 +131,11 @@ class AMToaster: UIView {
         
         // Start animation after layout
         transform = transform.translatedBy(x: 0, y: -frame.maxY)
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 5, options: [.curveEaseInOut], animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 5, options: [.curveEaseInOut], animations: { [weak self] in
+            guard let self else { return }
             self.transform = .identity
-        }) { _ in
+        }) { [weak self] _ in
+            guard let self = self else { return }
             DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                 self.hide()
             }
@@ -141,9 +143,11 @@ class AMToaster: UIView {
     }
     
     private func hide() {
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: [.curveEaseInOut], animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: [.curveEaseInOut], animations: { [weak self] in
+            guard let self = self else { return }
             self.transform = self.transform.translatedBy(x: 0, y: -self.frame.maxY)
-        }) { _ in
+        }) { [weak self] _ in
+            guard let self = self else { return }
             self.removeFromSuperview()
             if !Self.allToasts.isEmpty {
                 Self.allToasts.removeFirst()

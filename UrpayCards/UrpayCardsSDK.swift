@@ -8,24 +8,26 @@
 import UIKit
 
 public class UrpayCardsSDK {
-
+    
     public static var urpayWindow: UIWindow?
+    
+    private static let networkMonitor = NetworkMonitor()
     
     // Static properties to store the Apple Pay configuration
     private static var merchantId: String?
     private static var currencyCode: String?
     private static var countryCode: String?
-
+    
     public static func startSession() {
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
             print("No active window scene found")
             return
         }
-
+        
         urpayWindow = UIWindow(windowScene: windowScene)
         let bundle = Bundle(for: CardsViewController.self)
         let storyboard = UIStoryboard(name: "Cards", bundle: bundle)
-
+        
         if let viewController = storyboard.instantiateViewController(withIdentifier: "CardsViewController") as? CardsViewController {
             let navigationController = NavigationController(rootViewController: viewController)
             urpayWindow?.rootViewController = navigationController
@@ -33,14 +35,18 @@ public class UrpayCardsSDK {
         } else {
             print("Failed to instantiate CardsViewController")
         }
+        
+        // Start monitoring for VPN/Proxy and handle SecurityViewController
+        networkMonitor.startMonitoring()
     }
-
+    
     public static func stopSession() {
+        networkMonitor.stopMonitoring()
         urpayWindow?.isHidden = true
         urpayWindow = nil
         clearApplePayConfiguration()
     }
-
+    
     public static func configureTheme(_ config: ThemeConfig) {
         ThemeManager.shared.updateTheme(config: config)
     }

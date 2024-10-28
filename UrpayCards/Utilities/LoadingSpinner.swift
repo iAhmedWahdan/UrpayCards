@@ -197,11 +197,11 @@ public class LoadingSpinner: UIView {
         UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 0.85, initialSpringVelocity: 0.0, options: [.curveEaseInOut], animations: {
             self.currentOuterRotation -= randomRotation
             self.outerCircleView.transform = CGAffineTransform(rotationAngle: self.currentOuterRotation)
-        }) { _ in
+        }) { [weak self] _ in
             // Reduce the delay for smoother continuous animations
-            self.delay(0.1) {
-                if self.animating {
-                    self.spinOuter()
+            self?.delay(0.1) {
+                if self?.animating == true {
+                    self?.spinOuter()
                 }
             }
         }
@@ -214,11 +214,11 @@ public class LoadingSpinner: UIView {
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.85, initialSpringVelocity: 0.0, options: [.curveEaseInOut], animations: {
             self.currentInnerRotation += CGFloat(Double.pi / 4)
             self.innerCircleView.transform = CGAffineTransform(rotationAngle: self.currentInnerRotation)
-        }) { _ in
+        }) { [weak self] _ in
             // Minimized delay for smoother continuous inner rotation
-            self.delay(0.1) {
-                if self.animating {
-                    self.spinInner()
+            self?.delay(0.1) {
+                if self?.animating == true {
+                    self?.spinInner()
                 }
             }
         }
@@ -278,7 +278,10 @@ public class LoadingSpinner: UIView {
     // MARK: - Tap Handler
     public func addTapHandler(_ tap: @escaping () -> Void) {
         clearTapHandler()
-        tapHandler = tap
+        tapHandler = { [weak self] in
+            guard self != nil else { return }
+            tap()
+        }
     }
     
     public func clearTapHandler() {
