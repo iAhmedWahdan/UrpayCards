@@ -13,15 +13,10 @@ class AMToaster: UIView {
         
         var image: UIImage? {
             let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-            guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
-                  let resourceBundle = Bundle(url: resourceBundleURL) else {
-                print("Error: Could not locate UrpayCardsResources bundle.")
-                return nil
-            }
             switch self {
-            case .success: return UIImage(named: "toast_success", in: resourceBundle, compatibleWith: nil)
-            case .error: return UIImage(named: "toast_error", in: resourceBundle, compatibleWith: nil)
-            case .warning: return UIImage(named: "toast_warning", in: resourceBundle, compatibleWith: nil)
+            case .success: return UIImage(named: "toast_success", in: frameworkBundle, compatibleWith: nil)
+            case .error: return UIImage(named: "toast_error", in: frameworkBundle, compatibleWith: nil)
+            case .warning: return UIImage(named: "toast_warning", in: frameworkBundle, compatibleWith: nil)
             case .custom(let image): return image
             default: return nil
             }
@@ -29,15 +24,10 @@ class AMToaster: UIView {
         
         var color: UIColor? {
             let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-            guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
-                  let resourceBundle = Bundle(url: resourceBundleURL) else {
-                print("Error: Could not locate UrpayCardsResources bundle.")
-                return nil
-            }
             switch self {
-            case .success: return UIColor(named: "successColor", in: resourceBundle, compatibleWith: nil)!
-            case .error: return UIColor(named: "errorColor", in: resourceBundle, compatibleWith: nil)!
-            case .warning: return UIColor(named: "warningColor", in: resourceBundle, compatibleWith: nil)!
+            case .success: return UIColor(named: "successColor", in: frameworkBundle, compatibleWith: nil)!
+            case .error: return UIColor(named: "errorColor", in: frameworkBundle, compatibleWith: nil)!
+            case .warning: return UIColor(named: "warningColor", in: frameworkBundle, compatibleWith: nil)!
             default: return nil
             }
         }
@@ -95,15 +85,10 @@ class AMToaster: UIView {
         
         // Locate the resource bundle for the framework
         let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
-              let resourceBundle = Bundle(url: resourceBundleURL) else {
-            print("Error: Could not locate UrpayCardsResources bundle.")
-            return
-        }
         
         // Load and display the AMToaster view asynchronously
         DispatchQueue.main.async {
-            guard let toasterView = resourceBundle.loadNibNamed("AMToaster", owner: nil, options: nil)?.first as? AMToaster else {
+            guard let toasterView = frameworkBundle.loadNibNamed("AMToaster", owner: nil, options: nil)?.first as? AMToaster else {
                 fatalError("Error: Can't load the AMToaster nib from UrpayCardsResources.bundle.")
             }
             

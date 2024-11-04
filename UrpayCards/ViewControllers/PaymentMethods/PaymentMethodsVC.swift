@@ -91,13 +91,9 @@ class PaymentMethodsVC: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
-              let resourceBundle = Bundle(url: resourceBundleURL) else {
-            print("Error: Could not locate UrpayCardsResources bundle.")
-            return
-        }
+        
         tableView.register(
-            UINib(nibName: PaymentMethodCell.className, bundle: resourceBundle),
+            UINib(nibName: PaymentMethodCell.className, bundle: frameworkBundle),
             forCellReuseIdentifier: PaymentMethodCell.className
         )
     }

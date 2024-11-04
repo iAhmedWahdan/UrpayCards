@@ -15,12 +15,8 @@ class PaymentMethodCell: UITableViewCell {
     func configure(with paymentMethod: PaymentMethodModel) {
         nameLabel.text = paymentMethod.title
         let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
-              let resourceBundle = Bundle(url: resourceBundleURL) else {
-            print("Error: Could not locate UrpayCardsResources bundle.")
-            return
-        }
-        if let image = UIImage(named: paymentMethod.imageName, in: resourceBundle, compatibleWith: nil) {
+
+        if let image = UIImage(named: paymentMethod.imageName, in: frameworkBundle, compatibleWith: nil) {
             iconImageView.image = image
         } else {
             // Optional: You can log if the image is not found for debugging purposes

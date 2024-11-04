@@ -12,10 +12,7 @@ extension UIColor {
     private static var resourceBundle: Bundle? {
         // Locate the resource bundle created by CocoaPods
         let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        if let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle") {
-            return Bundle(url: resourceBundleURL)
-        }
-        return nil
+        return frameworkBundle
     }
     
     static let c292929 = UIColor(named: "292929", in: resourceBundle, compatibleWith: nil) ?? .black

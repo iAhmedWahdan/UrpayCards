@@ -31,12 +31,7 @@ class CollectionViewDataSource<Model, Cell: UICollectionViewCell>: NSObject, UIC
 extension UICollectionView {
     func register<Cell: UICollectionViewCell>(cellType: Cell.Type) {
         let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
-              let resourceBundle = Bundle(url: resourceBundleURL) else {
-            print("Error: Could not locate UrpayCardsResources bundle.")
-            return
-        }
-        let nib = UINib(nibName: String(describing: Cell.self), bundle: resourceBundle)
+        let nib = UINib(nibName: String(describing: Cell.self), bundle: frameworkBundle)
         register(nib, forCellWithReuseIdentifier: String(describing: Cell.self))
     }
 }
