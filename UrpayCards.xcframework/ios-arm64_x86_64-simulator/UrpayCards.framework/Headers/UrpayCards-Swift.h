@@ -353,8 +353,6 @@ SWIFT_CLASS("_TtC10UrpayCards20NavigationController")
 
 
 
-
-
 @class UIColor;
 
 @interface UIView (SWIFT_EXTENSION(UrpayCards))
@@ -722,8 +720,6 @@ SWIFT_CLASS("_TtC10UrpayCards20NavigationController")
 @interface NavigationController (SWIFT_EXTENSION(UrpayCards)) <UINavigationControllerDelegate>
 - (void)navigationController:(UINavigationController * _Nonnull)navigationController willShowViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated;
 @end
-
-
 
 
 

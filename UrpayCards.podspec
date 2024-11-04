@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.2.5'
+  s.version          = '0.2.6'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -23,10 +23,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  # Include the compiled .xcframework for end-users
+  # Use the compiled .xcframework for distribution
   s.vendored_frameworks = 'UrpayCards.xcframework'
 
-  # Bundle resources to prevent exposing individual resource files
+  # Bundle all resources together so they are not exposed individually
   s.resource_bundles = {
     'UrpayCardsResources' => [
       'UrpayCards/**/*.xib',
@@ -43,4 +43,3 @@ Pod::Spec.new do |s|
     s.source_files = 'UrpayCards/**/*.swift'
   end
 end
-
