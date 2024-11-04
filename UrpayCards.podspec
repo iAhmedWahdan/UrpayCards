@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
