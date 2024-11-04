@@ -16,6 +16,7 @@
 		C13603EB2CD0E64900DBE730 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = C13603EA2CD0E64900DBE730 /* netfox */; };
 		C1C595D32CAD6D3B00B0BEB3 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C595D22CAD6D3B00B0BEB3 /* AppColors.swift */; };
 		C1C60E142CAECA3C00EC75AF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C60E132CAECA3C00EC75AF /* PassKit.framework */; };
+		C1F76A7B2CD8C0250006BFA5 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = C1F76A7A2CD8C0250006BFA5 /* netfox */; };
 		E1C52C29D69BED51E5125184 /* Pods_UrpayCards_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9DC472B4AC7682B43F790A /* Pods_UrpayCards_Example.framework */; };
 		EC474A0A2043BAFAA39C3717 /* Pods_UrpayCards_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CDBD9FFDA0F9752C1EC266 /* Pods_UrpayCards_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 			files = (
 				C1C60E142CAECA3C00EC75AF /* PassKit.framework in Frameworks */,
 				E1C52C29D69BED51E5125184 /* Pods_UrpayCards_Example.framework in Frameworks */,
+				C1F76A7B2CD8C0250006BFA5 /* netfox in Frameworks */,
 				C13603EB2CD0E64900DBE730 /* netfox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +288,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/UrpayCards/UrpayCards.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/UrpayCards/UrpayCards.framework/UrpayCards",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -630,6 +633,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		C13603EA2CD0E64900DBE730 /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C13603E92CD0E64900DBE730 /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
+		C1F76A7A2CD8C0250006BFA5 /* netfox */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C13603E92CD0E64900DBE730 /* XCRemoteSwiftPackageReference "netfox" */;
 			productName = netfox;

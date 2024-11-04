@@ -14,9 +14,13 @@ class OptionCell: UITableViewCell {
     
     func configure(with option: OptionModel) {
         nameLabel.text = option.title
-        let bundle = Bundle(for: CardsViewController.self)
-        
-        if let image = UIImage(named: option.imageName, in: bundle, compatibleWith: nil) {
+        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
+              let resourceBundle = Bundle(url: resourceBundleURL) else {
+            print("Error: Could not locate UrpayCardsResources bundle.")
+            return
+        }
+        if let image = UIImage(named: option.imageName, in: resourceBundle, compatibleWith: nil) {
             iconImageView.image = image
         } else {
             // Optional: You can log if the image is not found for debugging purposes

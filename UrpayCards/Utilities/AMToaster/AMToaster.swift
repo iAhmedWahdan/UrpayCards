@@ -12,22 +12,32 @@ class AMToaster: UIView {
         case success, error, warning, custom(UIImage), none
         
         var image: UIImage? {
-            let bundle = Bundle(for: AMToaster.self)
+            let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+            guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
+                  let resourceBundle = Bundle(url: resourceBundleURL) else {
+                print("Error: Could not locate UrpayCardsResources bundle.")
+                return nil
+            }
             switch self {
-            case .success: return UIImage(named: "toast_success", in: bundle, compatibleWith: nil)
-            case .error: return UIImage(named: "toast_error", in: bundle, compatibleWith: nil)
-            case .warning: return UIImage(named: "toast_warning", in: bundle, compatibleWith: nil)
+            case .success: return UIImage(named: "toast_success", in: resourceBundle, compatibleWith: nil)
+            case .error: return UIImage(named: "toast_error", in: resourceBundle, compatibleWith: nil)
+            case .warning: return UIImage(named: "toast_warning", in: resourceBundle, compatibleWith: nil)
             case .custom(let image): return image
             default: return nil
             }
         }
         
         var color: UIColor? {
-            let bundle = Bundle(for: AMToaster.self)
+            let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+            guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
+                  let resourceBundle = Bundle(url: resourceBundleURL) else {
+                print("Error: Could not locate UrpayCardsResources bundle.")
+                return nil
+            }
             switch self {
-            case .success: return UIColor(named: "successColor", in: bundle, compatibleWith: nil)!
-            case .error: return UIColor(named: "errorColor", in: bundle, compatibleWith: nil)!
-            case .warning: return UIColor(named: "warningColor", in: bundle, compatibleWith: nil)!
+            case .success: return UIColor(named: "successColor", in: resourceBundle, compatibleWith: nil)!
+            case .error: return UIColor(named: "errorColor", in: resourceBundle, compatibleWith: nil)!
+            case .warning: return UIColor(named: "warningColor", in: resourceBundle, compatibleWith: nil)!
             default: return nil
             }
         }
@@ -70,27 +80,53 @@ class AMToaster: UIView {
     
     @MainActor
     public static func toast(_ text: String, type: ToastType = .none) {
+        // Provide haptic feedback based on toast type
+        let feedbackGenerator = UINotificationFeedbackGenerator()
         switch type {
-        case .success: UINotificationFeedbackGenerator().notificationOccurred(.success)
-        case .warning: UINotificationFeedbackGenerator().notificationOccurred(.warning)
-        case .error: UINotificationFeedbackGenerator().notificationOccurred(.error)
-        default: UINotificationFeedbackGenerator().notificationOccurred(.success)
+        case .success:
+            feedbackGenerator.notificationOccurred(.success)
+        case .warning:
+            feedbackGenerator.notificationOccurred(.warning)
+        case .error:
+            feedbackGenerator.notificationOccurred(.error)
+        default:
+            feedbackGenerator.notificationOccurred(.success)
         }
         
-        let bundle = Bundle(for: AMToaster.self)
+        // Locate the resource bundle for the framework
+        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
+              let resourceBundle = Bundle(url: resourceBundleURL) else {
+            print("Error: Could not locate UrpayCardsResources bundle.")
+            return
+        }
+        
+        // Load and display the AMToaster view asynchronously
         DispatchQueue.main.async {
-            guard let view = bundle.loadNibNamed("AMToaster", owner: nil, options: nil)?.first as? AMToaster else {
-                fatalError("Can't load the AMToaster nib")
+            guard let toasterView = resourceBundle.loadNibNamed("AMToaster", owner: nil, options: nil)?.first as? AMToaster else {
+                fatalError("Error: Can't load the AMToaster nib from UrpayCardsResources.bundle.")
             }
             
-            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else {
+            // Access the key window safely for iOS 13+
+            let window: UIWindow?
+            if #available(iOS 15, *) {
+                window = UIApplication.shared.connectedScenes
+                    .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+                    .first
+            } else {
+                window = UIApplication.shared.windows.first { $0.isKeyWindow }
+            }
+            
+            guard let keyWindow = window else {
+                print("Error: Could not find key window to display toast.")
                 return
             }
             
-            view.show(
+            // Show the toast view
+            toasterView.show(
                 with: text.trimmingCharacters(in: .whitespacesAndNewlines),
                 type: type,
-                on: window
+                on: keyWindow
             )
         }
     }
@@ -121,8 +157,8 @@ class AMToaster: UIView {
                 leadingAnchor.constraint(greaterThanOrEqualTo: window.leadingAnchor, constant: 10),
                 trailingAnchor.constraint(lessThanOrEqualTo: window.trailingAnchor, constant: -10)
                 //Full width
-//                leadingAnchor.constraint(equalTo: window.leadingAnchor, constant: 10),
-//                trailingAnchor.constraint(equalTo: window.trailingAnchor, constant: -10)
+                //                leadingAnchor.constraint(equalTo: window.leadingAnchor, constant: 10),
+                //                trailingAnchor.constraint(equalTo: window.trailingAnchor, constant: -10)
             ]
         )
         

@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
-UrpayCards is a framework designed for iOS applications to handle card management.
-It provides features such as card addition, deletion, and transaction management for Urpay services.
+  UrpayCards is a framework designed for iOS applications to handle card management.
+  It provides features such as card addition, deletion, and transaction management for Urpay services.
   DESC
 
   s.homepage         = 'https://github.com/iAhmedWahdan/UrpayCards'
@@ -22,17 +22,25 @@ It provides features such as card addition, deletion, and transaction management
   s.source           = { :git => 'https://github.com/iAhmedWahdan/UrpayCards.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '13.0'
-  
-  # Use the .xcframework instead of source files
+
+  # Include the compiled .xcframework for end-users
   s.vendored_frameworks = 'UrpayCards.xcframework'
 
-  # Include .xib files and other resources
-  s.resources = [
-    'UrpayCards/**/*.xib',
-    'UrpayCards/Assets/**/*.{png,jpg,xcassets}',
-    'UrpayCards/Assets/Colors/*.json'
-  ]
-  
+  # Bundle resources to prevent exposing individual resource files
+  s.resource_bundles = {
+    'UrpayCardsResources' => [
+      'UrpayCards/**/*.xib',
+      'UrpayCards/Assets/**/*.{png,jpg,xcassets}',
+      'UrpayCards/Assets/Colors/*.json'
+    ]
+  }
+
   # Specify Swift version
   s.swift_versions = ['5.0']
+
+  # Conditionally include source files for local development
+  if ENV['DEV_POD'] == 'true'
+    s.source_files = 'UrpayCards/**/*.swift'
+  end
 end
+

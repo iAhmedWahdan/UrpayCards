@@ -3,11 +3,11 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'UrpayCards_Example' do
+  # Set an environment variable to use source files in local development
+  ENV['DEV_POD'] = 'true'
   pod 'UrpayCards', :path => '../'
 
   target 'UrpayCards_Tests' do
     inherit! :search_paths
-
-    
   end
 end

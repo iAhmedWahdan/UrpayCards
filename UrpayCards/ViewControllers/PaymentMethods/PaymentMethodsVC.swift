@@ -90,9 +90,14 @@ class PaymentMethodsVC: BaseViewController {
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        let bundle = Bundle(for: CardsViewController.self)
+        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
+              let resourceBundle = Bundle(url: resourceBundleURL) else {
+            print("Error: Could not locate UrpayCardsResources bundle.")
+            return
+        }
         tableView.register(
-            UINib(nibName: PaymentMethodCell.className, bundle: bundle),
+            UINib(nibName: PaymentMethodCell.className, bundle: resourceBundle),
             forCellReuseIdentifier: PaymentMethodCell.className
         )
     }
@@ -130,8 +135,8 @@ extension PaymentMethodsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func showApplePay() {
-//        let amount = NSDecimalNumber(string: "10.00") // Replace with the actual amount
-//        viewModel.payWithApplePay(amount: amount, from: self)
+        //        let amount = NSDecimalNumber(string: "10.00") // Replace with the actual amount
+        //        viewModel.payWithApplePay(amount: amount, from: self)
         if let amountViewController = instantiateViewController(storyboardName: "Cards", viewControllerClass: AmountViewController.self) {
             presentViewController(amountViewController, withCustomPresentation: true)
         }

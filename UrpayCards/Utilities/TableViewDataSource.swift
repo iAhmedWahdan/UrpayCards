@@ -30,8 +30,13 @@ class TableViewDataSource<Model, Cell: UITableViewCell>: NSObject, UITableViewDa
 
 extension UITableView {
     func register<Cell: UITableViewCell>(cellType: Cell.Type) {
-        let bundle = Bundle(for: Cell.self)
-        let nib = UINib(nibName: String(describing: Cell.self), bundle: bundle)
+        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+        guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
+              let resourceBundle = Bundle(url: resourceBundleURL) else {
+            print("Error: Could not locate UrpayCardsResources bundle.")
+            return
+        }
+        let nib = UINib(nibName: String(describing: Cell.self), bundle: resourceBundle)
         register(nib, forCellReuseIdentifier: String(describing: Cell.self))
     }
 }
