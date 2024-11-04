@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.3.2'
+  s.version          = '0.3.3'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -27,17 +27,17 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'UrpayCards.xcframework'
 
   # Bundle all resources together so they are not exposed individually
-  s.resources = [
-    'UrpayCards/**/*.xib',
-    'UrpayCards/Assets/**/*.{png,jpg,xcassets}',
-    'UrpayCards/Assets/Colors/*.json'
-  ]
-
+  
   # Specify Swift version
   s.swift_versions = ['5.0']
-
+  
   # Conditionally include source files for local development
   if ENV['DEV_POD'] == 'true'
     s.source_files = 'UrpayCards/**/*.swift'
+    s.resources = [
+      'UrpayCards/**/*.xib',
+      'UrpayCards/Assets/**/*.{png,jpg,svg,pdf,xcassets}',
+      'UrpayCards/Assets/Colors/*.json'
+    ]
   end
 end
