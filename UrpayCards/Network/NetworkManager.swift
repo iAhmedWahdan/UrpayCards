@@ -18,7 +18,7 @@ final class NetworkManager {
         self.baseURL = baseURL
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30.0
-        session = URLSession(configuration: configuration)
+        self.session = URLSession(configuration: configuration)
     }
     
     // Generic request handler using JSONUtility for response parsing
@@ -37,8 +37,12 @@ final class NetworkManager {
         request.allHTTPHeaderFields = endpoint.headers
         
         // Encode and attach the body if provided
-        if let body = endpoint.body {
-            request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
+        do {
+            if let body = endpoint.body {
+                request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
+            }
+        } catch {
+            return .failure(.encodingError(error))
         }
         
         print("Request: \(request)")
@@ -48,12 +52,18 @@ final class NetworkManager {
             let (data, response) = try await session.data(for: request)
             
             // Validate response status
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            guard let httpResponse = response as? HTTPURLResponse else {
                 return .failure(.invalidResponse)
+            }
+            
+            if httpResponse.statusCode != 200 {
+                print("HTTP Error: Status code \(httpResponse.statusCode)")
+                return .failure(.httpError(httpResponse.statusCode))
             }
             
             // Use JSONUtility to parse the response data into a JSON object
             let jsonResponse = try JSON(data: data)
+            print("Response: \(jsonResponse)")
             return .success(jsonResponse)
             
         } catch {

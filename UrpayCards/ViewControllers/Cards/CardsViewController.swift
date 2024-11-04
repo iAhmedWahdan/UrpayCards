@@ -38,6 +38,7 @@ class CardsViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let theme = ThemeManager.shared.config
+        self.navigationItem.title = theme.navigationTitle
         setNavigationBarColor(UIColor.navigationBarColor2)
         //self.isLoading = true
     }
@@ -175,7 +176,10 @@ class CardsViewController: BaseViewController {
             .sink { [weak self] success in
                 guard let self = self else { return }
                 if success {
-                    showAlert(title: "Payment Successful", message: "Your payment was processed successfully.")
+                    showAlert(
+                        title: NSLocalizedString("Payment Successful", comment: ""),
+                        message: NSLocalizedString("Your payment was processed successfully.", comment: "")
+                    )
                 }
             }
             .store(in: &cancellables)

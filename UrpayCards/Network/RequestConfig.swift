@@ -30,7 +30,8 @@ enum HTTPMethod: String {
 
 enum APIError: Error {
     case invalidURL
+    case encodingError(Error)
     case invalidResponse
-    case invalidData
+    case httpError(Int)  // To capture HTTP status codes
     case requestFailed(Error)
 }
