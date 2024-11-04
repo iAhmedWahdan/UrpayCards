@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.2.8'
+  s.version          = '0.2.9'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   # Specify Swift version
   s.swift_versions = ['5.0']
 
-  # Conditionally include source files for local development
-  if ENV['DEV_POD'] == 'true'
-    s.source_files = 'UrpayCards/**/*.swift'
-  end
+  # # Conditionally include source files for local development
+  # if ENV['DEV_POD'] == 'true'
+  #   s.source_files = 'UrpayCards/**/*.swift'
+  # end
 end
