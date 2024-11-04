@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -23,8 +23,8 @@ It provides features such as card addition, deletion, and transaction management
 
   s.ios.deployment_target = '13.0'
   
-  # Include all Swift files in UrpayCards directory
-  s.source_files = 'UrpayCards/**/*.swift'
+  # Use the .xcframework instead of source files
+  s.vendored_frameworks = 'UrpayCards.xcframework'
 
   # Include .xib files and other resources
   s.resources = [
