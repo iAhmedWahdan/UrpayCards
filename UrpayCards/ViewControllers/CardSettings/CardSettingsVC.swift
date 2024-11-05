@@ -40,7 +40,7 @@ class CardSettingsVC: BaseViewController {
         } else {
             message = "Your card has been unlocked successfully."
         }
-        AMToaster.toast(message, type: .success)
+        AWToaster.toast(message, type: .success)
     }
     
     @IBAction func switchOnline(_ sender: UISwitch) {

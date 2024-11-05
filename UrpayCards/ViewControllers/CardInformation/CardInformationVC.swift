@@ -33,6 +33,6 @@ class CardInformationVC: BaseViewController {
     
     @IBAction func copyNumberTapped(_ sender: Any) {
         UIPasteboard.general.string = "4242424242424242"
-        AMToaster.toast("Copied to clipboard", type: .success)
+        AWToaster.toast("Copied to clipboard", type: .success)
     }
 }

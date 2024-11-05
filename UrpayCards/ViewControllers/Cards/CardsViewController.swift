@@ -247,7 +247,7 @@ extension CardsViewController {
     }
     
     func showPaymentMethods() {
-        if let paymentMethodsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: PaymentMethodsVC.self) {
+        if let paymentMethodsVC = instantiateViewController(storyboardName: "URCards", viewControllerClass: PaymentMethodsVC.self) {
             // If PaymentMethodsVC has a completion handler property
             paymentMethodsVC.completionHandler = { [weak self] method in
                 guard let self else { return }
@@ -269,7 +269,7 @@ extension CardsViewController {
     }
     
     func showAmount() {
-        if let amountViewController = instantiateViewController(storyboardName: "Cards", viewControllerClass: AmountViewController.self) {
+        if let amountViewController = instantiateViewController(storyboardName: "URCards", viewControllerClass: AmountViewController.self) {
             amountViewController.completionHandler = { [weak self] amount in
                 guard let self else { return }
                 let amount = NSDecimalNumber(string: amount)
@@ -280,13 +280,13 @@ extension CardsViewController {
     }
     
     func showCardInformation() {
-        if let cardInformationVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: CardInformationVC.self) {
+        if let cardInformationVC = instantiateViewController(storyboardName: "URCards", viewControllerClass: CardInformationVC.self) {
             self.show(cardInformationVC, sender: nil)
         }
     }
     
     func showCardSettings() {
-        if let cardSettingsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: CardSettingsVC.self) {
+        if let cardSettingsVC = instantiateViewController(storyboardName: "URCards", viewControllerClass: CardSettingsVC.self) {
             self.show(cardSettingsVC, sender: nil)
         }
     }
@@ -303,7 +303,7 @@ extension CardsViewController {
     }
     
     func showCardBenefits() {
-        if let cardBenefitsVC = instantiateViewController(storyboardName: "Cards", viewControllerClass: CardBenefitsVC.self) {
+        if let cardBenefitsVC = instantiateViewController(storyboardName: "URCards", viewControllerClass: CardBenefitsVC.self) {
             self.show(cardBenefitsVC, sender: nil)
         }
     }

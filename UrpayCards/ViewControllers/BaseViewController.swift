@@ -93,7 +93,7 @@ public class BaseViewController: UIViewController {
     // MARK:- Error Handling
     
     func handleError(_ error: Error) {
-        AMToaster.toast(error, type: .error)
+        AWToaster.toast(error, type: .error)
     }
     
     // MARK:- Alert Handling

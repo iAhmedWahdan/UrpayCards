@@ -1,6 +1,6 @@
 {
   "name": "UrpayCards",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "summary": "A framework for handling Urpay cards in iOS applications.",
   "description": "UrpayCards is a framework designed for iOS applications to handle card management.\nIt provides features such as card addition, deletion, and transaction management for Urpay services.",
   "homepage": "https://github.com/iAhmedWahdan/UrpayCards",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/iAhmedWahdan/UrpayCards.git",
-    "tag": "0.3.4"
+    "tag": "0.3.5"
   },
   "platforms": {
     "ios": "13.0"
@@ -22,12 +22,12 @@
   "swift_versions": [
     "5.0"
   ],
-  "source_files": "UrpayCards/**/*.swift",
   "resources": [
     "UrpayCards/**/*.xib",
     "UrpayCards/**/*.storyboard",
     "UrpayCards/Assets/**/*.{png,jpg,svg,pdf,xcassets}",
     "UrpayCards/Assets/Colors/*.json"
   ],
+  "source_files": "UrpayCards/**/*.swift",
   "swift_version": "5.0"
 }

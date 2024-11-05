@@ -101,54 +101,54 @@ relocations:
   - { offset: 0x7EFBD, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards25AMScaleCollectionViewCellC12touchesBegan_4withyShySo7UITouchCG_So7UIEventCSgtFTo', symObjAddr: 0xF40, symBinAddr: 0x5830, symSize: 0x170 }
   - { offset: 0x7F01F, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards25AMScaleCollectionViewCellC16touchesCancelled_4withyShySo7UITouchCG_So7UIEventCSgtFTo', symObjAddr: 0x10B0, symBinAddr: 0x59A0, symSize: 0x170 }
   - { offset: 0x7F081, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards25AMScaleCollectionViewCellC12touchesEnded_4withyShySo7UITouchCG_So7UIEventCSgtFTo', symObjAddr: 0x1220, symBinAddr: 0x5B10, symSize: 0x170 }
-  - { offset: 0x7F248, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9allToasts33_F623F786B1DC8829DE52D59E9E2D2BEBLLSayACGvpZ', symObjAddr: 0x3720, symBinAddr: 0x62B60, symSize: 0x0 }
-  - { offset: 0x7F602, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9allToasts33_F623F786B1DC8829DE52D59E9E2D2BEBLL_WZ', symObjAddr: 0x4B0, symBinAddr: 0x6570, symSize: 0x20 }
-  - { offset: 0x7F924, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterCfETo', symObjAddr: 0x25F0, symBinAddr: 0x86B0, symSize: 0x50 }
-  - { offset: 0x7F953, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterCMa', symObjAddr: 0x2640, symBinAddr: 0x8700, symSize: 0x20 }
-  - { offset: 0x7F972, size: 0x8, addend: 0x0, symName: '_$sSa034_makeUniqueAndReserveCapacityIfNotB0yyF10UrpayCards9AMToasterC_Tg5', symObjAddr: 0x2660, symBinAddr: 0x8720, symSize: 0xA0 }
+  - { offset: 0x7F248, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9allToasts33_0AFBAB4AE9300564B63FC8E9BB8B9983LLSayACGvpZ', symObjAddr: 0x3720, symBinAddr: 0x62B60, symSize: 0x0 }
+  - { offset: 0x7F602, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9allToasts33_0AFBAB4AE9300564B63FC8E9BB8B9983LL_WZ', symObjAddr: 0x4B0, symBinAddr: 0x6570, symSize: 0x20 }
+  - { offset: 0x7F924, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterCfETo', symObjAddr: 0x25F0, symBinAddr: 0x86B0, symSize: 0x50 }
+  - { offset: 0x7F953, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterCMa', symObjAddr: 0x2640, symBinAddr: 0x8700, symSize: 0x20 }
+  - { offset: 0x7F972, size: 0x8, addend: 0x0, symName: '_$sSa034_makeUniqueAndReserveCapacityIfNotB0yyF10UrpayCards9AWToasterC_Tg5', symObjAddr: 0x2660, symBinAddr: 0x8720, symSize: 0xA0 }
   - { offset: 0x7FA4C, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x2F70, symBinAddr: 0x9030, symSize: 0x40 }
-  - { offset: 0x7FA60, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC5toast_4typeySS_AC9ToastTypeOtFZyyYbScMYccfU_TA', symObjAddr: 0x2FF0, symBinAddr: 0x90B0, symSize: 0x20 }
+  - { offset: 0x7FA60, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC5toast_4typeySS_AC9ToastTypeOtFZyyYbScMYccfU_TA', symObjAddr: 0x2FF0, symBinAddr: 0x90B0, symSize: 0x20 }
   - { offset: 0x7FA74, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x3010, symBinAddr: 0x90D0, symSize: 0x20 }
   - { offset: 0x7FA88, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x3030, symBinAddr: 0x90F0, symSize: 0x10 }
-  - { offset: 0x7FA9C, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9ToastTypeOWOy', symObjAddr: 0x3040, symBinAddr: 0x9100, symSize: 0x20 }
+  - { offset: 0x7FA9C, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9ToastTypeOWOy', symObjAddr: 0x3040, symBinAddr: 0x9100, symSize: 0x20 }
   - { offset: 0x7FAB0, size: 0x8, addend: 0x0, symName: '_$sSay8Dispatch0A13WorkItemFlagsVGMa', symObjAddr: 0x3090, symBinAddr: 0x9120, symSize: 0x50 }
   - { offset: 0x7FAC4, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x3110, symBinAddr: 0x91A0, symSize: 0x30 }
   - { offset: 0x7FAD8, size: 0x8, addend: 0x0, symName: '_$sS2SSysWl', symObjAddr: 0x3140, symBinAddr: 0x91D0, symSize: 0x30 }
-  - { offset: 0x7FAEC, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC11didCloseTapyyypFyyScMYccfU_TA', symObjAddr: 0x31A0, symBinAddr: 0x9230, symSize: 0x10 }
-  - { offset: 0x7FB00, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4hide33_F623F786B1DC8829DE52D59E9E2D2BEBLLyyFyycfU_TA', symObjAddr: 0x31D0, symBinAddr: 0x9260, symSize: 0x10 }
-  - { offset: 0x7FB14, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4hide33_F623F786B1DC8829DE52D59E9E2D2BEBLLyyFySbcfU0_TA', symObjAddr: 0x3200, symBinAddr: 0x9290, symSize: 0x20 }
-  - { offset: 0x7FB75, size: 0x8, addend: 0x0, symName: '_$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0Vy10UrpayCards9AMToasterCG_s15EmptyCollectionVyANGTg5Tf4nndn_n', symObjAddr: 0x3220, symBinAddr: 0x92B0, symSize: 0x150 }
-  - { offset: 0x7FC83, size: 0x8, addend: 0x0, symName: '_$sSa15replaceSubrange_4withySnySiG_qd__nt7ElementQyd__RszSlRd__lF10UrpayCards9AMToasterC_s15EmptyCollectionVyAHGTg5Tf4ndn_n', symObjAddr: 0x3370, symBinAddr: 0x9400, symSize: 0x120 }
-  - { offset: 0x7FDA0, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4show33_F623F786B1DC8829DE52D59E9E2D2BEBLL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFyycfU_TA', symObjAddr: 0x34C0, symBinAddr: 0x9550, symSize: 0x10 }
-  - { offset: 0x7FDB4, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4show33_F623F786B1DC8829DE52D59E9E2D2BEBLL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_TA', symObjAddr: 0x34D0, symBinAddr: 0x9560, symSize: 0x10 }
-  - { offset: 0x7FDC8, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4show33_F623F786B1DC8829DE52D59E9E2D2BEBLL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_yyScMYccfU_TA', symObjAddr: 0x34E0, symBinAddr: 0x9570, symSize: 0x10 }
+  - { offset: 0x7FAEC, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC11didCloseTapyyypFyyScMYccfU_TA', symObjAddr: 0x31A0, symBinAddr: 0x9230, symSize: 0x10 }
+  - { offset: 0x7FB00, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4hide33_0AFBAB4AE9300564B63FC8E9BB8B9983LLyyFyycfU_TA', symObjAddr: 0x31D0, symBinAddr: 0x9260, symSize: 0x10 }
+  - { offset: 0x7FB14, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4hide33_0AFBAB4AE9300564B63FC8E9BB8B9983LLyyFySbcfU0_TA', symObjAddr: 0x3200, symBinAddr: 0x9290, symSize: 0x20 }
+  - { offset: 0x7FB75, size: 0x8, addend: 0x0, symName: '_$ss20_ArrayBufferProtocolPsE15replaceSubrange_4with10elementsOfySnySiG_Siqd__ntSlRd__7ElementQyd__AGRtzlFs01_aB0Vy10UrpayCards9AWToasterCG_s15EmptyCollectionVyANGTg5Tf4nndn_n', symObjAddr: 0x3220, symBinAddr: 0x92B0, symSize: 0x150 }
+  - { offset: 0x7FC83, size: 0x8, addend: 0x0, symName: '_$sSa15replaceSubrange_4withySnySiG_qd__nt7ElementQyd__RszSlRd__lF10UrpayCards9AWToasterC_s15EmptyCollectionVyAHGTg5Tf4ndn_n', symObjAddr: 0x3370, symBinAddr: 0x9400, symSize: 0x120 }
+  - { offset: 0x7FDA0, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4show33_0AFBAB4AE9300564B63FC8E9BB8B9983LL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFyycfU_TA', symObjAddr: 0x34C0, symBinAddr: 0x9550, symSize: 0x10 }
+  - { offset: 0x7FDB4, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4show33_0AFBAB4AE9300564B63FC8E9BB8B9983LL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_TA', symObjAddr: 0x34D0, symBinAddr: 0x9560, symSize: 0x10 }
+  - { offset: 0x7FDC8, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4show33_0AFBAB4AE9300564B63FC8E9BB8B9983LL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_yyScMYccfU_TA', symObjAddr: 0x34E0, symBinAddr: 0x9570, symSize: 0x10 }
   - { offset: 0x7FDDC, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x3500, symBinAddr: 0x9580, symSize: 0x30 }
-  - { offset: 0x801B0, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9ToastTypeO5imageSo7UIImageCSgvg', symObjAddr: 0x0, symBinAddr: 0x60C0, symSize: 0x1A0 }
-  - { offset: 0x80271, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9ToastTypeO5colorSo7UIColorCSgvg', symObjAddr: 0x1A0, symBinAddr: 0x6260, symSize: 0x220 }
-  - { offset: 0x803AE, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC13containerViewSo6UIViewCSgvgTo', symObjAddr: 0x3C0, symBinAddr: 0x6480, symSize: 0x20 }
-  - { offset: 0x8040E, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC13containerViewSo6UIViewCSgvsTo', symObjAddr: 0x3E0, symBinAddr: 0x64A0, symSize: 0x30 }
-  - { offset: 0x8045D, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9textLabelSo7UILabelCSgvgTo', symObjAddr: 0x410, symBinAddr: 0x64D0, symSize: 0x20 }
-  - { offset: 0x804B7, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9textLabelSo7UILabelCSgvsTo', symObjAddr: 0x430, symBinAddr: 0x64F0, symSize: 0x30 }
-  - { offset: 0x80506, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9imageViewSo07UIImageE0CSgvgTo', symObjAddr: 0x460, symBinAddr: 0x6520, symSize: 0x20 }
-  - { offset: 0x80560, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC9imageViewSo07UIImageE0CSgvsTo', symObjAddr: 0x480, symBinAddr: 0x6540, symSize: 0x30 }
-  - { offset: 0x805AF, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterCACyc33_F623F786B1DC8829DE52D59E9E2D2BEBLlfcTo', symObjAddr: 0x4D0, symBinAddr: 0x6590, symSize: 0x80 }
-  - { offset: 0x80627, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC5frameACSo6CGRectV_tc33_F623F786B1DC8829DE52D59E9E2D2BEBLlfcTo', symObjAddr: 0x550, symBinAddr: 0x6610, symSize: 0x80 }
-  - { offset: 0x80681, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC5coderACSgSo7NSCoderC_tcfcTo', symObjAddr: 0x5D0, symBinAddr: 0x6690, symSize: 0x70 }
-  - { offset: 0x806D0, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC12awakeFromNibyyF', symObjAddr: 0x640, symBinAddr: 0x6700, symSize: 0x100 }
-  - { offset: 0x80709, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC12awakeFromNibyyFTo', symObjAddr: 0x740, symBinAddr: 0x6800, symSize: 0x30 }
-  - { offset: 0x80749, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC5toast_4typeySS_AC9ToastTypeOtFZyyYbScMYccfU_', symObjAddr: 0x770, symBinAddr: 0x6830, symSize: 0x390 }
-  - { offset: 0x80A17, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4show33_F623F786B1DC8829DE52D59E9E2D2BEBLL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtF', symObjAddr: 0xB00, symBinAddr: 0x6BC0, symSize: 0xDE0 }
-  - { offset: 0x81437, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4show33_F623F786B1DC8829DE52D59E9E2D2BEBLL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFyycfU_', symObjAddr: 0x18E0, symBinAddr: 0x79A0, symSize: 0x90 }
-  - { offset: 0x81479, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4show33_F623F786B1DC8829DE52D59E9E2D2BEBLL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_', symObjAddr: 0x1970, symBinAddr: 0x7A30, symSize: 0x2A0 }
-  - { offset: 0x814F5, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4show33_F623F786B1DC8829DE52D59E9E2D2BEBLL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_yyScMYccfU_', symObjAddr: 0x1C10, symBinAddr: 0x7CD0, symSize: 0x180 }
-  - { offset: 0x815A7, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4hide33_F623F786B1DC8829DE52D59E9E2D2BEBLLyyFyycfU_', symObjAddr: 0x1D90, symBinAddr: 0x7E50, symSize: 0x160 }
-  - { offset: 0x8161D, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4hide33_F623F786B1DC8829DE52D59E9E2D2BEBLLyyFySbcfU0_', symObjAddr: 0x1EF0, symBinAddr: 0x7FB0, symSize: 0x310 }
-  - { offset: 0x819E2, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC11didCloseTapyyypF', symObjAddr: 0x2200, symBinAddr: 0x82C0, symSize: 0x1E0 }
-  - { offset: 0x81A3C, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC11didCloseTapyyypFyyScMYccfU_', symObjAddr: 0x23E0, symBinAddr: 0x84A0, symSize: 0x180 }
-  - { offset: 0x81A84, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC11didCloseTapyyypFTo', symObjAddr: 0x2560, symBinAddr: 0x8620, symSize: 0x60 }
-  - { offset: 0x81A98, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterCfD', symObjAddr: 0x25C0, symBinAddr: 0x8680, symSize: 0x30 }
-  - { offset: 0x81ABB, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC4hide33_F623F786B1DC8829DE52D59E9E2D2BEBLLyyFySbcfU0_yycfU_Tf4d_n', symObjAddr: 0x27D0, symBinAddr: 0x8890, symSize: 0x200 }
-  - { offset: 0x81C77, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AMToasterC5toast_4typeySS_AC9ToastTypeOtFZTf4nnd_n', symObjAddr: 0x29D0, symBinAddr: 0x8A90, symSize: 0x5A0 }
+  - { offset: 0x801B0, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9ToastTypeO5imageSo7UIImageCSgvg', symObjAddr: 0x0, symBinAddr: 0x60C0, symSize: 0x1A0 }
+  - { offset: 0x80271, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9ToastTypeO5colorSo7UIColorCSgvg', symObjAddr: 0x1A0, symBinAddr: 0x6260, symSize: 0x220 }
+  - { offset: 0x803AE, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC13containerViewSo6UIViewCSgvgTo', symObjAddr: 0x3C0, symBinAddr: 0x6480, symSize: 0x20 }
+  - { offset: 0x8040E, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC13containerViewSo6UIViewCSgvsTo', symObjAddr: 0x3E0, symBinAddr: 0x64A0, symSize: 0x30 }
+  - { offset: 0x8045D, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9textLabelSo7UILabelCSgvgTo', symObjAddr: 0x410, symBinAddr: 0x64D0, symSize: 0x20 }
+  - { offset: 0x804B7, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9textLabelSo7UILabelCSgvsTo', symObjAddr: 0x430, symBinAddr: 0x64F0, symSize: 0x30 }
+  - { offset: 0x80506, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9imageViewSo07UIImageE0CSgvgTo', symObjAddr: 0x460, symBinAddr: 0x6520, symSize: 0x20 }
+  - { offset: 0x80560, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC9imageViewSo07UIImageE0CSgvsTo', symObjAddr: 0x480, symBinAddr: 0x6540, symSize: 0x30 }
+  - { offset: 0x805AF, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterCACyc33_0AFBAB4AE9300564B63FC8E9BB8B9983LlfcTo', symObjAddr: 0x4D0, symBinAddr: 0x6590, symSize: 0x80 }
+  - { offset: 0x80627, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC5frameACSo6CGRectV_tc33_0AFBAB4AE9300564B63FC8E9BB8B9983LlfcTo', symObjAddr: 0x550, symBinAddr: 0x6610, symSize: 0x80 }
+  - { offset: 0x80681, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC5coderACSgSo7NSCoderC_tcfcTo', symObjAddr: 0x5D0, symBinAddr: 0x6690, symSize: 0x70 }
+  - { offset: 0x806D0, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC12awakeFromNibyyF', symObjAddr: 0x640, symBinAddr: 0x6700, symSize: 0x100 }
+  - { offset: 0x80709, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC12awakeFromNibyyFTo', symObjAddr: 0x740, symBinAddr: 0x6800, symSize: 0x30 }
+  - { offset: 0x80749, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC5toast_4typeySS_AC9ToastTypeOtFZyyYbScMYccfU_', symObjAddr: 0x770, symBinAddr: 0x6830, symSize: 0x390 }
+  - { offset: 0x80A17, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4show33_0AFBAB4AE9300564B63FC8E9BB8B9983LL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtF', symObjAddr: 0xB00, symBinAddr: 0x6BC0, symSize: 0xDE0 }
+  - { offset: 0x81437, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4show33_0AFBAB4AE9300564B63FC8E9BB8B9983LL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFyycfU_', symObjAddr: 0x18E0, symBinAddr: 0x79A0, symSize: 0x90 }
+  - { offset: 0x81479, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4show33_0AFBAB4AE9300564B63FC8E9BB8B9983LL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_', symObjAddr: 0x1970, symBinAddr: 0x7A30, symSize: 0x2A0 }
+  - { offset: 0x814F5, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4show33_0AFBAB4AE9300564B63FC8E9BB8B9983LL4with4type2onySS_AC9ToastTypeOSo8UIWindowCtFySbcfU0_yyScMYccfU_', symObjAddr: 0x1C10, symBinAddr: 0x7CD0, symSize: 0x180 }
+  - { offset: 0x815A7, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4hide33_0AFBAB4AE9300564B63FC8E9BB8B9983LLyyFyycfU_', symObjAddr: 0x1D90, symBinAddr: 0x7E50, symSize: 0x160 }
+  - { offset: 0x8161D, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4hide33_0AFBAB4AE9300564B63FC8E9BB8B9983LLyyFySbcfU0_', symObjAddr: 0x1EF0, symBinAddr: 0x7FB0, symSize: 0x310 }
+  - { offset: 0x819E2, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC11didCloseTapyyypF', symObjAddr: 0x2200, symBinAddr: 0x82C0, symSize: 0x1E0 }
+  - { offset: 0x81A3C, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC11didCloseTapyyypFyyScMYccfU_', symObjAddr: 0x23E0, symBinAddr: 0x84A0, symSize: 0x180 }
+  - { offset: 0x81A84, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC11didCloseTapyyypFTo', symObjAddr: 0x2560, symBinAddr: 0x8620, symSize: 0x60 }
+  - { offset: 0x81A98, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterCfD', symObjAddr: 0x25C0, symBinAddr: 0x8680, symSize: 0x30 }
+  - { offset: 0x81ABB, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC4hide33_0AFBAB4AE9300564B63FC8E9BB8B9983LLyyFySbcfU0_yycfU_Tf4d_n', symObjAddr: 0x27D0, symBinAddr: 0x8890, symSize: 0x200 }
+  - { offset: 0x81C77, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards9AWToasterC5toast_4typeySS_AC9ToastTypeOtFZTf4nnd_n', symObjAddr: 0x29D0, symBinAddr: 0x8A90, symSize: 0x5A0 }
   - { offset: 0x81FB6, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC10UrpayCardsE19navigationBarColor2ABvgZTf4d_n', symObjAddr: 0x1A0, symBinAddr: 0x98A0, symSize: 0x120 }
   - { offset: 0x81FDA, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC10UrpayCardsE7c292929ABvpZ', symObjAddr: 0x2D58, symBinAddr: 0x66C68, symSize: 0x0 }
   - { offset: 0x81FF4, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC10UrpayCardsE7c7D7D80ABvpZ', symObjAddr: 0x2D60, symBinAddr: 0x66C70, symSize: 0x0 }
@@ -165,7 +165,7 @@ relocations:
   - { offset: 0x82B35, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards15ApplePayHandlerCMa', symObjAddr: 0x4E0, symBinAddr: 0xA170, symSize: 0x20 }
   - { offset: 0x82BAC, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFs5Error_p_Tg5', symObjAddr: 0x6B0, symBinAddr: 0xA340, symSize: 0x130 }
   - { offset: 0x82D06, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV13_copyContents8subRange12initializingSpyxGSnySiG_AFtFSo18NSLayoutConstraintC_Tg5', symObjAddr: 0x860, symBinAddr: 0xA4F0, symSize: 0x120 }
-  - { offset: 0x82E46, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV13_copyContents8subRange12initializingSpyxGSnySiG_AFtF10UrpayCards9AMToasterC_Tg5', symObjAddr: 0x980, symBinAddr: 0xA610, symSize: 0x100 }
+  - { offset: 0x82E46, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV13_copyContents8subRange12initializingSpyxGSnySiG_AFtF10UrpayCards9AWToasterC_Tg5', symObjAddr: 0x980, symBinAddr: 0xA610, symSize: 0x100 }
   - { offset: 0x82FA7, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards0B9ViewModelC15payWithApplePay6amount4fromySo15NSDecimalNumberC_So16UIViewControllerCtFySb_s5Error_pSgtcfU_TA', symObjAddr: 0x1220, symBinAddr: 0xAEB0, symSize: 0x10 }
   - { offset: 0x82FBB, size: 0x8, addend: 0x0, symName: '_$sSbs5Error_pSgIegyg_SgWOe', symObjAddr: 0x1230, symBinAddr: 0xAEC0, symSize: 0x20 }
   - { offset: 0x82FCF, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards15ApplePayHandlerC12startPayment6amount17supportedNetworks11countryCode08currencyL018merchantIdentifier14viewController10completionySo15NSDecimalNumberC_SaySo16PKPaymentNetworkaGS3SSo06UIViewQ0CySb_s5Error_pSgtctFyyScMYccfU_TA', symObjAddr: 0x12D0, symBinAddr: 0xAF20, symSize: 0x20 }
@@ -578,7 +578,7 @@ relocations:
   - { offset: 0x95724, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards10trueNumber33_E4414CB3D5F21812376800C444F764FALL_WZ', symObjAddr: 0x21D0, symBinAddr: 0x1E760, symSize: 0x30 }
   - { offset: 0x95769, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards11falseNumber33_E4414CB3D5F21812376800C444F764FALL_WZ', symObjAddr: 0x2200, symBinAddr: 0x1E790, symSize: 0x30 }
   - { offset: 0x9583D, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo18NSLayoutConstraintC_Tgm5', symObjAddr: 0x2680, symBinAddr: 0x1EC10, symSize: 0x60 }
-  - { offset: 0x9586A, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlF10UrpayCards9AMToasterC_Tgm5', symObjAddr: 0x26E0, symBinAddr: 0x1EC70, symSize: 0x50 }
+  - { offset: 0x9586A, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlF10UrpayCards9AWToasterC_Tgm5', symObjAddr: 0x26E0, symBinAddr: 0x1EC70, symSize: 0x50 }
   - { offset: 0x95897, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo20PKPaymentSummaryItemC_Tgm5', symObjAddr: 0x2730, symBinAddr: 0x1ECC0, symSize: 0x60 }
   - { offset: 0x958C4, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo6PKPassC_Tgm5', symObjAddr: 0x2790, symBinAddr: 0x1ED20, symSize: 0x60 }
   - { offset: 0x958F1, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo8UIWindowC_Tgm5', symObjAddr: 0x27F0, symBinAddr: 0x1ED80, symSize: 0x60 }
@@ -1297,7 +1297,7 @@ relocations:
   - { offset: 0xADCB4, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards0aB3SDKC17configureApplePay10merchantId12currencyCode07countryJ0ySS_S2StFZ', symObjAddr: 0xC20, symBinAddr: 0x3C3E0, symSize: 0x2C0 }
   - { offset: 0xADDF2, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards0aB3SDKCfd', symObjAddr: 0xEE0, symBinAddr: 0x3C6A0, symSize: 0x10 }
   - { offset: 0xAE120, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards14NetworkMonitorCMa', symObjAddr: 0x520, symBinAddr: 0x3CF20, symSize: 0x20 }
-  - { offset: 0xAE155, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiF10UrpayCards9AMToasterC_Tg5', symObjAddr: 0x790, symBinAddr: 0x3D190, symSize: 0x1F0 }
+  - { offset: 0xAE155, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiF10UrpayCards9AWToasterC_Tg5', symObjAddr: 0x790, symBinAddr: 0x3D190, symSize: 0x1F0 }
   - { offset: 0xAE314, size: 0x8, addend: 0x0, symName: '_$s10UrpayCards14NetworkMonitorC15startMonitoringyyFy0C06NWPathVcfU_yyScMYccfU_TA', symObjAddr: 0x14A0, symBinAddr: 0x3DEA0, symSize: 0x10 }
   - { offset: 0xAE328, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x14B0, symBinAddr: 0x3DEB0, symSize: 0x20 }
   - { offset: 0xAE33C, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x14D0, symBinAddr: 0x3DED0, symSize: 0x10 }

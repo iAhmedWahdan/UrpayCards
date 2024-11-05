@@ -14,7 +14,7 @@ public class UrpayCardsSDK {
     private static let networkMonitor = NetworkMonitor()
     
     public static func getCardsStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: "Cards", bundle: .urpayCardsResources)
+        return UIStoryboard(name: "URCards", bundle: .urpayCardsResources)
     }
     
     // Static properties to store the Apple Pay configuration

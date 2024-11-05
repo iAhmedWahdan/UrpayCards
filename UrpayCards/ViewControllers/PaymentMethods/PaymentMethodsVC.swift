@@ -132,7 +132,7 @@ extension PaymentMethodsVC: UITableViewDataSource, UITableViewDelegate {
     func showApplePay() {
         //        let amount = NSDecimalNumber(string: "10.00") // Replace with the actual amount
         //        viewModel.payWithApplePay(amount: amount, from: self)
-        if let amountViewController = instantiateViewController(storyboardName: "Cards", viewControllerClass: AmountViewController.self) {
+        if let amountViewController = instantiateViewController(storyboardName: "URCards", viewControllerClass: AmountViewController.self) {
             presentViewController(amountViewController, withCustomPresentation: true)
         }
     }
