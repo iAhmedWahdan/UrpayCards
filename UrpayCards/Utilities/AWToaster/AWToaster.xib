@@ -24,7 +24,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rbd-Tm-Z6Y">
                                     <rect key="frame" x="0.0" y="33.666666666666664" width="85.333333333333329" height="56.999999999999993"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toast_success" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-UM-JzC">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toastSuccess" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-UM-JzC">
                                             <rect key="frame" x="0.0" y="11.000000000000007" width="35" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="35" id="44O-fF-RsA"/>
@@ -93,7 +93,7 @@
         </view>
     </objects>
     <resources>
-        <image name="toast_success" width="35" height="35"/>
+        <image name="toastSuccess" width="128" height="128"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
     </resources>
 </document>

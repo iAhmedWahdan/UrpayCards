@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.3.6'
+  s.version          = '0.3.7'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   # Use the compiled .xcframework for distribution
   s.vendored_frameworks = 'UrpayCards.xcframework'
-    
+
   # Specify Swift version
   s.swift_versions = ['5.0']
 

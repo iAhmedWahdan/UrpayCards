@@ -326,7 +326,7 @@
 				8981A85435E6E883A74FC9D1E838CAD1 /* UIScrollView+Extensions.swift */,
 				959984814692522D61402877607A7F66 /* UIView+Extensions.swift */,
 				601531CDAC99739995AE6787A8BCDC82 /* VPNProxyDetection.swift */,
-				E138D85008D1E204A0F7B798213512B1 /* AMToaster */,
+				E138D85008D1E204A0F7B798213512B1 /* AWToaster */,
 			);
 			name = Utilities;
 			path = UrpayCards/Utilities;
@@ -649,14 +649,14 @@
 			path = CardCell;
 			sourceTree = "<group>";
 		};
-		E138D85008D1E204A0F7B798213512B1 /* AMToaster */ = {
+		E138D85008D1E204A0F7B798213512B1 /* AWToaster */ = {
 			isa = PBXGroup;
 			children = (
 				6C8BBF87A3839284B2361B95375A1A99 /* AWToaster.swift */,
 				2175CE879D1EF8D7D60858751C24C28E /* AWToaster.xib */,
 				C1D52DC42CDA20BF0085EC84 /* AWToasterAssets.xcassets */,
 			);
-			path = AMToaster;
+			path = AWToaster;
 			sourceTree = "<group>";
 		};
 		EE64949DBFE7C4AE9407FE99606C3885 /* Targets Support Files */ = {
