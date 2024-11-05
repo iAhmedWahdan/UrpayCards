@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.3.9'
+  s.version          = '0.4.0'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
-  UrpayCards is a framework designed for iOS applications to handle card management.
-  It provides features such as card addition, deletion, and transaction management for Urpay services.
+    UrpayCards is a framework designed for iOS applications to handle card management.
+    It provides features such as card addition, deletion, and transaction management for Urpay services.
   DESC
 
   s.homepage         = 'https://github.com/iAhmedWahdan/UrpayCards'
@@ -29,17 +29,18 @@ Pod::Spec.new do |s|
   # Specify Swift version
   s.swift_versions = ['5.0']
 
-  s.resources = [
-    'UrpayCards/**/*.{png,jpg,svg,pdf,xcassets}',
-    'UrpayCards/**/*.json'
-  ]
-  
-  # Conditionally include source files for local development
+  # Conditionally include all files for development visibility
   if ENV['DEV_POD'] == 'true'
-    s.source_files = [
-      'UrpayCards/**/*.swift',
-      'UrpayCards/**/*.xib',
-      'UrpayCards/**/*.storyboard'
-    ]
+    # Include everything for visibility during development
+    s.source_files = 'UrpayCards/**/*.{swift,xib,storyboard}'
+    s.resources = 'UrpayCards/**/*.{png,jpg,svg,pdf,xcassets,json}'
+  else
+    # In production, include only .swift files and bundle other resources
+    s.source_files = 'UrpayCards/**/*.swift'
+    s.resource_bundles = {
+      'UrpayCardsResources' => [
+        'UrpayCards/**/*.{png,jpg,svg,pdf,xcassets,json,xib,storyboard}'
+      ]
+    }
   end
 end

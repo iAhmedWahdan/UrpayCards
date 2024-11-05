@@ -34,11 +34,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mqLnRSzQnnqET6vWkZX7BKCgh6Q=
+		z4x1t+VJQ6W13kM3ahxa87EsuTU=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bj+eV2d38NrHAkLjud3/56qpvpA=
+		R7DA8tEiLEGg58m0M5sZfRbvJxA=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		a9K3+U1WYnKBEpaPUZjkrIFUQwM=
+		WIOht+a32eP0XI703LMtVY/A28s=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bj+eV2d38NrHAkLjud3/56qpvpA=
+		R7DA8tEiLEGg58m0M5sZfRbvJxA=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IsaCT5IeSwVTut/y/vEXYV6Kmg4=
+		qTe0wFJiuM603AlZ08LdRj9N1x4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -276,7 +276,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJQjtZ616qTpZc2fF/EEEo1PqVa3MGaSsN/vqbH4c0o=
+			/3FcqhGmX08swW3oz7q+CjEUrkCPyCW4Zcv9xSJuj0U=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -304,14 +304,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7wS7rAUMf9+igWguBBitBlnm9xzxx+jrcxyGhdzzo2Y=
+			ZvRBvId/7DIdzxYjdQb2/XE8hoCHZ+HTU9SSDSaUmeI=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJQjtZ616qTpZc2fF/EEEo1PqVa3MGaSsN/vqbH4c0o=
+			/3FcqhGmX08swW3oz7q+CjEUrkCPyCW4Zcv9xSJuj0U=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -339,7 +339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aDSjg01AIne04I9ipK2FKx84xw3S75FSDGTvmqb26B8=
+			ls6yVmnhA7qKImCK/X/cA4ehsXXqVdqmmmFOtyxs/Js=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
