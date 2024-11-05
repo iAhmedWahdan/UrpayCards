@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		VKv9j2pt6py4i86KDPREQadBPTY=
+		6SdrnVYY7udUfUkZdhNG54aPHaU=
 		</data>
 		<key>CardBenefitCell.nib</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		H+dNQHIFPy5k1YdwR2FHRa+f90I=
+		sVvyzu2OWApfdD9hkJP4gbTKU3s=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9g5Ab7mNHQW2dxQrLPS7oK66vHQ=
+		bj+eV2d38NrHAkLjud3/56qpvpA=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7aVvQS29I4XjaxwqAhTOVTujDK8=
+		a9K3+U1WYnKBEpaPUZjkrIFUQwM=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9g5Ab7mNHQW2dxQrLPS7oK66vHQ=
+		bj+eV2d38NrHAkLjud3/56qpvpA=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OuL9O7+dVFrVrOz37u3dk/wcjOA=
+		IsaCT5IeSwVTut/y/vEXYV6Kmg4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -241,7 +241,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5oR3U/L+uRF5oqHDpPgPxYwz7s2cFJ1/zopJDFBMkpk=
+			KU8iJDjSxWPkdvqf1Rph9cy8eUaa4jsDXPzYhZ9WhhM=
 			</data>
 		</dict>
 		<key>CardBenefitCell.nib</key>
@@ -276,7 +276,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oIy5SJrK3Ek54SLWnH5cwk9IhvvxxJSwWHt+tGtUuB8=
+			EJQjtZ616qTpZc2fF/EEEo1PqVa3MGaSsN/vqbH4c0o=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -304,14 +304,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nDrZM4lsrv+pBeK2FaD/1k1whZ8fn2HnquTMWYnxh8c=
+			7wS7rAUMf9+igWguBBitBlnm9xzxx+jrcxyGhdzzo2Y=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oIy5SJrK3Ek54SLWnH5cwk9IhvvxxJSwWHt+tGtUuB8=
+			EJQjtZ616qTpZc2fF/EEEo1PqVa3MGaSsN/vqbH4c0o=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -339,7 +339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TKif/qLYw/JPDKXahTNvc5ayttnfQ+jozGaYA0DF/X0=
+			aDSjg01AIne04I9ipK2FKx84xw3S75FSDGTvmqb26B8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

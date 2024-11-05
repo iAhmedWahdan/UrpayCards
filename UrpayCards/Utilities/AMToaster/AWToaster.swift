@@ -13,9 +13,9 @@ class AWToaster: UIView {
         
         var image: UIImage? {
             switch self {
-            case .success: return UIImage(named: "toast_success", in: .urpayCardsResources, compatibleWith: nil)
-            case .error: return UIImage(named: "toast_error", in: .urpayCardsResources, compatibleWith: nil)
-            case .warning: return UIImage(named: "toast_warning", in: .urpayCardsResources, compatibleWith: nil)
+            case .success: return UIImage(named: "toastSuccess", in: .urpayCardsResources, compatibleWith: nil)
+            case .error: return UIImage(named: "toastError", in: .urpayCardsResources, compatibleWith: nil)
+            case .warning: return UIImage(named: "toastWarning", in: .urpayCardsResources, compatibleWith: nil)
             case .custom(let image): return image
             default: return nil
             }
