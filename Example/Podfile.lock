@@ -1,5 +1,5 @@
 PODS:
-  - UrpayCards (0.3.5)
+  - UrpayCards (0.3.8)
 
 DEPENDENCIES:
   - UrpayCards (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UrpayCards: 5ab861c23aec21de7403f49cd878e8ada11e99d9
+  UrpayCards: 3a2c6aad28f4ade62551e9048077ea46e9775916
 
 PODFILE CHECKSUM: 06f93d56e9ffccb5eb1149e4ca419ba94193f7a0
 

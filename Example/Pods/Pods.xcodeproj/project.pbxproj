@@ -7,103 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0313ACB528D1E7274383320983BEA5D3 /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDB78431167708232422490F28536E /* JSONUtility.swift */; };
-		040045206ADC50CCC61F763C7FE6EDD5 /* PaymentMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87E39529C8798791606629DB325E13 /* PaymentMethodModel.swift */; };
-		0AB7ADEC00566E704F35547A741F8958 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0093D5350C9A4BB830C97E0F2D94DB1 /* OptionCell.swift */; };
-		109DA3D6294A1B9B16A41D2477BE9C99 /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FC80FF0DB38ACD7CB59274BC1893F2 /* AmountViewController.swift */; };
-		11608CF5FA50ECEDDE97064051F09B76 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30831D4F92D3F9AE78EFDB5FA7BFB318 /* AlertHelper.swift */; };
-		14B6AA69B436CFCE60ECDF4E9C1FEA02 /* PaymentMethodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8B9A6E398D81FD6E26DD4BF8FC42B /* PaymentMethodsViewModel.swift */; };
-		16F20237A48E343D700DF42AEB74F551 /* UpdateCardAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C5D4AC17876686B0F8D0E906AA8C2 /* UpdateCardAuthRequest.swift */; };
-		175D4AA0EEECD44FB9C47DC3938EB168 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D5623987E323490C22D838E8280AF /* NavigationController.swift */; };
-		1A074425A956825D1D1CF0D0DA6929D1 /* PaymentMethodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220D95344E3359FEC189BFDA7C2DC255 /* PaymentMethodCell.xib */; };
-		1E5EF693F973A7526C14D843BCD35F3B /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853F322B173135BB0F85ADE0F4C911F /* LoadingIndicatorView.swift */; };
-		210A4902A2C2F54F379B30CEB93DE514 /* AMControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771E92B5913894FA75F3F2A2126BE15 /* AMControlView.swift */; };
-		23410B16327B005AE6107F8E13B221F8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41814FE077E8A0F8FD5A72730A44DD6 /* CardsViewController.swift */; };
-		2E16AEEC20142B39CC9DA4E1E0BF8ADF /* WalletError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8662A5088AC675E7625B6EC01DEFB78 /* WalletError.swift */; };
-		387AC3640F264EA7821AB228919B2F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		38ADD86EB58393BE932F1F5A831F0626 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6456AA1323E3F519772959FC5AD887 /* AppColors.swift */; };
-		3A4645A539FB63BC2CAC51CAB89D5CB6 /* VPNProxyDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601531CDAC99739995AE6787A8BCDC82 /* VPNProxyDetection.swift */; };
-		3BAF8684EA3C7C38687AD9F886A4D46E /* CardBenefitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752C7DA25CE68B8A8E470B148F282E71 /* CardBenefitsViewModel.swift */; };
-		3D38C3FA7118C0CA89E817E7AEB457EB /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E664D3A063269BBFF4C2BB65740BBC3D /* CollectionViewDelegate.swift */; };
-		3F9003CDD9FBED7C037D80B2705BC8E1 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981A85435E6E883A74FC9D1E838CAD1 /* UIScrollView+Extensions.swift */; };
-		3FDD9314E5BB9FD27618F3E741D87FA2 /* OptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844E8CB168CECDBD6C16593D85EC69D /* OptionModel.swift */; };
-		400D31852959B1E858A079120B29588F /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A6C7EC94D75B1A9FF1CAE4B04596F /* CollectionViewDataSource.swift */; };
-		456C57E4DE59BC5FD8B11AAD2C568B34 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C9C68F9D0C716D860A677F40201A54 /* CardsViewModel.swift */; };
+		04F71DC1A8FBFA010772D9ACFF84480D /* PaymentMethodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8B9A6E398D81FD6E26DD4BF8FC42B /* PaymentMethodsViewModel.swift */; };
+		08181E0572EA21A6C09A7A05DB591358 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73EFCB7909E8A6B1AAB812554B2410 /* LoadingSpinner.swift */; };
+		0A6F3A91D9DF61109AE99BB5110CD677 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8B3A8087BE9719A6BFEEEB9760972 /* CurrencyTextField.swift */; };
+		1064004216F02ED44874AEFA386617CA /* ApplePayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC771AAD80784EA4D6B820054DCC741 /* ApplePayConfiguration.swift */; };
+		13BED55E3EEA06CBB787E575F06AD9EF /* ThemeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355F25B17E256C72E29B91271E84751 /* ThemeConfig.swift */; };
+		1803F780D01279F30402EF68FA8F9735 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C65D7368C8F3911F5B46CF7EDED19CD /* UIScrollView+Extensions.swift */; };
+		18781CE3BF758E227D24BE212F550F63 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149EC893E3E6C778A6CAA848D761B299 /* CardModel.swift */; };
+		1928A3D1F2FA0EC60404C67A896310F4 /* ScaleContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51498CD0F92CC8AB4820306C0776E0CB /* ScaleContainerView.swift */; };
+		1C983FE9BBB64A10EF83DCCEA52B7922 /* AMScaleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1EDA5FB11B03D240D4E082AD0FE7E7 /* AMScaleButton.swift */; };
+		1E31BA7416EF48C7A91AE4984564C8A0 /* ApplePayHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67773975766D3D518A8E9053C50131F3 /* ApplePayHandler.swift */; };
+		22FA980D0730BD7F5A39443C1485C2D1 /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715218BA368C7D7731948D6B5C87858 /* CurrencyLabel.swift */; };
+		234397217A16B7F26BC9D2D830C432E5 /* Encodable+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0205FDADA34FB15DA278076A88899F3A /* Encodable+Parameters.swift */; };
+		235065D56BB29C7F1EDFBA4312F3FD8E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128949131513223EA703104F195A4E1 /* UIView+Extensions.swift */; };
+		2AD28E6AED484B766901A485B7C4BBFB /* VPNProxyDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4BE5BF3D067EAE5F4EE780F8350DE /* VPNProxyDetection.swift */; };
+		2ECC37533DE1AD1C46DF3E9F8535E525 /* CardBenefitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B68B20C7DB54BCEBA6B09F455AEB2BB /* CardBenefitCell.xib */; };
+		373A81062F8FFF28D82CA91303D179F7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E60F6A94CC7C1776069A34FDD0F60 /* LineView.swift */; };
+		3B2E480298FF4197DF25FAD29FAC9E7C /* SecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2013644EA05CB4ED2D31517AC4820B4 /* SecurityViewController.swift */; };
+		3B34592FF48A273A408619D01C424B7E /* AppleWalletHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E0467C01B9C914AA3C42DF8871823 /* AppleWalletHandler.swift */; };
+		3F27CD2C6D47BB49D3D66B124B609F89 /* AWToaster.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E4E9C368CDDE437841470191A305BE /* AWToaster.xib */; };
+		3F60768E87B8569120270787D7BC574C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C771072C78632E4210DDE9A9FB957 /* BaseViewController.swift */; };
+		3F9E1C9EAB9FA3939CF567D3ECCBAD0C /* AdaptiveCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D556BFB1FAFDA3D3DD00CF27B943EC /* AdaptiveCollectionViewLayout.swift */; };
+		3FCE63B7339B6785F7BF90F45D11423A /* IntrinsicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C0EDE33649537320A95E4B80BF2A9D /* IntrinsicScrollView.swift */; };
+		425A1B2169F1B573F32A94FF2BD0C442 /* QRUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D7F6A0555A1AC1E3E75961BF4310EC /* QRUIManager.swift */; };
 		4611C7399348FCC0362D7ED7F2E26E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4779D580782A0E37E9C04925EF16F8EC /* AppleWalletHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C8B6FF3E98BAA9129AFBFABAD0B6C /* AppleWalletHandler.swift */; };
-		4D57D8C5B64F8861D7ACF3656A31EF07 /* CardBenefitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A47D99578209A2E5E57A117A3F1929B /* CardBenefitModel.swift */; };
-		511DD8963197E1F8FFAA0920802EFD03 /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C14F7EC8A8013D95010E33E06891E /* CaptureSessionManager.swift */; };
-		5500FE800ECCE158F3C8C03F651EC8BF /* UrpayCards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA57B6F2919A9DDA8034F6774214916 /* UrpayCards-dummy.m */; };
-		599932C523CFA58BA88E14DBAA572DEA /* OutlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F5E75E680784EFE209BCAA0A85D363 /* OutlineButton.swift */; };
-		59B0E71D9CF1B54EAE921E4B99300392 /* CardBenefitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BA553AE114E097402B9B54B2580D1E /* CardBenefitsVC.swift */; };
+		491DDB6563558F3BD3B3E0E979099329 /* UrpayCardsSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540CC0E3C3C4B27426D56214729FCF7 /* UrpayCardsSDK.swift */; };
+		4D76569162D5B3C9E60F2D24BE296D67 /* IntrinsicContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCD10971A2754E86354117878F65FF0 /* IntrinsicContainerView.swift */; };
+		4DDE382932E1655EABF10D729BB4EBFC /* CardBenefitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BA553AE114E097402B9B54B2580D1E /* CardBenefitsVC.swift */; };
+		4FAD51B77AF004531249D6BB33A41AAA /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30831D4F92D3F9AE78EFDB5FA7BFB318 /* AlertHelper.swift */; };
+		504617630E90635205A9A7968588FB36 /* PaymentMethodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F32233409F19998FF01463F593A567 /* PaymentMethodsVC.swift */; };
+		5373C12863A9DFE55944DDAB937805F3 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C9C68F9D0C716D860A677F40201A54 /* CardsViewModel.swift */; };
 		5A1FD2937A0365D6B9030777E29ED752 /* Pods-UrpayCards_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2631BE5ACF368D27596F1A5C718444E2 /* Pods-UrpayCards_Tests-dummy.m */; };
-		5C066A55FC793C2B6E3809598B447123 /* CardSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72865A193B16B16E83735B5A9478EA1D /* CardSettingsVC.swift */; };
-		5D14CB7F58C4E0781D9D43A33B4541EB /* AdaptiveCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92855FC41124301A836B27BD076D54 /* AdaptiveCollectionViewLayout.swift */; };
-		664B43D355864CCD315EEDE2FCF3A5BF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C771072C78632E4210DDE9A9FB957 /* BaseViewController.swift */; };
-		6BB37AD62F37DA171C81A11B9D25D74B /* SecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20CBF25EDC7E804A317C6AE7E512EF /* SecondaryLabel.swift */; };
-		6DAD30E2A06FE9CA996E36F6D635C64C /* AMScaleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FFC2AA6E94EDA5E3D407C604232882 /* AMScaleButton.swift */; };
-		72082A736708EACD0D66F9AF3AAABAAD /* AWToaster.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2175CE879D1EF8D7D60858751C24C28E /* AWToaster.xib */; };
-		771EDBBB7B52683135A1CF04841A5959 /* ApplePayHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D87FB15B0054D50A384568E796DA49 /* ApplePayHandler.swift */; };
-		79D7D97A6377E83E7CB4CF8636842652 /* ContinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4784FC8C2A3CC0B1F7E6A428D78B461 /* ContinerView.swift */; };
-		7A3D3B90F124A30FCB03590A2652ABD3 /* URColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E5EBFE376A9160BD610BCD95AF3312 /* URColors.xcassets */; };
+		5FED113B0CA6A0A0336327D28C794234 /* CardAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8634757D6862BCDDEB519B1A5E08A38 /* CardAuthService.swift */; };
+		60E0F73E8390E6FB515D67085BD5A201 /* AWToaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8171B61B59626C023684461BAB80D /* AWToaster.swift */; };
+		610AF41D1BF8E899451C907EAB633385 /* PaymentMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87E39529C8798791606629DB325E13 /* PaymentMethodModel.swift */; };
+		62813BEB8E0559ED7611AC674304CBCB /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C14F7EC8A8013D95010E33E06891E /* CaptureSessionManager.swift */; };
+		6918483C2E7F4B50937F4C07455782C4 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7C263847C6722154D2B5B687441D4 /* PrimaryButton.swift */; };
+		6A9B59FC61EB3648E956F896DCC65D9D /* PaymentMethodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220D95344E3359FEC189BFDA7C2DC255 /* PaymentMethodCell.xib */; };
+		71C98F978261BCCE2C55B40FC07F4635 /* PaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DDC95596D0E442314FB5CF01BE6E78 /* PaymentMethodCell.swift */; };
+		7279198EC2996F024C3C0D19A44DA118 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F738B62AA8422470CF5EFA285CCB13 /* CardCell.swift */; };
+		78405F1D5E0F046D7FE2892187ABE286 /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDF18F10825C700D453C303992882CC /* OptionCell.xib */; };
+		80602A47A470A6BCB25179C6ED460685 /* ContinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEC0B9F02794A77013D65871F009AD /* ContinerView.swift */; };
 		8113E150EE22C22B2B4F12230E28287E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		822A0F9E034354BBC49E3DF805935263 /* PaymentMethodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F32233409F19998FF01463F593A567 /* PaymentMethodsVC.swift */; };
-		87AD8B386DD4020581E1A35F3CFE2107 /* URAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33EA1D94D8CFE4D66EBB3E692C0BC4D5 /* URAssets.xcassets */; };
-		8A7A10FFE947B282B5C61E8B3AF17F15 /* QRCodeScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9223100E3D766416CBE29A5A7255 /* QRCodeScannerVC.swift */; };
-		8C85F563DCD59383DC876E4EB521F9DC /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDF18F10825C700D453C303992882CC /* OptionCell.xib */; };
-		8FE8753A8AC12A90DD8B66B31E278FF2 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212C26426F6F07D6E8692AD4970B40D /* PrimaryLabel.swift */; };
-		92D94EA164AB07B35B43A68DB13728E5 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149EC893E3E6C778A6CAA848D761B299 /* CardModel.swift */; };
-		95B5580F0B3373824DFF47472FEAAFA7 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B1F8FC6B48B81195EE833C5A436BA1 /* TableViewDelegate.swift */; };
-		97A554400BB75D6164D9DC16908C3212 /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E901008C955783DCFB59B08E17E0209 /* CurrencyLabel.swift */; };
-		9A2246A0B9685BC645B62BBE92414A61 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB8494872C1BB89044ACBF0D1FC803 /* NetworkManager.swift */; };
-		9F65CCEE2719F4DE532519BBE4F179F3 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC9F4B7913990A1487791CEFC15243C /* ThemeManager.swift */; };
-		A0715DE3BFBEFD65B5D2980AA224BA94 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959984814692522D61402877607A7F66 /* UIView+Extensions.swift */; };
-		A2A5B5956D3A4665208E50862DC4CB71 /* UrpayCardsSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540CC0E3C3C4B27426D56214729FCF7 /* UrpayCardsSDK.swift */; };
-		A6FE30387E946951D7DC64FA28A71D7C /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0689062FD55DC62713AE061500B2EC /* TableViewDataSource.swift */; };
-		AE04C3B0AD73C83D6DCBD3FA1F4DD5F2 /* SecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2013644EA05CB4ED2D31517AC4820B4 /* SecurityViewController.swift */; };
-		B0937045B3B48BD2A897E64789633513 /* IntrinsicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B62C48D279257BA1228CF2CCFEF7B6 /* IntrinsicScrollView.swift */; };
-		B21A481AD9AA165415281F1295547B54 /* CardInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572793CF096B5F6CD809D37248BEEB3E /* CardInformationVC.swift */; };
-		B75DECBF46BDA0FA6A91D65379C96605 /* URCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2D130F8D7BD199FC7B5DF6499A5828 /* URCards.storyboard */; };
-		B788A555DE29753F8AADB5063FA6DBC9 /* UrpayCards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E23878BFC4A8B03E1CA6D483105E2DBB /* UrpayCards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1D52DC52CDA20BF0085EC84 /* AWToasterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D52DC42CDA20BF0085EC84 /* AWToasterAssets.xcassets */; };
-		C53B7CE5113A16493E6AE81D74519303 /* CardBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C024999FBA7B2D06C4B8A9A55F0898 /* CardBenefitCell.swift */; };
-		C5F31E610646506A6523DE771D70B7BA /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F738B62AA8422470CF5EFA285CCB13 /* CardCell.swift */; };
+		841E23C97A8E970871BF60B3906BD14E /* UpdateCardAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C5D4AC17876686B0F8D0E906AA8C2 /* UpdateCardAuthRequest.swift */; };
+		87091379792FE555344EE8C062D96830 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0093D5350C9A4BB830C97E0F2D94DB1 /* OptionCell.swift */; };
+		8B1EA422D2E10EC3A057AAD9674D0421 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6456AA1323E3F519772959FC5AD887 /* AppColors.swift */; };
+		8CC634806F000A77389EA63737BE19E9 /* OptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844E8CB168CECDBD6C16593D85EC69D /* OptionModel.swift */; };
+		8CD0042B7B98129E63ED0B1340922BDA /* URAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33EA1D94D8CFE4D66EBB3E692C0BC4D5 /* URAssets.xcassets */; };
+		8D98DA06876E420BBD4917BD1B52A971 /* CardBenefitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A47D99578209A2E5E57A117A3F1929B /* CardBenefitModel.swift */; };
+		8D98E1BEE3766239152677131774E26F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9122BD305807C9B527586E9FD532E3F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB8494872C1BB89044ACBF0D1FC803 /* NetworkManager.swift */; };
+		97DF56CB8C62B66FC8B05BFB9FCF984A /* CardSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72865A193B16B16E83735B5A9478EA1D /* CardSettingsVC.swift */; };
+		990C9C67845C4DADA7D266C4280E5039 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C961BCED213C696FF8BD6139026EFFC8 /* NSObject+Extensions.swift */; };
+		9999BB434294A68D8B6BF4DC530B8F09 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6BF3265AAFF6750EF4732C0B970E9 /* LoadingIndicatorView.swift */; };
+		9B03BC313421F06AC84DFB4D999BD715 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41814FE077E8A0F8FD5A72730A44DD6 /* CardsViewController.swift */; };
+		9B69C05A8947D3C4A62EF4C7CF94CBF4 /* SecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FEFDDE04EDD91EB126ED6B5FE0DD7B /* SecondaryLabel.swift */; };
+		A59CA5F0B906E0576CB06D253C0C35CD /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A607A9D56BB5CB0EE12EB8E63A5FE16 /* IntrinsicTableView.swift */; };
+		AB18C4BEFD21C7B886B559AFD71492E6 /* QRCodeScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF9223100E3D766416CBE29A5A7255 /* QRCodeScannerVC.swift */; };
+		AB6BBA80874FD165EACF04FA14FC0037 /* CardBenefitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752C7DA25CE68B8A8E470B148F282E71 /* CardBenefitsViewModel.swift */; };
+		ADDCF20C573D0B3A0B81E0E0C7EF1B15 /* OutlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DAE6814B8D9E8340088A9A07E4F2F /* OutlineButton.swift */; };
+		B0088D789784659E037DBAFD136C026E /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FBD20F2839AEB2834A0E2C653140D7 /* CollectionViewDelegate.swift */; };
+		B18868C57BD2F2C24F98BDCF8927ABF8 /* AWToasterAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8C90E710A85294A4459D533AFC27E1 /* AWToasterAssets.xcassets */; };
+		B442EB026EEA24A1891C8F4F0D382B0C /* AmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FC80FF0DB38ACD7CB59274BC1893F2 /* AmountViewController.swift */; };
+		B59B80F5F8026B3845C69CFD0E7A2579 /* UrpayCards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E23878BFC4A8B03E1CA6D483105E2DBB /* UrpayCards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9EBF4B03C62D74AEA1C75E8806ADEC4 /* URCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2D130F8D7BD199FC7B5DF6499A5828 /* URCards.storyboard */; };
+		BD4E339E275D888A12B8F6DFC2026D75 /* DecimalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8B4625BB5365B0782D48B60087092 /* DecimalTextField.swift */; };
+		C1893F047F3494C9034DD0131C16C20A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D5623987E323490C22D838E8280AF /* NavigationController.swift */; };
+		C2E06A21D2A5D91D3649FF5454A06E34 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8100951114E46CA173AD768FE48FFE9 /* CardCell.xib */; };
+		C829C1BC29C7B120B02644E5292F9012 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4C5D1D172F408A702310B71753FFF /* TableViewDataSource.swift */; };
 		C87E24CE05D4532E68EB2C5CC86A789B /* Pods-UrpayCards_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 130852B28C31521C7539EEE4E32407B8 /* Pods-UrpayCards_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8F4610B98EA6958A97B042400D1C4C5 /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD20009C455166AF30CDB3011539AD4 /* IntrinsicTableView.swift */; };
-		CF8CABAC9D5A042890C43C051B1F72F8 /* CardBenefitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B68B20C7DB54BCEBA6B09F455AEB2BB /* CardBenefitCell.xib */; };
-		D2B2718D5D7B72ABF445319F06DC2932 /* IntrinsicContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0616B126362CE77DA1252B80AE399E01 /* IntrinsicContainerView.swift */; };
-		D46BAFAE011441CD5945FCE994DCDAF9 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7891D226319B7B2A8940EF1AE489FC1 /* CurrencyTextField.swift */; };
+		CE1FE60A6E17C3029D5F3137A77BF406 /* CardInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572793CF096B5F6CD809D37248BEEB3E /* CardInformationVC.swift */; };
+		D094354097666E69137A5AE2F29EA6BD /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE4838A59AAB1F30B45739902092356 /* CollectionViewDataSource.swift */; };
+		D2B949336BED7E44E9011C6F8D8469B9 /* CardBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C024999FBA7B2D06C4B8A9A55F0898 /* CardBenefitCell.swift */; };
 		D6922A37BBDE529AAFE091CC1529F26D /* Pods-UrpayCards_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BEC17959ED1E82B7FE9EA4F4E4D1CA9 /* Pods-UrpayCards_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6D504C660944EDC2F555F3FC0BD1CF2 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694F42C70EDEBB474939D08D917253C /* LineView.swift */; };
-		DCA72AD55961B1AE392C493D7458C94F /* AWToaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8BBF87A3839284B2361B95375A1A99 /* AWToaster.swift */; };
-		DCF99B6AC9BBB6F05762FAD4A1E44335 /* PaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DDC95596D0E442314FB5CF01BE6E78 /* PaymentMethodCell.swift */; };
-		DD6AD1C07BEEE135B61524016CA365C6 /* QRUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D7F6A0555A1AC1E3E75961BF4310EC /* QRUIManager.swift */; };
-		DD7602840C692009715443E31F74B08A /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12529146C8A04A6833AD3FFE779BA9 /* NSObject+Extensions.swift */; };
-		DD7CF63541F25A51D319028F60B296BD /* SlideUpPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0E36CF6CAD04FE3174376FB4A0FD3 /* SlideUpPresentationController.swift */; };
-		DED48CEDC531222B2EE5A93B9C1E1FD5 /* UIPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF77D6826C417FAF3BA02FE78F320D8 /* UIPanGestureRecognizer.swift */; };
-		E47072C5B3EE292112F494BBE4C588DE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B3BCC7FD5D6E19D515A209B04F562A /* PrimaryButton.swift */; };
+		DFF44FB05F8F96815CC074D35D745E76 /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F6651149A91D2A17FD12DEBED78A7 /* RequestConfig.swift */; };
+		E283EAF2429595858195482B6E7B7351 /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFDB78431167708232422490F28536E /* JSONUtility.swift */; };
+		E373C4BB115E96E5BF0FFADFDA393F07 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C1B0B2ED01D3C786CDE9013B3563E /* KeychainHelper.swift */; };
 		E5A4CF9D8854878FEAA11B236EDB751F /* Pods-UrpayCards_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3564E06D037CC6582E298699C675DB75 /* Pods-UrpayCards_Example-dummy.m */; };
-		E5CD11625BA409D4F3B371B6E48EC84A /* ThemeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6355F25B17E256C72E29B91271E84751 /* ThemeConfig.swift */; };
-		E8DF3A0EBB6DBDBE19397C17D7B64804 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0432BE74C269CB1A9DA35149A8AE1B /* KeychainHelper.swift */; };
-		EA16A91FB226BE25751E6CACC9641232 /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F6651149A91D2A17FD12DEBED78A7 /* RequestConfig.swift */; };
-		EA9894756ECD30A1F923A7D7EE434460 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B628FBD0DEF6A8904E2C80369EEE823 /* LoadingSpinner.swift */; };
-		EEE73F0909C992D19DB7BEA02E637E61 /* CardAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8634757D6862BCDDEB519B1A5E08A38 /* CardAuthService.swift */; };
-		F40A12DD5F75EE8FBC8770A324595F44 /* DecimalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67E7D36E01F2B4C2431A4227488747 /* DecimalTextField.swift */; };
-		F6BE4AC64FE60A364A116E545A2A3047 /* ScaleContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15843DD1A6A01EAF4A11FFC8286D4A /* ScaleContainerView.swift */; };
-		F8B5F54CDBC685496A99ADBF356DD856 /* ApplePayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC771AAD80784EA4D6B820054DCC741 /* ApplePayConfiguration.swift */; };
-		F8B62CA26F3E7C0036BBFF0B9885ECAE /* Encodable+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0205FDADA34FB15DA278076A88899F3A /* Encodable+Parameters.swift */; };
-		FE01EFCDC10740C2E4F242A8FFADF522 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8100951114E46CA173AD768FE48FFE9 /* CardCell.xib */; };
+		E7AA58FA7549B3AC0185B2858F9CD1CB /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED96D33329BD73902A7BE09BF7C25F /* PrimaryLabel.swift */; };
+		EF7DF3713528B185B5F7476286C5D155 /* URColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E5EBFE376A9160BD610BCD95AF3312 /* URColors.xcassets */; };
+		F0F3199D9C57FF09F7E6331C53CED919 /* SlideUpPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23115AB2476DD3FFBC8B730E1407CB31 /* SlideUpPresentationController.swift */; };
+		F335AE953546920D2F37454E84F8C9F5 /* AMControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFFEECEA860108D613A3FA7D9B4C0 /* AMControlView.swift */; };
+		F358E36254B05ED371DAFEE1A693DEEA /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC9F4B7913990A1487791CEFC15243C /* ThemeManager.swift */; };
+		F6AF0B70F0FF24C536112D0DFE329004 /* WalletError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8662A5088AC675E7625B6EC01DEFB78 /* WalletError.swift */; };
+		F84A5EAD9759D2FB3738FF970E2F4CF7 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40B07A6782CCBEDF5C7B6BECBDC8D2 /* TableViewDelegate.swift */; };
+		FCB5051A381BE8837FBEF5A7D09F55C6 /* UIPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B62C46F7374FE8F3B7EB3E56FF427 /* UIPanGestureRecognizer.swift */; };
+		FDF1B3DA7A71242BA95A88ABAB40F0A1 /* UrpayCards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA57B6F2919A9DDA8034F6774214916 /* UrpayCards-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C1A3FBD3F5EDAED1EC5EE48E28CB007F /* PBXContainerItemProxy */ = {
+		3194CC9A664F7B80E4EB33BA6F0D2EEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3EC18F0E27E41D1BAD5B8E951D7E264F;
 			remoteInfo = UrpayCards;
 		};
-		F08F3A40D6F17BD5DFC31C2E2B647A8D /* PBXContainerItemProxy */ = {
+		62492AB89801D1E368D82AE0D25E72AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -115,115 +115,115 @@
 /* Begin PBXFileReference section */
 		0205FDADA34FB15DA278076A88899F3A /* Encodable+Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Encodable+Parameters.swift"; sourceTree = "<group>"; };
 		03F810998920F815804CB5BBEE4F2583 /* UrpayCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UrpayCards.debug.xcconfig; sourceTree = "<group>"; };
-		0616B126362CE77DA1252B80AE399E01 /* IntrinsicContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntrinsicContainerView.swift; sourceTree = "<group>"; };
 		06DDC95596D0E442314FB5CF01BE6E78 /* PaymentMethodCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentMethodCell.swift; sourceTree = "<group>"; };
-		0771E92B5913894FA75F3F2A2126BE15 /* AMControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMControlView.swift; sourceTree = "<group>"; };
 		0844E8CB168CECDBD6C16593D85EC69D /* OptionModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OptionModel.swift; sourceTree = "<group>"; };
 		0B2D5623987E323490C22D838E8280AF /* NavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		0D15843DD1A6A01EAF4A11FFC8286D4A /* ScaleContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScaleContainerView.swift; sourceTree = "<group>"; };
 		0D2C5D4AC17876686B0F8D0E906AA8C2 /* UpdateCardAuthRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UpdateCardAuthRequest.swift; sourceTree = "<group>"; };
+		11C0EDE33649537320A95E4B80BF2A9D /* IntrinsicScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntrinsicScrollView.swift; sourceTree = "<group>"; };
 		130852B28C31521C7539EEE4E32407B8 /* Pods-UrpayCards_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UrpayCards_Example-umbrella.h"; sourceTree = "<group>"; };
 		149EC893E3E6C778A6CAA848D761B299 /* CardModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		14D4BE5BF3D067EAE5F4EE780F8350DE /* VPNProxyDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPNProxyDetection.swift; sourceTree = "<group>"; };
 		15BA553AE114E097402B9B54B2580D1E /* CardBenefitsVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardBenefitsVC.swift; sourceTree = "<group>"; };
-		1D0DFE743AE0784FF662F48753230ADD /* Pods_UrpayCards_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2175CE879D1EF8D7D60858751C24C28E /* AWToaster.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AWToaster.xib; sourceTree = "<group>"; };
+		1A607A9D56BB5CB0EE12EB8E63A5FE16 /* IntrinsicTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
+		1C65D7368C8F3911F5B46CF7EDED19CD /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
+		1D0DFE743AE0784FF662F48753230ADD /* Pods-UrpayCards_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UrpayCards_Example"; path = Pods_UrpayCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		220D95344E3359FEC189BFDA7C2DC255 /* PaymentMethodCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PaymentMethodCell.xib; sourceTree = "<group>"; };
-		22FFC2AA6E94EDA5E3D407C604232882 /* AMScaleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMScaleButton.swift; sourceTree = "<group>"; };
+		23115AB2476DD3FFBC8B730E1407CB31 /* SlideUpPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlideUpPresentationController.swift; sourceTree = "<group>"; };
 		255A60B5A27C26876BF158A001ABD093 /* Pods-UrpayCards_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UrpayCards_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		25B3BCC7FD5D6E19D515A209B04F562A /* PrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		25C9C68F9D0C716D860A677F40201A54 /* CardsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		2631BE5ACF368D27596F1A5C718444E2 /* Pods-UrpayCards_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UrpayCards_Tests-dummy.m"; sourceTree = "<group>"; };
 		2D3C14F7EC8A8013D95010E33E06891E /* CaptureSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CaptureSessionManager.swift; sourceTree = "<group>"; };
 		30831D4F92D3F9AE78EFDB5FA7BFB318 /* AlertHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		33EA1D94D8CFE4D66EBB3E692C0BC4D5 /* URAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = URAssets.xcassets; sourceTree = "<group>"; };
 		3564E06D037CC6582E298699C675DB75 /* Pods-UrpayCards_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UrpayCards_Example-dummy.m"; sourceTree = "<group>"; };
+		3A3B62C46F7374FE8F3B7EB3E56FF427 /* UIPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		3A47D99578209A2E5E57A117A3F1929B /* CardBenefitModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardBenefitModel.swift; sourceTree = "<group>"; };
-		3B628FBD0DEF6A8904E2C80369EEE823 /* LoadingSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
-		3C351AC4A28402C0BC40B218E909568B /* Pods_UrpayCards_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE4838A59AAB1F30B45739902092356 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		3C351AC4A28402C0BC40B218E909568B /* Pods-UrpayCards_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UrpayCards_Tests"; path = Pods_UrpayCards_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDF18F10825C700D453C303992882CC /* OptionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
 		43609DC2625EC5FAB6CA341ADD6489C6 /* Pods-UrpayCards_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UrpayCards_Example-Info.plist"; sourceTree = "<group>"; };
-		4487319D701F5C1E9F9EBDEB99F73E80 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4487319D701F5C1E9F9EBDEB99F73E80 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		47659AAF921FA64AA2DFF82C6DE786F7 /* Pods-UrpayCards_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UrpayCards_Tests.modulemap"; sourceTree = "<group>"; };
 		49CF68FFF3F9D42047E5771166328C50 /* Pods-UrpayCards_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UrpayCards_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4AEF9223100E3D766416CBE29A5A7255 /* QRCodeScannerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QRCodeScannerVC.swift; sourceTree = "<group>"; };
 		4FC9F4B7913990A1487791CEFC15243C /* ThemeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		5212C26426F6F07D6E8692AD4970B40D /* PrimaryLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
+		504C1B0B2ED01D3C786CDE9013B3563E /* KeychainHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		50FEFDDE04EDD91EB126ED6B5FE0DD7B /* SecondaryLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondaryLabel.swift; sourceTree = "<group>"; };
+		51498CD0F92CC8AB4820306C0776E0CB /* ScaleContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScaleContainerView.swift; sourceTree = "<group>"; };
+		51FBD20F2839AEB2834A0E2C653140D7 /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
+		52C8B3A8087BE9719A6BFEEEB9760972 /* CurrencyTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		54EAFF36668197CC66E11865C139B8FB /* Pods-UrpayCards_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UrpayCards_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		572793CF096B5F6CD809D37248BEEB3E /* CardInformationVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardInformationVC.swift; sourceTree = "<group>"; };
 		592C771072C78632E4210DDE9A9FB957 /* BaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		5BD20009C455166AF30CDB3011539AD4 /* IntrinsicTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
-		601531CDAC99739995AE6787A8BCDC82 /* VPNProxyDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VPNProxyDetection.swift; sourceTree = "<group>"; };
-		61D87FB15B0054D50A384568E796DA49 /* ApplePayHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplePayHandler.swift; sourceTree = "<group>"; };
 		6355F25B17E256C72E29B91271E84751 /* ThemeConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThemeConfig.swift; sourceTree = "<group>"; };
-		68560A8A1D47D1707366CC5D1DFBFDC9 /* UrpayCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UrpayCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C8BBF87A3839284B2361B95375A1A99 /* AWToaster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AWToaster.swift; sourceTree = "<group>"; };
-		6D0286DB2C4FB0BD59BDE9D5A7CCD4EF /* UrpayCards.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = UrpayCards.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		67773975766D3D518A8E9053C50131F3 /* ApplePayHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplePayHandler.swift; sourceTree = "<group>"; };
+		68560A8A1D47D1707366CC5D1DFBFDC9 /* UrpayCards */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UrpayCards; path = UrpayCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69ACFFEECEA860108D613A3FA7D9B4C0 /* AMControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMControlView.swift; sourceTree = "<group>"; };
+		6B1EDA5FB11B03D240D4E082AD0FE7E7 /* AMScaleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AMScaleButton.swift; sourceTree = "<group>"; };
+		6D0286DB2C4FB0BD59BDE9D5A7CCD4EF /* UrpayCards.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = UrpayCards.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6F2D130F8D7BD199FC7B5DF6499A5828 /* URCards.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = URCards.storyboard; path = UrpayCards/URCards.storyboard; sourceTree = "<group>"; };
 		72865A193B16B16E83735B5A9478EA1D /* CardSettingsVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardSettingsVC.swift; sourceTree = "<group>"; };
-		72F5E75E680784EFE209BCAA0A85D363 /* OutlineButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OutlineButton.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		74860903FA0C7D17DE41E877937207A2 /* Pods-UrpayCards_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UrpayCards_Example.modulemap"; sourceTree = "<group>"; };
 		752C7DA25CE68B8A8E470B148F282E71 /* CardBenefitsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardBenefitsViewModel.swift; sourceTree = "<group>"; };
-		757C64D7FDAE47F1AEE30D01C8E16E89 /* UrpayCards.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = UrpayCards.xcframework; sourceTree = "<group>"; };
+		757C64D7FDAE47F1AEE30D01C8E16E89 /* UrpayCards.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = UrpayCards.xcframework; sourceTree = "<group>"; };
 		7897CD228CA9ECFF369C285A34C19FC7 /* UrpayCards-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UrpayCards-Info.plist"; sourceTree = "<group>"; };
 		7BC771AAD80784EA4D6B820054DCC741 /* ApplePayConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplePayConfiguration.swift; sourceTree = "<group>"; };
 		7BEC17959ED1E82B7FE9EA4F4E4D1CA9 /* Pods-UrpayCards_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UrpayCards_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7E0E60F6A94CC7C1776069A34FDD0F60 /* LineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		7EE8B4625BB5365B0782D48B60087092 /* DecimalTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DecimalTextField.swift; sourceTree = "<group>"; };
+		7F73EFCB7909E8A6B1AAB812554B2410 /* LoadingSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
 		8242893F05F99D9F441EF785881A5CF4 /* Pods-UrpayCards_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UrpayCards_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		827A6C7EC94D75B1A9FF1CAE4B04596F /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		846E0467C01B9C914AA3C42DF8871823 /* AppleWalletHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppleWalletHandler.swift; sourceTree = "<group>"; };
 		85A7BEF352AC87D7F23287CB168F7A51 /* Pods-UrpayCards_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UrpayCards_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8981A85435E6E883A74FC9D1E838CAD1 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		8B68B20C7DB54BCEBA6B09F455AEB2BB /* CardBenefitCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CardBenefitCell.xib; sourceTree = "<group>"; };
-		8C0689062FD55DC62713AE061500B2EC /* TableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		8D988E3912F376EEB5379E4F2B920DD1 /* Pods-UrpayCards_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UrpayCards_Example.release.xcconfig"; sourceTree = "<group>"; };
-		959984814692522D61402877607A7F66 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		960DAE6814B8D9E8340088A9A07E4F2F /* OutlineButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OutlineButton.swift; sourceTree = "<group>"; };
 		97FB8494872C1BB89044ACBF0D1FC803 /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		9853F322B173135BB0F85ADE0F4C911F /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
-		9B67E7D36E01F2B4C2431A4227488747 /* DecimalTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DecimalTextField.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B40B07A6782CCBEDF5C7B6BECBDC8D2 /* TableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0429F722D04AFD1003E3A5F8EB7A60 /* UrpayCards.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UrpayCards.modulemap; sourceTree = "<group>"; };
-		9E901008C955783DCFB59B08E17E0209 /* CurrencyLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyLabel.swift; sourceTree = "<group>"; };
 		9EA1537629A5BF81C9D5359C951CA5E7 /* Pods-UrpayCards_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UrpayCards_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A0093D5350C9A4BB830C97E0F2D94DB1 /* OptionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
 		A164C1E957BD6D74F288EBE5250BBB6D /* UrpayCards-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UrpayCards-prefix.pch"; sourceTree = "<group>"; };
 		A6E5EBFE376A9160BD610BCD95AF3312 /* URColors.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = URColors.xcassets; sourceTree = "<group>"; };
-		A7891D226319B7B2A8940EF1AE489FC1 /* CurrencyTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		A8D556BFB1FAFDA3D3DD00CF27B943EC /* AdaptiveCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveCollectionViewLayout.swift; sourceTree = "<group>"; };
 		A8D7F6A0555A1AC1E3E75961BF4310EC /* QRUIManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QRUIManager.swift; sourceTree = "<group>"; };
+		AFD8171B61B59626C023684461BAB80D /* AWToaster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AWToaster.swift; sourceTree = "<group>"; };
+		AFE4C5D1D172F408A702310B71753FFF /* TableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		B2013644EA05CB4ED2D31517AC4820B4 /* SecurityViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecurityViewController.swift; sourceTree = "<group>"; };
-		B3C0E36CF6CAD04FE3174376FB4A0FD3 /* SlideUpPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlideUpPresentationController.swift; sourceTree = "<group>"; };
-		B694F42C70EDEBB474939D08D917253C /* LineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		B94DE6908C29270A92AD4E1B8B240C0F /* Pods-UrpayCards_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UrpayCards_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BD0C8B6FF3E98BAA9129AFBFABAD0B6C /* AppleWalletHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppleWalletHandler.swift; sourceTree = "<group>"; };
+		BCC6BF3265AAFF6750EF4732C0B970E9 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		BDCD10971A2754E86354117878F65FF0 /* IntrinsicContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntrinsicContainerView.swift; sourceTree = "<group>"; };
 		BFA57B6F2919A9DDA8034F6774214916 /* UrpayCards-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UrpayCards-dummy.m"; sourceTree = "<group>"; };
-		C1D52DC42CDA20BF0085EC84 /* AWToasterAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AWToasterAssets.xcassets; sourceTree = "<group>"; };
+		C128949131513223EA703104F195A4E1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C1ED96D33329BD73902A7BE09BF7C25F /* PrimaryLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
+		C715218BA368C7D7731948D6B5C87858 /* CurrencyLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurrencyLabel.swift; sourceTree = "<group>"; };
 		C8100951114E46CA173AD768FE48FFE9 /* CardCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		C8634757D6862BCDDEB519B1A5E08A38 /* CardAuthService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardAuthService.swift; sourceTree = "<group>"; };
+		C961BCED213C696FF8BD6139026EFFC8 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		C9D88EC773A7D15BA6A6ADE5E3365586 /* Pods-UrpayCards_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UrpayCards_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CBAEC0B9F02794A77013D65871F009AD /* ContinerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContinerView.swift; sourceTree = "<group>"; };
 		D0E551AB1634ED55BC51049D84E55F75 /* Pods-UrpayCards_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UrpayCards_Tests-Info.plist"; sourceTree = "<group>"; };
 		D0F738B62AA8422470CF5EFA285CCB13 /* CardCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		D3B62C48D279257BA1228CF2CCFEF7B6 /* IntrinsicScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntrinsicScrollView.swift; sourceTree = "<group>"; };
-		D4784FC8C2A3CC0B1F7E6A428D78B461 /* ContinerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContinerView.swift; sourceTree = "<group>"; };
 		D5C6B6AEC92FA41A19B5BD31C389266D /* UrpayCards-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "UrpayCards-xcframeworks.sh"; sourceTree = "<group>"; };
 		D6FC80FF0DB38ACD7CB59274BC1893F2 /* AmountViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AmountViewController.swift; sourceTree = "<group>"; };
 		D79F6651149A91D2A17FD12DEBED78A7 /* RequestConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
-		D7B1F8FC6B48B81195EE833C5A436BA1 /* TableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		D7C8B9A6E398D81FD6E26DD4BF8FC42B /* PaymentMethodsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentMethodsViewModel.swift; sourceTree = "<group>"; };
 		D8662A5088AC675E7625B6EC01DEFB78 /* WalletError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletError.swift; sourceTree = "<group>"; };
-		DA20CBF25EDC7E804A317C6AE7E512EF /* SecondaryLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondaryLabel.swift; sourceTree = "<group>"; };
-		DC92855FC41124301A836B27BD076D54 /* AdaptiveCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveCollectionViewLayout.swift; sourceTree = "<group>"; };
 		DCFDB78431167708232422490F28536E /* JSONUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JSONUtility.swift; sourceTree = "<group>"; };
 		DE6456AA1323E3F519772959FC5AD887 /* AppColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
-		DFF77D6826C417FAF3BA02FE78F320D8 /* UIPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		E23878BFC4A8B03E1CA6D483105E2DBB /* UrpayCards-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UrpayCards-umbrella.h"; sourceTree = "<group>"; };
 		E2B97105501378DC9A03FA215895688E /* UrpayCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UrpayCards.release.xcconfig; sourceTree = "<group>"; };
 		E2C024999FBA7B2D06C4B8A9A55F0898 /* CardBenefitCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardBenefitCell.swift; sourceTree = "<group>"; };
 		E41814FE077E8A0F8FD5A72730A44DD6 /* CardsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		E540CC0E3C3C4B27426D56214729FCF7 /* UrpayCardsSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UrpayCardsSDK.swift; path = UrpayCards/UrpayCardsSDK.swift; sourceTree = "<group>"; };
-		E664D3A063269BBFF4C2BB65740BBC3D /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
 		E7F32233409F19998FF01463F593A567 /* PaymentMethodsVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentMethodsVC.swift; sourceTree = "<group>"; };
-		EC0432BE74C269CB1A9DA35149A8AE1B /* KeychainHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
-		EE12529146C8A04A6833AD3FFE779BA9 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		EC8C90E710A85294A4459D533AFC27E1 /* AWToasterAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = AWToasterAssets.xcassets; sourceTree = "<group>"; };
 		EF87E39529C8798791606629DB325E13 /* PaymentMethodModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentMethodModel.swift; sourceTree = "<group>"; };
-		FD3597ED3325EE3532EA50B40458812D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F1E4E9C368CDDE437841470191A305BE /* AWToaster.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AWToaster.xib; sourceTree = "<group>"; };
+		FAF7C263847C6722154D2B5B687441D4 /* PrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		FD3597ED3325EE3532EA50B40458812D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,11 +243,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADCFA2AACBD0A9CE7F8E107166337A2C /* Frameworks */ = {
+		E2690254A6B17E8F3CDB9B501426F973 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387AC3640F264EA7821AB228919B2F01 /* Foundation.framework in Frameworks */,
+				8D98E1BEE3766239152677131774E26F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +260,7 @@
 				E2C024999FBA7B2D06C4B8A9A55F0898 /* CardBenefitCell.swift */,
 				8B68B20C7DB54BCEBA6B09F455AEB2BB /* CardBenefitCell.xib */,
 			);
+			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -278,6 +279,7 @@
 			children = (
 				572793CF096B5F6CD809D37248BEEB3E /* CardInformationVC.swift */,
 			);
+			name = CardInformation;
 			path = CardInformation;
 			sourceTree = "<group>";
 		};
@@ -289,47 +291,19 @@
 				EF51F08EC3AAE4A59CE101FE01434F56 /* Models */,
 				73820B02528A415BBE92E7802C5AA973 /* ViewModels */,
 			);
+			name = CardBenefits;
 			path = CardBenefits;
 			sourceTree = "<group>";
 		};
-		30ED99CE8D00424C4D06BA3CC4B9E751 /* Utilities */ = {
+		30D6B7D4C68956C389302769568D8E8E /* AWToaster */ = {
 			isa = PBXGroup;
 			children = (
-				DC92855FC41124301A836B27BD076D54 /* AdaptiveCollectionViewLayout.swift */,
-				0771E92B5913894FA75F3F2A2126BE15 /* AMControlView.swift */,
-				22FFC2AA6E94EDA5E3D407C604232882 /* AMScaleButton.swift */,
-				61D87FB15B0054D50A384568E796DA49 /* ApplePayHandler.swift */,
-				BD0C8B6FF3E98BAA9129AFBFABAD0B6C /* AppleWalletHandler.swift */,
-				827A6C7EC94D75B1A9FF1CAE4B04596F /* CollectionViewDataSource.swift */,
-				E664D3A063269BBFF4C2BB65740BBC3D /* CollectionViewDelegate.swift */,
-				D4784FC8C2A3CC0B1F7E6A428D78B461 /* ContinerView.swift */,
-				9E901008C955783DCFB59B08E17E0209 /* CurrencyLabel.swift */,
-				A7891D226319B7B2A8940EF1AE489FC1 /* CurrencyTextField.swift */,
-				9B67E7D36E01F2B4C2431A4227488747 /* DecimalTextField.swift */,
-				0616B126362CE77DA1252B80AE399E01 /* IntrinsicContainerView.swift */,
-				D3B62C48D279257BA1228CF2CCFEF7B6 /* IntrinsicScrollView.swift */,
-				5BD20009C455166AF30CDB3011539AD4 /* IntrinsicTableView.swift */,
-				EC0432BE74C269CB1A9DA35149A8AE1B /* KeychainHelper.swift */,
-				B694F42C70EDEBB474939D08D917253C /* LineView.swift */,
-				9853F322B173135BB0F85ADE0F4C911F /* LoadingIndicatorView.swift */,
-				3B628FBD0DEF6A8904E2C80369EEE823 /* LoadingSpinner.swift */,
-				EE12529146C8A04A6833AD3FFE779BA9 /* NSObject+Extensions.swift */,
-				72F5E75E680784EFE209BCAA0A85D363 /* OutlineButton.swift */,
-				25B3BCC7FD5D6E19D515A209B04F562A /* PrimaryButton.swift */,
-				5212C26426F6F07D6E8692AD4970B40D /* PrimaryLabel.swift */,
-				0D15843DD1A6A01EAF4A11FFC8286D4A /* ScaleContainerView.swift */,
-				DA20CBF25EDC7E804A317C6AE7E512EF /* SecondaryLabel.swift */,
-				B3C0E36CF6CAD04FE3174376FB4A0FD3 /* SlideUpPresentationController.swift */,
-				8C0689062FD55DC62713AE061500B2EC /* TableViewDataSource.swift */,
-				D7B1F8FC6B48B81195EE833C5A436BA1 /* TableViewDelegate.swift */,
-				DFF77D6826C417FAF3BA02FE78F320D8 /* UIPanGestureRecognizer.swift */,
-				8981A85435E6E883A74FC9D1E838CAD1 /* UIScrollView+Extensions.swift */,
-				959984814692522D61402877607A7F66 /* UIView+Extensions.swift */,
-				601531CDAC99739995AE6787A8BCDC82 /* VPNProxyDetection.swift */,
-				E138D85008D1E204A0F7B798213512B1 /* AWToaster */,
+				AFD8171B61B59626C023684461BAB80D /* AWToaster.swift */,
+				F1E4E9C368CDDE437841470191A305BE /* AWToaster.xib */,
+				EC8C90E710A85294A4459D533AFC27E1 /* AWToasterAssets.xcassets */,
 			);
-			name = Utilities;
-			path = UrpayCards/Utilities;
+			name = AWToaster;
+			path = AWToaster;
 			sourceTree = "<group>";
 		};
 		3C3A49B3153D6CAB529ACA42731C100D /* Network */ = {
@@ -357,6 +331,7 @@
 			children = (
 				D6FC80FF0DB38ACD7CB59274BC1893F2 /* AmountViewController.swift */,
 			);
+			name = Amount;
 			path = Amount;
 			sourceTree = "<group>";
 		};
@@ -371,7 +346,7 @@
 				74A884EB08549AF583AFC7B3A5B896B6 /* Pod */,
 				933FD6E449CFFF107A111A1233BDCB71 /* Support Files */,
 				584BEC9BD725E29C73C7D554293024E9 /* Theme */,
-				30ED99CE8D00424C4D06BA3CC4B9E751 /* Utilities */,
+				7D925F6EBB51831E7DB4A829A0EE5873 /* Utilities */,
 				765F5EAC4EFCBD63849385CE9481988F /* ViewControllers */,
 			);
 			name = UrpayCards;
@@ -401,6 +376,7 @@
 			children = (
 				25C9C68F9D0C716D860A677F40201A54 /* CardsViewModel.swift */,
 			);
+			name = ViewModels;
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
@@ -413,6 +389,7 @@
 				7116BCD34FB7295E6B646A354B422908 /* Models */,
 				5E8FFCB5882FE7088FDA0657B8B1783E /* ViewModels */,
 			);
+			name = Cards;
 			path = Cards;
 			sourceTree = "<group>";
 		};
@@ -446,6 +423,7 @@
 			children = (
 				EF87E39529C8798791606629DB325E13 /* PaymentMethodModel.swift */,
 			);
+			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -455,6 +433,7 @@
 				149EC893E3E6C778A6CAA848D761B299 /* CardModel.swift */,
 				0844E8CB168CECDBD6C16593D85EC69D /* OptionModel.swift */,
 			);
+			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -466,6 +445,7 @@
 				0D2C5D4AC17876686B0F8D0E906AA8C2 /* UpdateCardAuthRequest.swift */,
 				D8662A5088AC675E7625B6EC01DEFB78 /* WalletError.swift */,
 			);
+			name = Endpoints;
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
@@ -474,6 +454,7 @@
 			children = (
 				752C7DA25CE68B8A8E470B148F282E71 /* CardBenefitsViewModel.swift */,
 			);
+			name = ViewModels;
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
@@ -505,6 +486,46 @@
 			path = UrpayCards/ViewControllers;
 			sourceTree = "<group>";
 		};
+		7D925F6EBB51831E7DB4A829A0EE5873 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A8D556BFB1FAFDA3D3DD00CF27B943EC /* AdaptiveCollectionViewLayout.swift */,
+				69ACFFEECEA860108D613A3FA7D9B4C0 /* AMControlView.swift */,
+				6B1EDA5FB11B03D240D4E082AD0FE7E7 /* AMScaleButton.swift */,
+				67773975766D3D518A8E9053C50131F3 /* ApplePayHandler.swift */,
+				846E0467C01B9C914AA3C42DF8871823 /* AppleWalletHandler.swift */,
+				3BE4838A59AAB1F30B45739902092356 /* CollectionViewDataSource.swift */,
+				51FBD20F2839AEB2834A0E2C653140D7 /* CollectionViewDelegate.swift */,
+				CBAEC0B9F02794A77013D65871F009AD /* ContinerView.swift */,
+				C715218BA368C7D7731948D6B5C87858 /* CurrencyLabel.swift */,
+				52C8B3A8087BE9719A6BFEEEB9760972 /* CurrencyTextField.swift */,
+				7EE8B4625BB5365B0782D48B60087092 /* DecimalTextField.swift */,
+				BDCD10971A2754E86354117878F65FF0 /* IntrinsicContainerView.swift */,
+				11C0EDE33649537320A95E4B80BF2A9D /* IntrinsicScrollView.swift */,
+				1A607A9D56BB5CB0EE12EB8E63A5FE16 /* IntrinsicTableView.swift */,
+				504C1B0B2ED01D3C786CDE9013B3563E /* KeychainHelper.swift */,
+				7E0E60F6A94CC7C1776069A34FDD0F60 /* LineView.swift */,
+				BCC6BF3265AAFF6750EF4732C0B970E9 /* LoadingIndicatorView.swift */,
+				7F73EFCB7909E8A6B1AAB812554B2410 /* LoadingSpinner.swift */,
+				C961BCED213C696FF8BD6139026EFFC8 /* NSObject+Extensions.swift */,
+				960DAE6814B8D9E8340088A9A07E4F2F /* OutlineButton.swift */,
+				FAF7C263847C6722154D2B5B687441D4 /* PrimaryButton.swift */,
+				C1ED96D33329BD73902A7BE09BF7C25F /* PrimaryLabel.swift */,
+				51498CD0F92CC8AB4820306C0776E0CB /* ScaleContainerView.swift */,
+				50FEFDDE04EDD91EB126ED6B5FE0DD7B /* SecondaryLabel.swift */,
+				23115AB2476DD3FFBC8B730E1407CB31 /* SlideUpPresentationController.swift */,
+				AFE4C5D1D172F408A702310B71753FFF /* TableViewDataSource.swift */,
+				9B40B07A6782CCBEDF5C7B6BECBDC8D2 /* TableViewDelegate.swift */,
+				3A3B62C46F7374FE8F3B7EB3E56FF427 /* UIPanGestureRecognizer.swift */,
+				1C65D7368C8F3911F5B46CF7EDED19CD /* UIScrollView+Extensions.swift */,
+				C128949131513223EA703104F195A4E1 /* UIView+Extensions.swift */,
+				14D4BE5BF3D067EAE5F4EE780F8350DE /* VPNProxyDetection.swift */,
+				30D6B7D4C68956C389302769568D8E8E /* AWToaster */,
+			);
+			name = Utilities;
+			path = UrpayCards/Utilities;
+			sourceTree = "<group>";
+		};
 		933FD6E449CFFF107A111A1233BDCB71 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,15 +548,16 @@
 				DE6456AA1323E3F519772959FC5AD887 /* AppColors.swift */,
 				A6E5EBFE376A9160BD610BCD95AF3312 /* URColors.xcassets */,
 			);
+			name = Colors;
 			path = Colors;
 			sourceTree = "<group>";
 		};
 		9AB969EEA30EA66ACBADB855400EE17C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D0DFE743AE0784FF662F48753230ADD /* Pods_UrpayCards_Example.framework */,
-				3C351AC4A28402C0BC40B218E909568B /* Pods_UrpayCards_Tests.framework */,
-				68560A8A1D47D1707366CC5D1DFBFDC9 /* UrpayCards.framework */,
+				1D0DFE743AE0784FF662F48753230ADD /* Pods-UrpayCards_Example */,
+				3C351AC4A28402C0BC40B218E909568B /* Pods-UrpayCards_Tests */,
+				68560A8A1D47D1707366CC5D1DFBFDC9 /* UrpayCards */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -546,6 +568,7 @@
 				06DDC95596D0E442314FB5CF01BE6E78 /* PaymentMethodCell.swift */,
 				220D95344E3359FEC189BFDA7C2DC255 /* PaymentMethodCell.xib */,
 			);
+			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -554,6 +577,7 @@
 			children = (
 				72865A193B16B16E83735B5A9478EA1D /* CardSettingsVC.swift */,
 			);
+			name = CardSettings;
 			path = CardSettings;
 			sourceTree = "<group>";
 		};
@@ -565,6 +589,7 @@
 				65ED07740D73753160D525267D8719C1 /* Models */,
 				DFBC5E0E5E5C8FA3CD3634D0E27794BF /* ViewModels */,
 			);
+			name = PaymentMethods;
 			path = PaymentMethods;
 			sourceTree = "<group>";
 		};
@@ -574,6 +599,7 @@
 				A0093D5350C9A4BB830C97E0F2D94DB1 /* OptionCell.swift */,
 				3FDF18F10825C700D453C303992882CC /* OptionCell.xib */,
 			);
+			name = OptionCell;
 			path = OptionCell;
 			sourceTree = "<group>";
 		};
@@ -585,6 +611,7 @@
 				4AEF9223100E3D766416CBE29A5A7255 /* QRCodeScannerVC.swift */,
 				A8D7F6A0555A1AC1E3E75961BF4310EC /* QRUIManager.swift */,
 			);
+			name = QRCodeScanner;
 			path = QRCodeScanner;
 			sourceTree = "<group>";
 		};
@@ -594,6 +621,7 @@
 				E108514277EF518173065757D047E084 /* CardCell */,
 				C1F936880D0576595E7523845E8BDCA6 /* OptionCell */,
 			);
+			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -637,6 +665,7 @@
 			children = (
 				D7C8B9A6E398D81FD6E26DD4BF8FC42B /* PaymentMethodsViewModel.swift */,
 			);
+			name = ViewModels;
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
@@ -646,17 +675,8 @@
 				D0F738B62AA8422470CF5EFA285CCB13 /* CardCell.swift */,
 				C8100951114E46CA173AD768FE48FFE9 /* CardCell.xib */,
 			);
+			name = CardCell;
 			path = CardCell;
-			sourceTree = "<group>";
-		};
-		E138D85008D1E204A0F7B798213512B1 /* AWToaster */ = {
-			isa = PBXGroup;
-			children = (
-				6C8BBF87A3839284B2361B95375A1A99 /* AWToaster.swift */,
-				2175CE879D1EF8D7D60858751C24C28E /* AWToaster.xib */,
-				C1D52DC42CDA20BF0085EC84 /* AWToasterAssets.xcassets */,
-			);
-			path = AWToaster;
 			sourceTree = "<group>";
 		};
 		EE64949DBFE7C4AE9407FE99606C3885 /* Targets Support Files */ = {
@@ -673,17 +693,18 @@
 			children = (
 				3A47D99578209A2E5E57A117A3F1929B /* CardBenefitModel.swift */,
 			);
+			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		709827B94823D0DA0D3A665080EB8783 /* Headers */ = {
+		1338E720F3EFFD684A78F75E9A5A082A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B788A555DE29753F8AADB5063FA6DBC9 /* UrpayCards-umbrella.h in Headers */,
+				B59B80F5F8026B3845C69CFD0E7A2579 /* UrpayCards-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,22 +739,22 @@
 			buildRules = (
 			);
 			dependencies = (
-				071E4420539D5B8D02185F49CFEBE131 /* PBXTargetDependency */,
+				6BF3A9F7F876D5BB1AF0B4D1E9E8B334 /* PBXTargetDependency */,
 			);
 			name = "Pods-UrpayCards_Tests";
 			productName = Pods_UrpayCards_Tests;
-			productReference = 3C351AC4A28402C0BC40B218E909568B /* Pods_UrpayCards_Tests.framework */;
+			productReference = 3C351AC4A28402C0BC40B218E909568B /* Pods-UrpayCards_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		3EC18F0E27E41D1BAD5B8E951D7E264F /* UrpayCards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3895FF2DC1C166442C98FE31DFB6E279 /* Build configuration list for PBXNativeTarget "UrpayCards" */;
+			buildConfigurationList = BA019232E39C083FB70E0827B9DD358E /* Build configuration list for PBXNativeTarget "UrpayCards" */;
 			buildPhases = (
-				709827B94823D0DA0D3A665080EB8783 /* Headers */,
-				8006590A8D5F23EFD1C7C0C2D1FD669C /* [CP] Copy XCFrameworks */,
-				F45DB35C71D9E8CD32F111ACB673CA6D /* Sources */,
-				ADCFA2AACBD0A9CE7F8E107166337A2C /* Frameworks */,
-				B7CE900BCFDC4BA8D6927E2971F1BD8B /* Resources */,
+				1338E720F3EFFD684A78F75E9A5A082A /* Headers */,
+				558B5480E852229C29DF62D9A6B6D925 /* [CP] Copy XCFrameworks */,
+				9A8F8D009A14AE127F58D60C8BB67ECB /* Sources */,
+				E2690254A6B17E8F3CDB9B501426F973 /* Frameworks */,
+				FE489C9990000C90F5EA7A5E29607F1B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -741,7 +762,7 @@
 			);
 			name = UrpayCards;
 			productName = UrpayCards;
-			productReference = 68560A8A1D47D1707366CC5D1DFBFDC9 /* UrpayCards.framework */;
+			productReference = 68560A8A1D47D1707366CC5D1DFBFDC9 /* UrpayCards */;
 			productType = "com.apple.product-type.framework";
 		};
 		7F49385F7EEFBCBB2736AD7D29E7EA4D /* Pods-UrpayCards_Example */ = {
@@ -756,11 +777,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				FE3D713D5F023DAF0397970E192D22AE /* PBXTargetDependency */,
+				A4DA4812CCFDD16A888320CE70FFA24D /* PBXTargetDependency */,
 			);
 			name = "Pods-UrpayCards_Example";
 			productName = Pods_UrpayCards_Example;
-			productReference = 1D0DFE743AE0784FF662F48753230ADD /* Pods_UrpayCards_Example.framework */;
+			productReference = 1D0DFE743AE0784FF662F48753230ADD /* Pods-UrpayCards_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -781,6 +802,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 9AB969EEA30EA66ACBADB855400EE17C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -800,22 +822,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CE900BCFDC4BA8D6927E2971F1BD8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72082A736708EACD0D66F9AF3AAABAAD /* AWToaster.xib in Resources */,
-				CF8CABAC9D5A042890C43C051B1F72F8 /* CardBenefitCell.xib in Resources */,
-				FE01EFCDC10740C2E4F242A8FFADF522 /* CardCell.xib in Resources */,
-				8C85F563DCD59383DC876E4EB521F9DC /* OptionCell.xib in Resources */,
-				1A074425A956825D1D1CF0D0DA6929D1 /* PaymentMethodCell.xib in Resources */,
-				C1D52DC52CDA20BF0085EC84 /* AWToasterAssets.xcassets in Resources */,
-				87AD8B386DD4020581E1A35F3CFE2107 /* URAssets.xcassets in Resources */,
-				B75DECBF46BDA0FA6A91D65379C96605 /* URCards.storyboard in Resources */,
-				7A3D3B90F124A30FCB03590A2652ABD3 /* URColors.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D3CD3AD10AD5CE24CA1610C711A4B062 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -823,10 +829,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE489C9990000C90F5EA7A5E29607F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F27CD2C6D47BB49D3D66B124B609F89 /* AWToaster.xib in Resources */,
+				B18868C57BD2F2C24F98BDCF8927ABF8 /* AWToasterAssets.xcassets in Resources */,
+				2ECC37533DE1AD1C46DF3E9F8535E525 /* CardBenefitCell.xib in Resources */,
+				C2E06A21D2A5D91D3649FF5454A06E34 /* CardCell.xib in Resources */,
+				78405F1D5E0F046D7FE2892187ABE286 /* OptionCell.xib in Resources */,
+				6A9B59FC61EB3648E956F896DCC65D9D /* PaymentMethodCell.xib in Resources */,
+				8CD0042B7B98129E63ED0B1340922BDA /* URAssets.xcassets in Resources */,
+				B9EBF4B03C62D74AEA1C75E8806ADEC4 /* URCards.storyboard in Resources */,
+				EF7DF3713528B185B5F7476286C5D155 /* URColors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8006590A8D5F23EFD1C7C0C2D1FD669C /* [CP] Copy XCFrameworks */ = {
+		558B5480E852229C29DF62D9A6B6D925 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -862,96 +884,96 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F45DB35C71D9E8CD32F111ACB673CA6D /* Sources */ = {
+		9A8F8D009A14AE127F58D60C8BB67ECB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D14CB7F58C4E0781D9D43A33B4541EB /* AdaptiveCollectionViewLayout.swift in Sources */,
-				11608CF5FA50ECEDDE97064051F09B76 /* AlertHelper.swift in Sources */,
-				210A4902A2C2F54F379B30CEB93DE514 /* AMControlView.swift in Sources */,
-				109DA3D6294A1B9B16A41D2477BE9C99 /* AmountViewController.swift in Sources */,
-				6DAD30E2A06FE9CA996E36F6D635C64C /* AMScaleButton.swift in Sources */,
-				38ADD86EB58393BE932F1F5A831F0626 /* AppColors.swift in Sources */,
-				F8B5F54CDBC685496A99ADBF356DD856 /* ApplePayConfiguration.swift in Sources */,
-				771EDBBB7B52683135A1CF04841A5959 /* ApplePayHandler.swift in Sources */,
-				4779D580782A0E37E9C04925EF16F8EC /* AppleWalletHandler.swift in Sources */,
-				DCA72AD55961B1AE392C493D7458C94F /* AWToaster.swift in Sources */,
-				664B43D355864CCD315EEDE2FCF3A5BF /* BaseViewController.swift in Sources */,
-				511DD8963197E1F8FFAA0920802EFD03 /* CaptureSessionManager.swift in Sources */,
-				EEE73F0909C992D19DB7BEA02E637E61 /* CardAuthService.swift in Sources */,
-				C53B7CE5113A16493E6AE81D74519303 /* CardBenefitCell.swift in Sources */,
-				4D57D8C5B64F8861D7ACF3656A31EF07 /* CardBenefitModel.swift in Sources */,
-				59B0E71D9CF1B54EAE921E4B99300392 /* CardBenefitsVC.swift in Sources */,
-				3BAF8684EA3C7C38687AD9F886A4D46E /* CardBenefitsViewModel.swift in Sources */,
-				C5F31E610646506A6523DE771D70B7BA /* CardCell.swift in Sources */,
-				B21A481AD9AA165415281F1295547B54 /* CardInformationVC.swift in Sources */,
-				92D94EA164AB07B35B43A68DB13728E5 /* CardModel.swift in Sources */,
-				5C066A55FC793C2B6E3809598B447123 /* CardSettingsVC.swift in Sources */,
-				23410B16327B005AE6107F8E13B221F8 /* CardsViewController.swift in Sources */,
-				456C57E4DE59BC5FD8B11AAD2C568B34 /* CardsViewModel.swift in Sources */,
-				400D31852959B1E858A079120B29588F /* CollectionViewDataSource.swift in Sources */,
-				3D38C3FA7118C0CA89E817E7AEB457EB /* CollectionViewDelegate.swift in Sources */,
-				79D7D97A6377E83E7CB4CF8636842652 /* ContinerView.swift in Sources */,
-				97A554400BB75D6164D9DC16908C3212 /* CurrencyLabel.swift in Sources */,
-				D46BAFAE011441CD5945FCE994DCDAF9 /* CurrencyTextField.swift in Sources */,
-				F40A12DD5F75EE8FBC8770A324595F44 /* DecimalTextField.swift in Sources */,
-				F8B62CA26F3E7C0036BBFF0B9885ECAE /* Encodable+Parameters.swift in Sources */,
-				D2B2718D5D7B72ABF445319F06DC2932 /* IntrinsicContainerView.swift in Sources */,
-				B0937045B3B48BD2A897E64789633513 /* IntrinsicScrollView.swift in Sources */,
-				C8F4610B98EA6958A97B042400D1C4C5 /* IntrinsicTableView.swift in Sources */,
-				0313ACB528D1E7274383320983BEA5D3 /* JSONUtility.swift in Sources */,
-				E8DF3A0EBB6DBDBE19397C17D7B64804 /* KeychainHelper.swift in Sources */,
-				D6D504C660944EDC2F555F3FC0BD1CF2 /* LineView.swift in Sources */,
-				1E5EF693F973A7526C14D843BCD35F3B /* LoadingIndicatorView.swift in Sources */,
-				EA9894756ECD30A1F923A7D7EE434460 /* LoadingSpinner.swift in Sources */,
-				175D4AA0EEECD44FB9C47DC3938EB168 /* NavigationController.swift in Sources */,
-				9A2246A0B9685BC645B62BBE92414A61 /* NetworkManager.swift in Sources */,
-				DD7602840C692009715443E31F74B08A /* NSObject+Extensions.swift in Sources */,
-				0AB7ADEC00566E704F35547A741F8958 /* OptionCell.swift in Sources */,
-				3FDD9314E5BB9FD27618F3E741D87FA2 /* OptionModel.swift in Sources */,
-				599932C523CFA58BA88E14DBAA572DEA /* OutlineButton.swift in Sources */,
-				DCF99B6AC9BBB6F05762FAD4A1E44335 /* PaymentMethodCell.swift in Sources */,
-				040045206ADC50CCC61F763C7FE6EDD5 /* PaymentMethodModel.swift in Sources */,
-				822A0F9E034354BBC49E3DF805935263 /* PaymentMethodsVC.swift in Sources */,
-				14B6AA69B436CFCE60ECDF4E9C1FEA02 /* PaymentMethodsViewModel.swift in Sources */,
-				E47072C5B3EE292112F494BBE4C588DE /* PrimaryButton.swift in Sources */,
-				8FE8753A8AC12A90DD8B66B31E278FF2 /* PrimaryLabel.swift in Sources */,
-				8A7A10FFE947B282B5C61E8B3AF17F15 /* QRCodeScannerVC.swift in Sources */,
-				DD6AD1C07BEEE135B61524016CA365C6 /* QRUIManager.swift in Sources */,
-				EA16A91FB226BE25751E6CACC9641232 /* RequestConfig.swift in Sources */,
-				F6BE4AC64FE60A364A116E545A2A3047 /* ScaleContainerView.swift in Sources */,
-				6BB37AD62F37DA171C81A11B9D25D74B /* SecondaryLabel.swift in Sources */,
-				AE04C3B0AD73C83D6DCBD3FA1F4DD5F2 /* SecurityViewController.swift in Sources */,
-				DD7CF63541F25A51D319028F60B296BD /* SlideUpPresentationController.swift in Sources */,
-				A6FE30387E946951D7DC64FA28A71D7C /* TableViewDataSource.swift in Sources */,
-				95B5580F0B3373824DFF47472FEAAFA7 /* TableViewDelegate.swift in Sources */,
-				E5CD11625BA409D4F3B371B6E48EC84A /* ThemeConfig.swift in Sources */,
-				9F65CCEE2719F4DE532519BBE4F179F3 /* ThemeManager.swift in Sources */,
-				DED48CEDC531222B2EE5A93B9C1E1FD5 /* UIPanGestureRecognizer.swift in Sources */,
-				3F9003CDD9FBED7C037D80B2705BC8E1 /* UIScrollView+Extensions.swift in Sources */,
-				A0715DE3BFBEFD65B5D2980AA224BA94 /* UIView+Extensions.swift in Sources */,
-				16F20237A48E343D700DF42AEB74F551 /* UpdateCardAuthRequest.swift in Sources */,
-				5500FE800ECCE158F3C8C03F651EC8BF /* UrpayCards-dummy.m in Sources */,
-				A2A5B5956D3A4665208E50862DC4CB71 /* UrpayCardsSDK.swift in Sources */,
-				3A4645A539FB63BC2CAC51CAB89D5CB6 /* VPNProxyDetection.swift in Sources */,
-				2E16AEEC20142B39CC9DA4E1E0BF8ADF /* WalletError.swift in Sources */,
+				3F9E1C9EAB9FA3939CF567D3ECCBAD0C /* AdaptiveCollectionViewLayout.swift in Sources */,
+				4FAD51B77AF004531249D6BB33A41AAA /* AlertHelper.swift in Sources */,
+				F335AE953546920D2F37454E84F8C9F5 /* AMControlView.swift in Sources */,
+				B442EB026EEA24A1891C8F4F0D382B0C /* AmountViewController.swift in Sources */,
+				1C983FE9BBB64A10EF83DCCEA52B7922 /* AMScaleButton.swift in Sources */,
+				8B1EA422D2E10EC3A057AAD9674D0421 /* AppColors.swift in Sources */,
+				1064004216F02ED44874AEFA386617CA /* ApplePayConfiguration.swift in Sources */,
+				1E31BA7416EF48C7A91AE4984564C8A0 /* ApplePayHandler.swift in Sources */,
+				3B34592FF48A273A408619D01C424B7E /* AppleWalletHandler.swift in Sources */,
+				60E0F73E8390E6FB515D67085BD5A201 /* AWToaster.swift in Sources */,
+				3F60768E87B8569120270787D7BC574C /* BaseViewController.swift in Sources */,
+				62813BEB8E0559ED7611AC674304CBCB /* CaptureSessionManager.swift in Sources */,
+				5FED113B0CA6A0A0336327D28C794234 /* CardAuthService.swift in Sources */,
+				D2B949336BED7E44E9011C6F8D8469B9 /* CardBenefitCell.swift in Sources */,
+				8D98DA06876E420BBD4917BD1B52A971 /* CardBenefitModel.swift in Sources */,
+				4DDE382932E1655EABF10D729BB4EBFC /* CardBenefitsVC.swift in Sources */,
+				AB6BBA80874FD165EACF04FA14FC0037 /* CardBenefitsViewModel.swift in Sources */,
+				7279198EC2996F024C3C0D19A44DA118 /* CardCell.swift in Sources */,
+				CE1FE60A6E17C3029D5F3137A77BF406 /* CardInformationVC.swift in Sources */,
+				18781CE3BF758E227D24BE212F550F63 /* CardModel.swift in Sources */,
+				97DF56CB8C62B66FC8B05BFB9FCF984A /* CardSettingsVC.swift in Sources */,
+				9B03BC313421F06AC84DFB4D999BD715 /* CardsViewController.swift in Sources */,
+				5373C12863A9DFE55944DDAB937805F3 /* CardsViewModel.swift in Sources */,
+				D094354097666E69137A5AE2F29EA6BD /* CollectionViewDataSource.swift in Sources */,
+				B0088D789784659E037DBAFD136C026E /* CollectionViewDelegate.swift in Sources */,
+				80602A47A470A6BCB25179C6ED460685 /* ContinerView.swift in Sources */,
+				22FA980D0730BD7F5A39443C1485C2D1 /* CurrencyLabel.swift in Sources */,
+				0A6F3A91D9DF61109AE99BB5110CD677 /* CurrencyTextField.swift in Sources */,
+				BD4E339E275D888A12B8F6DFC2026D75 /* DecimalTextField.swift in Sources */,
+				234397217A16B7F26BC9D2D830C432E5 /* Encodable+Parameters.swift in Sources */,
+				4D76569162D5B3C9E60F2D24BE296D67 /* IntrinsicContainerView.swift in Sources */,
+				3FCE63B7339B6785F7BF90F45D11423A /* IntrinsicScrollView.swift in Sources */,
+				A59CA5F0B906E0576CB06D253C0C35CD /* IntrinsicTableView.swift in Sources */,
+				E283EAF2429595858195482B6E7B7351 /* JSONUtility.swift in Sources */,
+				E373C4BB115E96E5BF0FFADFDA393F07 /* KeychainHelper.swift in Sources */,
+				373A81062F8FFF28D82CA91303D179F7 /* LineView.swift in Sources */,
+				9999BB434294A68D8B6BF4DC530B8F09 /* LoadingIndicatorView.swift in Sources */,
+				08181E0572EA21A6C09A7A05DB591358 /* LoadingSpinner.swift in Sources */,
+				C1893F047F3494C9034DD0131C16C20A /* NavigationController.swift in Sources */,
+				9122BD305807C9B527586E9FD532E3F0 /* NetworkManager.swift in Sources */,
+				990C9C67845C4DADA7D266C4280E5039 /* NSObject+Extensions.swift in Sources */,
+				87091379792FE555344EE8C062D96830 /* OptionCell.swift in Sources */,
+				8CC634806F000A77389EA63737BE19E9 /* OptionModel.swift in Sources */,
+				ADDCF20C573D0B3A0B81E0E0C7EF1B15 /* OutlineButton.swift in Sources */,
+				71C98F978261BCCE2C55B40FC07F4635 /* PaymentMethodCell.swift in Sources */,
+				610AF41D1BF8E899451C907EAB633385 /* PaymentMethodModel.swift in Sources */,
+				504617630E90635205A9A7968588FB36 /* PaymentMethodsVC.swift in Sources */,
+				04F71DC1A8FBFA010772D9ACFF84480D /* PaymentMethodsViewModel.swift in Sources */,
+				6918483C2E7F4B50937F4C07455782C4 /* PrimaryButton.swift in Sources */,
+				E7AA58FA7549B3AC0185B2858F9CD1CB /* PrimaryLabel.swift in Sources */,
+				AB18C4BEFD21C7B886B559AFD71492E6 /* QRCodeScannerVC.swift in Sources */,
+				425A1B2169F1B573F32A94FF2BD0C442 /* QRUIManager.swift in Sources */,
+				DFF44FB05F8F96815CC074D35D745E76 /* RequestConfig.swift in Sources */,
+				1928A3D1F2FA0EC60404C67A896310F4 /* ScaleContainerView.swift in Sources */,
+				9B69C05A8947D3C4A62EF4C7CF94CBF4 /* SecondaryLabel.swift in Sources */,
+				3B2E480298FF4197DF25FAD29FAC9E7C /* SecurityViewController.swift in Sources */,
+				F0F3199D9C57FF09F7E6331C53CED919 /* SlideUpPresentationController.swift in Sources */,
+				C829C1BC29C7B120B02644E5292F9012 /* TableViewDataSource.swift in Sources */,
+				F84A5EAD9759D2FB3738FF970E2F4CF7 /* TableViewDelegate.swift in Sources */,
+				13BED55E3EEA06CBB787E575F06AD9EF /* ThemeConfig.swift in Sources */,
+				F358E36254B05ED371DAFEE1A693DEEA /* ThemeManager.swift in Sources */,
+				FCB5051A381BE8837FBEF5A7D09F55C6 /* UIPanGestureRecognizer.swift in Sources */,
+				1803F780D01279F30402EF68FA8F9735 /* UIScrollView+Extensions.swift in Sources */,
+				235065D56BB29C7F1EDFBA4312F3FD8E /* UIView+Extensions.swift in Sources */,
+				841E23C97A8E970871BF60B3906BD14E /* UpdateCardAuthRequest.swift in Sources */,
+				FDF1B3DA7A71242BA95A88ABAB40F0A1 /* UrpayCards-dummy.m in Sources */,
+				491DDB6563558F3BD3B3E0E979099329 /* UrpayCardsSDK.swift in Sources */,
+				2AD28E6AED484B766901A485B7C4BBFB /* VPNProxyDetection.swift in Sources */,
+				F6AF0B70F0FF24C536112D0DFE329004 /* WalletError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		071E4420539D5B8D02185F49CFEBE131 /* PBXTargetDependency */ = {
+		6BF3A9F7F876D5BB1AF0B4D1E9E8B334 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-UrpayCards_Example";
 			target = 7F49385F7EEFBCBB2736AD7D29E7EA4D /* Pods-UrpayCards_Example */;
-			targetProxy = F08F3A40D6F17BD5DFC31C2E2B647A8D /* PBXContainerItemProxy */;
+			targetProxy = 62492AB89801D1E368D82AE0D25E72AC /* PBXContainerItemProxy */;
 		};
-		FE3D713D5F023DAF0397970E192D22AE /* PBXTargetDependency */ = {
+		A4DA4812CCFDD16A888320CE70FFA24D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UrpayCards;
 			target = 3EC18F0E27E41D1BAD5B8E951D7E264F /* UrpayCards */;
-			targetProxy = C1A3FBD3F5EDAED1EC5EE48E28CB007F /* PBXContainerItemProxy */;
+			targetProxy = 3194CC9A664F7B80E4EB33BA6F0D2EEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1106,7 +1128,7 @@
 			};
 			name = Debug;
 		};
-		74EE3BDD1DEEDB2C1339FBA735B979E7 /* Release */ = {
+		7AAB7C30413EDCEC17F30858F23ABAAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2B97105501378DC9A03FA215895688E /* UrpayCards.release.xcconfig */;
 			buildSettings = {
@@ -1270,7 +1292,7 @@
 			};
 			name = Release;
 		};
-		DF2A66B8A88D870A139DBB447FF743E7 /* Debug */ = {
+		CACAF36DC6C6A0549C2D7FDEBBCE51E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03F810998920F815804CB5BBEE4F2583 /* UrpayCards.debug.xcconfig */;
 			buildSettings = {
@@ -1317,20 +1339,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3895FF2DC1C166442C98FE31DFB6E279 /* Build configuration list for PBXNativeTarget "UrpayCards" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF2A66B8A88D870A139DBB447FF743E7 /* Debug */,
-				74EE3BDD1DEEDB2C1339FBA735B979E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA019232E39C083FB70E0827B9DD358E /* Build configuration list for PBXNativeTarget "UrpayCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACAF36DC6C6A0549C2D7FDEBBCE51E4 /* Debug */,
+				7AAB7C30413EDCEC17F30858F23ABAAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
