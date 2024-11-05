@@ -13,6 +13,10 @@ public class UrpayCardsSDK {
     
     private static let networkMonitor = NetworkMonitor()
     
+    public static func getCardsStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "Cards", bundle: .urpayCardsResources)
+    }
+    
     // Static properties to store the Apple Pay configuration
     private static var merchantId: String?
     private static var currencyCode: String?
@@ -25,10 +29,8 @@ public class UrpayCardsSDK {
         }
         
         urpayWindow = UIWindow(windowScene: windowScene)
-        let bundle = Bundle(for: CardsViewController.self)
-        let storyboard = UIStoryboard(name: "Cards", bundle: bundle)
         
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "CardsViewController") as? CardsViewController {
+        if let viewController = getCardsStoryboard().instantiateViewController(withIdentifier: "CardsViewController") as? CardsViewController {
             let navigationController = NavigationController(rootViewController: viewController)
             urpayWindow?.rootViewController = navigationController
             urpayWindow?.makeKeyAndVisible()
@@ -74,5 +76,5 @@ public class UrpayCardsSDK {
         _ = keychain.delete(key: "currencyCode")
         _ = keychain.delete(key: "countryCode")
     }
-
+    
 }

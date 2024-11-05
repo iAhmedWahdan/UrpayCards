@@ -124,8 +124,7 @@ extension BaseViewController: UIViewControllerTransitioningDelegate {
     // MARK:- Instantiate View Controller
     
     func instantiateViewController<T: UIViewController>(storyboardName: String, viewControllerClass: T.Type) -> T? {
-        let bundle = Bundle(for: viewControllerClass)
-        let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
+        let storyboard = UrpayCardsSDK.getCardsStoryboard()
         let identifier = String(describing: viewControllerClass)
         if let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as? T {
             return viewController

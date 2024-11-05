@@ -90,10 +90,9 @@ class PaymentMethodsVC: BaseViewController {
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        
+
         tableView.register(
-            UINib(nibName: PaymentMethodCell.className, bundle: frameworkBundle),
+            UINib(nibName: PaymentMethodCell.className, bundle: .urpayCardsResources),
             forCellReuseIdentifier: PaymentMethodCell.className
         )
     }

@@ -12,22 +12,20 @@ class AMToaster: UIView {
         case success, error, warning, custom(UIImage), none
         
         var image: UIImage? {
-            let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
             switch self {
-            case .success: return UIImage(named: "toast_success", in: frameworkBundle, compatibleWith: nil)
-            case .error: return UIImage(named: "toast_error", in: frameworkBundle, compatibleWith: nil)
-            case .warning: return UIImage(named: "toast_warning", in: frameworkBundle, compatibleWith: nil)
+            case .success: return UIImage(named: "toast_success", in: .urpayCardsResources, compatibleWith: nil)
+            case .error: return UIImage(named: "toast_error", in: .urpayCardsResources, compatibleWith: nil)
+            case .warning: return UIImage(named: "toast_warning", in: .urpayCardsResources, compatibleWith: nil)
             case .custom(let image): return image
             default: return nil
             }
         }
         
         var color: UIColor? {
-            let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
             switch self {
-            case .success: return UIColor(named: "successColor", in: frameworkBundle, compatibleWith: nil)!
-            case .error: return UIColor(named: "errorColor", in: frameworkBundle, compatibleWith: nil)!
-            case .warning: return UIColor(named: "warningColor", in: frameworkBundle, compatibleWith: nil)!
+            case .success: return UIColor(named: "successColor", in: .urpayCardsResources, compatibleWith: nil)!
+            case .error: return UIColor(named: "errorColor", in: .urpayCardsResources, compatibleWith: nil)!
+            case .warning: return UIColor(named: "warningColor", in: .urpayCardsResources, compatibleWith: nil)!
             default: return nil
             }
         }
@@ -70,51 +68,36 @@ class AMToaster: UIView {
     
     @MainActor
     public static func toast(_ text: String, type: ToastType = .none) {
-        // Provide haptic feedback based on toast type
-        let feedbackGenerator = UINotificationFeedbackGenerator()
-        switch type {
-        case .success:
-            feedbackGenerator.notificationOccurred(.success)
-        case .warning:
-            feedbackGenerator.notificationOccurred(.warning)
-        case .error:
-            feedbackGenerator.notificationOccurred(.error)
-        default:
-            feedbackGenerator.notificationOccurred(.success)
-        }
-        
-        // Locate the resource bundle for the framework
-        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        
-        // Load and display the AMToaster view asynchronously
-        DispatchQueue.main.async {
-            guard let toasterView = frameworkBundle.loadNibNamed("AMToaster", owner: nil, options: nil)?.first as? AMToaster else {
-                fatalError("Error: Can't load the AMToaster nib from UrpayCardsResources.bundle.")
+            switch type {
+            case .success: UINotificationFeedbackGenerator().notificationOccurred(.success)
+            case .warning: UINotificationFeedbackGenerator().notificationOccurred(.warning)
+            case .error: UINotificationFeedbackGenerator().notificationOccurred(.error)
+            default: UINotificationFeedbackGenerator().notificationOccurred(.success)
             }
             
-            // Access the key window safely for iOS 13+
-            let window: UIWindow?
-            if #available(iOS 15, *) {
-                window = UIApplication.shared.connectedScenes
-                    .compactMap { ($0 as? UIWindowScene)?.keyWindow }
-                    .first
-            } else {
-                window = UIApplication.shared.windows.first { $0.isKeyWindow }
-            }
-            
-            guard let keyWindow = window else {
-                print("Error: Could not find key window to display toast.")
+            let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+            guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
+                  let resourceBundle = Bundle(url: resourceBundleURL) else {
+                print("Error: Could not locate UrpayCardsResources bundle.")
                 return
             }
-            
-            // Show the toast view
-            toasterView.show(
-                with: text.trimmingCharacters(in: .whitespacesAndNewlines),
-                type: type,
-                on: keyWindow
-            )
+            DispatchQueue.main.async {
+                guard let view = resourceBundle.loadNibNamed("AMToaster", owner: nil, options: nil)?.first as? AMToaster else {
+                    fatalError("Can't load the AMToaster nib")
+                }
+                
+                guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else {
+                    return
+                }
+                
+                view.show(
+                    with: text.trimmingCharacters(in: .whitespacesAndNewlines),
+                    type: type,
+                    on: window
+                )
+            }
         }
-    }
+        
     
     private func show(with text: String, type: ToastType, on window: UIWindow) {
         guard !text.isEmpty else { return }

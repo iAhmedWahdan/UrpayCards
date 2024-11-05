@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.3.3'
+  s.version          = '0.3.4'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
 
   s.description      = <<-DESC
@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
     s.source_files = 'UrpayCards/**/*.swift'
     s.resources = [
       'UrpayCards/**/*.xib',
+      'UrpayCards/**/*.storyboard',
       'UrpayCards/Assets/**/*.{png,jpg,svg,pdf,xcassets}',
       'UrpayCards/Assets/Colors/*.json'
     ]

@@ -5,11 +5,13 @@
 import AVFoundation
 import AudioToolbox
 import Combine
+import DeveloperToolsSupport
 import Foundation
 import Network
 import PassKit
 import Security
 import Swift
+import SwiftUI
 import UIKit
 @_exported import UrpayCards
 import _Concurrency
@@ -243,6 +245,7 @@ extension UIKit.UIView {
 }
 @_hasMissingDesignatedInitializers public class UrpayCardsSDK {
   public static var urpayWindow: UIKit.UIWindow?
+  public static func getCardsStoryboard() -> UIKit.UIStoryboard
   public static func startSession()
   public static func stopSession()
   public static func configureTheme(_ config: UrpayCards.ThemeConfig)

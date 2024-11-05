@@ -321,6 +321,7 @@ SWIFT_CLASS("_TtC10UrpayCards18BaseViewController")
 @end
 
 
+
 SWIFT_CLASS("_TtC10UrpayCards14LoadingSpinner")
 @interface LoadingSpinner : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -343,6 +344,8 @@ SWIFT_CLASS("_TtC10UrpayCards20NavigationController")
 @interface NavigationController (SWIFT_EXTENSION(UrpayCards)) <UINavigationControllerDelegate>
 - (void)navigationController:(UINavigationController * _Nonnull)navigationController willShowViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated;
 @end
+
+
 
 
 

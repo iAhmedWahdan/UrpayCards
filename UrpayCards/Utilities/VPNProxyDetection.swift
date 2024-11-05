@@ -59,8 +59,7 @@ class NetworkMonitor {
             return
         }
         
-        let bundle = Bundle(for: UrpayCardsSDK.self)
-        let storyboard = UIStoryboard(name: "Cards", bundle: bundle)
+        let storyboard = UIStoryboard(name: "Cards", bundle: .urpayCardsResources)
         if let securityVC = storyboard.instantiateViewController(withIdentifier: "SecurityViewController") as? SecurityViewController {
             securityVC.modalPresentationStyle = .fullScreen
             topViewController.present(securityVC, animated: true, completion: nil)

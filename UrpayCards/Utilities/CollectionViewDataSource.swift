@@ -30,8 +30,7 @@ class CollectionViewDataSource<Model, Cell: UICollectionViewCell>: NSObject, UIC
 
 extension UICollectionView {
     func register<Cell: UICollectionViewCell>(cellType: Cell.Type) {
-        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        let nib = UINib(nibName: String(describing: Cell.self), bundle: frameworkBundle)
+        let nib = UINib(nibName: String(describing: Cell.self), bundle: .urpayCardsResources)
         register(nib, forCellWithReuseIdentifier: String(describing: Cell.self))
     }
 }

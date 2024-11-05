@@ -4,9 +4,161 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AMToaster.nib/objects-14.0+.nib</key>
+		<data>
+		PZDUS+yWkusI+KT9plivoeh2kJw=
+		</data>
+		<key>AMToaster.nib/runtime.nib</key>
+		<data>
+		f3Xx7lBqtWC4mMFl5QsgShpnbcY=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		VKv9j2pt6py4i86KDPREQadBPTY=
+		</data>
+		<key>CardBenefitCell.nib</key>
+		<data>
+		TO4P6C13tT4sRi5cyC8F6KqmJQc=
+		</data>
+		<key>CardCell.nib</key>
+		<data>
+		MaVPLgmtFqQZOtWew2JPTtXHqSM=
+		</data>
+		<key>Cards.storyboardc/5Tj-qo-5io-view-Ou2-CS-czD.nib/objects-14.0+.nib</key>
+		<data>
+		jodyls7yVdKHPeeyvF1SyJq+gBA=
+		</data>
+		<key>Cards.storyboardc/5Tj-qo-5io-view-Ou2-CS-czD.nib/runtime.nib</key>
+		<data>
+		jodyls7yVdKHPeeyvF1SyJq+gBA=
+		</data>
+		<key>Cards.storyboardc/AmountViewController.nib/objects-14.0+.nib</key>
+		<data>
+		cr+A7vbiZFXLsKz827tznIZWUO4=
+		</data>
+		<key>Cards.storyboardc/AmountViewController.nib/runtime.nib</key>
+		<data>
+		cr+A7vbiZFXLsKz827tznIZWUO4=
+		</data>
+		<key>Cards.storyboardc/BaseViewController.nib/objects-14.0+.nib</key>
+		<data>
+		U7m4o85YWnr+t8YigY7vokANZII=
+		</data>
+		<key>Cards.storyboardc/BaseViewController.nib/runtime.nib</key>
+		<data>
+		U7m4o85YWnr+t8YigY7vokANZII=
+		</data>
+		<key>Cards.storyboardc/CardBenefitsVC.nib/objects-14.0+.nib</key>
+		<data>
+		UBeTPXBdq3nFbbc5AiUd35U5bts=
+		</data>
+		<key>Cards.storyboardc/CardBenefitsVC.nib/runtime.nib</key>
+		<data>
+		UBeTPXBdq3nFbbc5AiUd35U5bts=
+		</data>
+		<key>Cards.storyboardc/CardInformationVC.nib/objects-14.0+.nib</key>
+		<data>
+		tKiNQ4oGDAp+Mh+USXnxbtQmmRc=
+		</data>
+		<key>Cards.storyboardc/CardInformationVC.nib/runtime.nib</key>
+		<data>
+		tKiNQ4oGDAp+Mh+USXnxbtQmmRc=
+		</data>
+		<key>Cards.storyboardc/CardSettingsVC.nib/objects-14.0+.nib</key>
+		<data>
+		4IahzwN2uQP7wPjAVg4k7dSwRu8=
+		</data>
+		<key>Cards.storyboardc/CardSettingsVC.nib/runtime.nib</key>
+		<data>
+		4IahzwN2uQP7wPjAVg4k7dSwRu8=
+		</data>
+		<key>Cards.storyboardc/CardsViewController.nib/objects-14.0+.nib</key>
+		<data>
+		vw9gAaK+R1wavWTIJ7hTP+n3EDg=
+		</data>
+		<key>Cards.storyboardc/CardsViewController.nib/runtime.nib</key>
+		<data>
+		vw9gAaK+R1wavWTIJ7hTP+n3EDg=
+		</data>
+		<key>Cards.storyboardc/I0o-yp-o57-view-b1W-w3-aiI.nib/objects-14.0+.nib</key>
+		<data>
+		pc+Qx+Ow7lDaMhFVh6qS+9JHgWA=
+		</data>
+		<key>Cards.storyboardc/I0o-yp-o57-view-b1W-w3-aiI.nib/runtime.nib</key>
+		<data>
+		pc+Qx+Ow7lDaMhFVh6qS+9JHgWA=
+		</data>
+		<key>Cards.storyboardc/Info.plist</key>
+		<data>
+		JeeLgfH2lxc0KPAlT0FsuYIP3D4=
+		</data>
+		<key>Cards.storyboardc/PaymentMethodsVC.nib/objects-14.0+.nib</key>
+		<data>
+		2aSpbrhQotGOit3LmOdiXE3yews=
+		</data>
+		<key>Cards.storyboardc/PaymentMethodsVC.nib/runtime.nib</key>
+		<data>
+		2aSpbrhQotGOit3LmOdiXE3yews=
+		</data>
+		<key>Cards.storyboardc/Rg3-J6-zxL-view-cNf-ZX-vjf.nib/objects-14.0+.nib</key>
+		<data>
+		65fJxna7GYhB85PyuQQtOYlB3n0=
+		</data>
+		<key>Cards.storyboardc/Rg3-J6-zxL-view-cNf-ZX-vjf.nib/runtime.nib</key>
+		<data>
+		bsWxDFRGAtEec6c1thzAcejydqw=
+		</data>
+		<key>Cards.storyboardc/SWa-Nf-cQe-view-qv3-bd-nR1.nib/objects-14.0+.nib</key>
+		<data>
+		68VPCnHUSL6eD8WGpOTLrbgoDRc=
+		</data>
+		<key>Cards.storyboardc/SWa-Nf-cQe-view-qv3-bd-nR1.nib/runtime.nib</key>
+		<data>
+		68VPCnHUSL6eD8WGpOTLrbgoDRc=
+		</data>
+		<key>Cards.storyboardc/SecurityViewController.nib/objects-14.0+.nib</key>
+		<data>
+		W5bFA6bHbu3FG7f6hE7O2m3c0GQ=
+		</data>
+		<key>Cards.storyboardc/SecurityViewController.nib/runtime.nib</key>
+		<data>
+		W5bFA6bHbu3FG7f6hE7O2m3c0GQ=
+		</data>
+		<key>Cards.storyboardc/YEu-xw-4FX-view-iDl-1y-3bk.nib/objects-14.0+.nib</key>
+		<data>
+		XjLpTTR29M9Uqcixfkhy0btv8UQ=
+		</data>
+		<key>Cards.storyboardc/YEu-xw-4FX-view-iDl-1y-3bk.nib/runtime.nib</key>
+		<data>
+		XjLpTTR29M9Uqcixfkhy0btv8UQ=
+		</data>
+		<key>Cards.storyboardc/pUn-Xn-Dxa-view-Tfj-8u-bv5.nib/objects-14.0+.nib</key>
+		<data>
+		88XHH+g2fXgbifMfRtzLRvY/KRQ=
+		</data>
+		<key>Cards.storyboardc/pUn-Xn-Dxa-view-Tfj-8u-bv5.nib/runtime.nib</key>
+		<data>
+		88XHH+g2fXgbifMfRtzLRvY/KRQ=
+		</data>
+		<key>Cards.storyboardc/uWs-Ap-2xi-view-NLu-j4-0Zv.nib/objects-14.0+.nib</key>
+		<data>
+		6re/9z7KDJh2AkwPnvBCv1mRkVw=
+		</data>
+		<key>Cards.storyboardc/uWs-Ap-2xi-view-NLu-j4-0Zv.nib/runtime.nib</key>
+		<data>
+		6re/9z7KDJh2AkwPnvBCv1mRkVw=
+		</data>
+		<key>Cards.storyboardc/yFx-LI-4P9-view-Ssu-m8-YPF.nib/objects-14.0+.nib</key>
+		<data>
+		mGJXI6h2WAENWaKMk9KVsc0ybNM=
+		</data>
+		<key>Cards.storyboardc/yFx-LI-4P9-view-Ssu-m8-YPF.nib/runtime.nib</key>
+		<data>
+		DOrHg7LEew9+jXhSTs49OKbhfw4=
+		</data>
 		<key>Headers/UrpayCards-Swift.h</key>
 		<data>
-		UnoHXMUN0VkGrw+ulUWELrR73wM=
+		/UMPj6w219SfKm742x+f1cl5bqI=
 		</data>
 		<key>Headers/UrpayCards-umbrella.h</key>
 		<data>
@@ -14,15 +166,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		izKhqrjZZirTKVMLAKBN+mEniRk=
+		vyQlAQZntALsqvWsKnR7/xmCpLI=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4JjtZtsFw9/L5KbHcISiybAuJcs=
+		9g5Ab7mNHQW2dxQrLPS7oK66vHQ=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		E+jnmaUSs57EbxkPfyOPvIylWsw=
+		OhUBCgGLtL5zgR12Za684efQ6ks=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +182,19 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		E+jnmaUSs57EbxkPfyOPvIylWsw=
+		OhUBCgGLtL5zgR12Za684efQ6ks=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eS/Wv3BXaN5AI13SeD0v0FDVOLo=
+		Y+xjCV40bAfCVlFGH4JoOBGiRDQ=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4JjtZtsFw9/L5KbHcISiybAuJcs=
+		9g5Ab7mNHQW2dxQrLPS7oK66vHQ=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		i9cvXN10zk82uPU5bWLpPhEW1Po=
+		EAXywPh73AXv5O7TVxf8B+PAJLs=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,56 +202,298 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		i9cvXN10zk82uPU5bWLpPhEW1Po=
+		EAXywPh73AXv5O7TVxf8B+PAJLs=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NFIGSgTKNKhddYvBTZi9eTi3H/k=
+		V5dKkYlW5v7rbV9sLaoK+r7daVY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		MOtkfmHMYJKKjrVZ+nZpKcfwurs=
 		</data>
-		<key>UrpayCardsResources.bundle/AMToaster.nib/objects-14.0+.nib</key>
+		<key>OptionCell.nib</key>
 		<data>
-		uPGTbBK8A/YCnyMC8feKe2ZOQjQ=
+		Unod8nCermumrBUhLQ9dYigiUhs=
 		</data>
-		<key>UrpayCardsResources.bundle/AMToaster.nib/runtime.nib</key>
+		<key>PaymentMethodCell.nib</key>
 		<data>
-		lgPGaPPxApKkvACfjBBUrQSv9Rk=
-		</data>
-		<key>UrpayCardsResources.bundle/Assets.car</key>
-		<data>
-		VKv9j2pt6py4i86KDPREQadBPTY=
-		</data>
-		<key>UrpayCardsResources.bundle/CardBenefitCell.nib</key>
-		<data>
-		eW2D/2cc/12nmVXkX7DIylJY/ak=
-		</data>
-		<key>UrpayCardsResources.bundle/CardCell.nib</key>
-		<data>
-		LJVFnvEfws+d8VtrfyJ8ej7wQFY=
-		</data>
-		<key>UrpayCardsResources.bundle/Info.plist</key>
-		<data>
-		0TJC63TGBAnUisY4e+Yf5Ku/K8U=
-		</data>
-		<key>UrpayCardsResources.bundle/OptionCell.nib</key>
-		<data>
-		M1mwO9jPPajlqlMK3walniDBKis=
-		</data>
-		<key>UrpayCardsResources.bundle/PaymentMethodCell.nib</key>
-		<data>
-		sbhlB57tTx8aLnSvNVSIbwyIDF8=
+		8Sk74wHfseERvUXHB1Dm6yWJZUU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AMToaster.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pmPjfcuFTxJMjRSdkmNC3SicPh213YVa8YSHoaXbxGc=
+			</data>
+		</dict>
+		<key>AMToaster.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oQOsVANaofPlF4TOmITSxn2Bp/VzAoy5S5peKCRiphc=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5oR3U/L+uRF5oqHDpPgPxYwz7s2cFJ1/zopJDFBMkpk=
+			</data>
+		</dict>
+		<key>CardBenefitCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kx/JbLMQ6OJztIld+R+9NE6D7EhoM6yY5vcACGVBcdQ=
+			</data>
+		</dict>
+		<key>CardCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AFE2aGRjLp6x034xiXVgCi7tClve8Xz6Irlr77/OMFM=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/5Tj-qo-5io-view-Ou2-CS-czD.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KNCKZ3oUkYwvvnNtRhEVpefebF2Tpf1S2cmFd/WhWnQ=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/5Tj-qo-5io-view-Ou2-CS-czD.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KNCKZ3oUkYwvvnNtRhEVpefebF2Tpf1S2cmFd/WhWnQ=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/AmountViewController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G4SQuz4MqaNl6QyX4AxPqav2qshXgAZy8gUrQrWZZ9g=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/AmountViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G4SQuz4MqaNl6QyX4AxPqav2qshXgAZy8gUrQrWZZ9g=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/BaseViewController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ALCcMHsc/wD4pZl4Kw+cgP3ShKJLvRpd0ffUQeSap9Q=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/BaseViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ALCcMHsc/wD4pZl4Kw+cgP3ShKJLvRpd0ffUQeSap9Q=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardBenefitsVC.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5R9OY3lSLzUpGyTyv1M6CFlHEMOhW8mKP3pN+PV8Z/Y=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardBenefitsVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5R9OY3lSLzUpGyTyv1M6CFlHEMOhW8mKP3pN+PV8Z/Y=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardInformationVC.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PGp3x3S4EIl5Y2cBQ5T5IlLJgYT4xKSAHtyJsW4f+eA=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardInformationVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PGp3x3S4EIl5Y2cBQ5T5IlLJgYT4xKSAHtyJsW4f+eA=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardSettingsVC.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I2FW+ZPizwtXPyW21nTzHIZcceCCpI9qrWPjzjQ4/Nc=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardSettingsVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I2FW+ZPizwtXPyW21nTzHIZcceCCpI9qrWPjzjQ4/Nc=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardsViewController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CC4aL9e3On3LEe9Bp7/PwrYD+RU2R468mkqfuqpiUZs=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/CardsViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CC4aL9e3On3LEe9Bp7/PwrYD+RU2R468mkqfuqpiUZs=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/I0o-yp-o57-view-b1W-w3-aiI.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			he8moZDocdGaCEIGVvLHbfJkN293q3P4j5mUtx5WK5U=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/I0o-yp-o57-view-b1W-w3-aiI.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			he8moZDocdGaCEIGVvLHbfJkN293q3P4j5mUtx5WK5U=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nUdUnFOawi3RK5QK0Hzh8Xz68J+yrcn+3GEHQ18orKk=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/PaymentMethodsVC.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+e8amihO9BgaaB3LV8gYWcmgvDdf9mHKWixhZGR//Os=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/PaymentMethodsVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+e8amihO9BgaaB3LV8gYWcmgvDdf9mHKWixhZGR//Os=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/Rg3-J6-zxL-view-cNf-ZX-vjf.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z2nUZFaSwYIeh6IEXsbo4805ooYrrBDDaJgTNRdXf+o=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/Rg3-J6-zxL-view-cNf-ZX-vjf.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wbaP1c/5KXkrC8XjQsDtzQhwMNIR9PsfCqDU0Ibv0bM=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/SWa-Nf-cQe-view-qv3-bd-nR1.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fxodx2sOEV1oZgwY3LG5yd7jqR0oYJbiLvKYwqZMYf0=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/SWa-Nf-cQe-view-qv3-bd-nR1.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fxodx2sOEV1oZgwY3LG5yd7jqR0oYJbiLvKYwqZMYf0=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/SecurityViewController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qxSbOSaNNkr5965RToP1QLIvRHAEWqsuVxI2T0TAqxQ=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/SecurityViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qxSbOSaNNkr5965RToP1QLIvRHAEWqsuVxI2T0TAqxQ=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/YEu-xw-4FX-view-iDl-1y-3bk.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ggvk877Z0Q2CRC5V/EgpiU9YUp3fHFn4MxUmsmkruno=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/YEu-xw-4FX-view-iDl-1y-3bk.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ggvk877Z0Q2CRC5V/EgpiU9YUp3fHFn4MxUmsmkruno=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/pUn-Xn-Dxa-view-Tfj-8u-bv5.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9dhr5LauQJcKBoOANYiJNnaRZDGjw+HVXhxXKVDpCaM=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/pUn-Xn-Dxa-view-Tfj-8u-bv5.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9dhr5LauQJcKBoOANYiJNnaRZDGjw+HVXhxXKVDpCaM=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/uWs-Ap-2xi-view-NLu-j4-0Zv.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YV8WwL3Ry/KUIiSHAg5cILJipGwX+DvPfOLrorvmsw0=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/uWs-Ap-2xi-view-NLu-j4-0Zv.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YV8WwL3Ry/KUIiSHAg5cILJipGwX+DvPfOLrorvmsw0=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/yFx-LI-4P9-view-Ssu-m8-YPF.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kgWwDEU3MSG6e2nctjkL8xm5PZh5+yDYyHYAP6V9nto=
+			</data>
+		</dict>
+		<key>Cards.storyboardc/yFx-LI-4P9-view-Ssu-m8-YPF.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			v0pc97wu9B3bacDOh+RzBSnj60g5Ilc5Yw8VXluEdgc=
+			</data>
+		</dict>
 		<key>Headers/UrpayCards-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tz0Z3QDFOUCTMuxgYXdpfHko/3/iicPz4vYv8VRI0Zw=
+			pY+1Dqwd7TYfqh4P0cykFumwsCTODnNNJYAZbkGkHE4=
 			</data>
 		</dict>
 		<key>Headers/UrpayCards-umbrella.h</key>
@@ -113,14 +507,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pmz7FQsGMInWcQNGPi6M+XF1gJ0DlhTEiPn5wXFmRFo=
+			oIy5SJrK3Ek54SLWnH5cwk9IhvvxxJSwWHt+tGtUuB8=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dvQD7EKgMgxRKqPAJUk/SyRmSFvJ5e0iGfIpBB8Q5bg=
+			UxxUcC8YAtDlaEnlTNY5Nb85fodHsoNTvXKiTEY1n1k=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -134,28 +528,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dvQD7EKgMgxRKqPAJUk/SyRmSFvJ5e0iGfIpBB8Q5bg=
+			UxxUcC8YAtDlaEnlTNY5Nb85fodHsoNTvXKiTEY1n1k=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QVIfKleY2zWiPXJ1CtBsURk1UF+UbFHC2ccAzWpfWLc=
+			S4hG6AcY0ZeTa7bd4IwJftsTR4gmsVb9hHbpZ3iQYRA=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pmz7FQsGMInWcQNGPi6M+XF1gJ0DlhTEiPn5wXFmRFo=
+			oIy5SJrK3Ek54SLWnH5cwk9IhvvxxJSwWHt+tGtUuB8=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+G8/oCCV6qNrbmfo0sXdfo1a708b2sgzyRaC9a6vFMI=
+			I5f1Fj+1Mp7T7EcWTpJZnCIpfDC+1Gxe3+Dv7JZOvus=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -169,14 +563,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+G8/oCCV6qNrbmfo0sXdfo1a708b2sgzyRaC9a6vFMI=
+			I5f1Fj+1Mp7T7EcWTpJZnCIpfDC+1Gxe3+Dv7JZOvus=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4BnWW2olaJXTzCByeW+5Z4ukxZD6rQKCvjeoq5moVXk=
+			AZx5F/mhnP5Wf9O8Ba2rAPPxLYtxKtdl1NWVWAKNPcA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -186,60 +580,18 @@
 			j3vUvuybVePSLfuoaSoiTUmJCA38J/jjzbyCpyEyOSk=
 			</data>
 		</dict>
-		<key>UrpayCardsResources.bundle/AMToaster.nib/objects-14.0+.nib</key>
+		<key>OptionCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IzgH/HXiMZlIEva2HNWU7PXjv78OXkwXysslz5g5rjI=
+			zs8B7Bhh3Pbn0XSU1YRnO7x8d+QqJoRGR8iXiAS8HDY=
 			</data>
 		</dict>
-		<key>UrpayCardsResources.bundle/AMToaster.nib/runtime.nib</key>
+		<key>PaymentMethodCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m/QmGcQ6vvNtbbfQ+E90BlvYQmBwYMnWBhYRn+3GjOg=
-			</data>
-		</dict>
-		<key>UrpayCardsResources.bundle/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5oR3U/L+uRF5oqHDpPgPxYwz7s2cFJ1/zopJDFBMkpk=
-			</data>
-		</dict>
-		<key>UrpayCardsResources.bundle/CardBenefitCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sIGiDwEGKyuaf7XP7IrKSYOMDd9wB6zUD3y4tBfeBY4=
-			</data>
-		</dict>
-		<key>UrpayCardsResources.bundle/CardCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7WtgyK02AYt4zh2CS0v4MBTjBLTbitemEkE9Igl7Apg=
-			</data>
-		</dict>
-		<key>UrpayCardsResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GXz7fB4hP/q7nMXYblNrqjKu0CNO8ZHpgaURTQW4PfY=
-			</data>
-		</dict>
-		<key>UrpayCardsResources.bundle/OptionCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oLVZkoeCMabfBh2q1LebjeVcHZHfQajDgMcNVLfZ6KU=
-			</data>
-		</dict>
-		<key>UrpayCardsResources.bundle/PaymentMethodCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/sWG1cTtIMWfIKYeEO1GG9lZENFsiCCAQBBlWRLreLo=
+			nuVAdKPGaYWKEoRPzadXq7eHLXd65mdQGpBzA68U/5w=
 			</data>
 		</dict>
 	</dict>

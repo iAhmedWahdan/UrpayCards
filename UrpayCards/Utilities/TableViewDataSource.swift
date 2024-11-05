@@ -30,8 +30,14 @@ class TableViewDataSource<Model, Cell: UITableViewCell>: NSObject, UITableViewDa
 
 extension UITableView {
     func register<Cell: UITableViewCell>(cellType: Cell.Type) {
-        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        let nib = UINib(nibName: String(describing: Cell.self), bundle: frameworkBundle)
+        let nib = UINib(nibName: String(describing: Cell.self), bundle: .urpayCardsResources)
         register(nib, forCellReuseIdentifier: String(describing: Cell.self))
+    }
+}
+
+extension Bundle {
+    static var urpayCardsResources: Bundle? {
+        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+        return frameworkBundle
     }
 }
