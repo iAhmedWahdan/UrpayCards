@@ -8509,170 +8509,128 @@
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2335,
-      "length": 12,
-      "value": "\"errorColor\""
-    },
-    {
-      "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2476,
-      "length": 14,
-      "value": "\"successColor\""
-    },
-    {
-      "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2619,
-      "length": 14,
-      "value": "\"warningColor\""
-    },
-    {
-      "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 2445,
       "length": 12,
       "value": "\"bgBenefits\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3023,
+      "offset": 2600,
       "length": 19,
       "value": "\"ic_accountDetails\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3173,
+      "offset": 2750,
       "length": 13,
       "value": "\"ic_addMoney\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3317,
+      "offset": 2894,
       "length": 13,
       "value": "\"ic_applePay\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3467,
+      "offset": 3044,
       "length": 16,
       "value": "\"ic_appleWallet\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3614,
+      "offset": 3191,
       "length": 13,
       "value": "\"ic_bankCard\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3343,
       "length": 17,
       "value": "\"ic_cardBenefits\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3928,
+      "offset": 3505,
       "length": 20,
       "value": "\"ic_cardInformation\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4075,
+      "offset": 3652,
       "length": 11,
       "value": "\"ic_cardQR\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4225,
+      "offset": 3802,
       "length": 17,
       "value": "\"ic_cardSettings\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4379,
+      "offset": 3956,
       "length": 16,
       "value": "\"ic_cashDeposit\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4518,
+      "offset": 4095,
       "length": 9,
       "value": "\"ic_copy\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4650,
+      "offset": 4227,
       "length": 9,
       "value": "\"ic_mada\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4790,
+      "offset": 4367,
       "length": 13,
       "value": "\"ic_nuskCard\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4934,
+      "offset": 4511,
       "length": 13,
       "value": "\"ic_nuskLogo\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5078,
+      "offset": 4655,
       "length": 13,
       "value": "\"ic_tapArrow\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5224,
+      "offset": 4801,
       "length": 14,
       "value": "\"ic_urpayLogo\""
     },
     {
       "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5359,
+      "offset": 4936,
       "length": 8,
       "value": "\"ic_vpn\""
-    },
-    {
-      "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5497,
-      "length": 12,
-      "value": "\"toastError\""
-    },
-    {
-      "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5643,
-      "length": 14,
-      "value": "\"toastSuccess\""
-    },
-    {
-      "filePath": "\/Users\/ahmedwahdan\/Library\/Developer\/Xcode\/DerivedData\/Pods-dsoymtspeuyuitdrzsngizngbhcq\/ArchiveIntermediates\/UrpayCards\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/UrpayCards.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5791,
-      "length": 14,
-      "value": "\"toastWarning\""
     }
   ]
 }
