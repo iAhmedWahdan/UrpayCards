@@ -34,11 +34,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mIVQf45RNibiY9SCSWkEW2aQNyE=
+		vvj4opheteEPjlTVsfDkGHvHqAI=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		R7DA8tEiLEGg58m0M5sZfRbvJxA=
+		bj+eV2d38NrHAkLjud3/56qpvpA=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WIOht+a32eP0XI703LMtVY/A28s=
+		OEYgHuejcARfjQHSBGDCtzDcsZU=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		R7DA8tEiLEGg58m0M5sZfRbvJxA=
+		bj+eV2d38NrHAkLjud3/56qpvpA=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qTe0wFJiuM603AlZ08LdRj9N1x4=
+		/KMV5ClNZ+IMs3CelkpA5nZKBDw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -276,7 +276,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/3FcqhGmX08swW3oz7q+CjEUrkCPyCW4Zcv9xSJuj0U=
+			EJQjtZ616qTpZc2fF/EEEo1PqVa3MGaSsN/vqbH4c0o=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -304,14 +304,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZvRBvId/7DIdzxYjdQb2/XE8hoCHZ+HTU9SSDSaUmeI=
+			8hjVcs+QYa+0UHMFgnqfbcXfTmjKqjtNcyVoSZS9tuM=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/3FcqhGmX08swW3oz7q+CjEUrkCPyCW4Zcv9xSJuj0U=
+			EJQjtZ616qTpZc2fF/EEEo1PqVa3MGaSsN/vqbH4c0o=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -339,7 +339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ls6yVmnhA7qKImCK/X/cA4ehsXXqVdqmmmFOtyxs/Js=
+			SC/Mw3dXkaC5CcdXcuCGUMZA7Zrevs3zGZ1J4e/7Hrs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

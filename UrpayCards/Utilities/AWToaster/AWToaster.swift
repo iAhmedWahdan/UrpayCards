@@ -13,9 +13,9 @@ class AWToaster: UIView {
         
         var image: UIImage? {
             switch self {
-            case .success: return UIImage(named: "toastSuccess", in: .urpayCardsAssets, compatibleWith: nil)
-            case .error: return UIImage(named: "toastError", in: .urpayCardsAssets, compatibleWith: nil)
-            case .warning: return UIImage(named: "toastWarning", in: .urpayCardsAssets, compatibleWith: nil)
+            case .success: return UIImage(named: "toastSuccess", in: .urpayCardsResources, compatibleWith: nil)
+            case .error: return UIImage(named: "toastError", in: .urpayCardsResources, compatibleWith: nil)
+            case .warning: return UIImage(named: "toastWarning", in: .urpayCardsResources, compatibleWith: nil)
             case .custom(let image): return image
             default: return nil
             }
@@ -23,9 +23,9 @@ class AWToaster: UIView {
         
         var color: UIColor? {
             switch self {
-            case .success: return UIColor(named: "successColor", in: .urpayCardsAssets, compatibleWith: nil)!
-            case .error: return UIColor(named: "errorColor", in: .urpayCardsAssets, compatibleWith: nil)!
-            case .warning: return UIColor(named: "warningColor", in: .urpayCardsAssets, compatibleWith: nil)!
+            case .success: return UIColor(named: "successColor", in: .urpayCardsResources, compatibleWith: nil)!
+            case .error: return UIColor(named: "errorColor", in: .urpayCardsResources, compatibleWith: nil)!
+            case .warning: return UIColor(named: "warningColor", in: .urpayCardsResources, compatibleWith: nil)!
             default: return nil
             }
         }

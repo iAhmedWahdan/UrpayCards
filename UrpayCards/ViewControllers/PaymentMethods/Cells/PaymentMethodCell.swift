@@ -15,7 +15,7 @@ class PaymentMethodCell: UITableViewCell {
     func configure(with paymentMethod: PaymentMethodModel) {
         nameLabel.text = paymentMethod.title
 
-        if let image = UIImage(named: paymentMethod.imageName, in: .urpayCardsAssets, compatibleWith: nil) {
+        if let image = UIImage(named: paymentMethod.imageName, in: .urpayCardsResources, compatibleWith: nil) {
             iconImageView.image = image
         } else {
             // Optional: You can log if the image is not found for debugging purposes
