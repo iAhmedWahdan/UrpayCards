@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B017A3C39E441C45ED575CE /* Pods_UrpayCards_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9BC5AB59954E3FEBD70ED7 /* Pods_UrpayCards_Example.framework */; };
+		0CA6B8ECB831ACCA82265EE6 /* Pods_UrpayCards_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78146FF6C8B7C9E3CB5B7B2 /* Pods_UrpayCards_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		8131A838BA86FCD981E6D0A2 /* Pods_UrpayCards_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2E3D6D72FC6A2A6FA75C2D /* Pods_UrpayCards_Tests.framework */; };
 		C13603EB2CD0E64900DBE730 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = C13603EA2CD0E64900DBE730 /* netfox */; };
 		C1C595D32CAD6D3B00B0BEB3 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C595D22CAD6D3B00B0BEB3 /* AppColors.swift */; };
 		C1C60E142CAECA3C00EC75AF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C60E132CAECA3C00EC75AF /* PassKit.framework */; };
 		C1F76A7B2CD8C0250006BFA5 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = C1F76A7A2CD8C0250006BFA5 /* netfox */; };
+		CB9AD1DD54388C32CE2E2AD8 /* Pods_UrpayCards_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25800F69395309AED816CEEC /* Pods_UrpayCards_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,8 @@
 
 /* Begin PBXFileReference section */
 		0BCD56AA5D35B45A64B991F0 /* UrpayCards.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UrpayCards.podspec; path = ../UrpayCards.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0F16F668E48F52B72D9897DA /* Pods-UrpayCards_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Tests.release.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Tests/Pods-UrpayCards_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		25800F69395309AED816CEEC /* Pods_UrpayCards_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F4D2E019708868B17B82BB /* Pods-UrpayCards_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Example.release.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example.release.xcconfig"; sourceTree = "<group>"; };
 		478DE7EED7249B60255463F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* UrpayCards_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrpayCards_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,14 +47,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		73920EA9EB8D2C9BFC7E6FA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		7A4648464D02793EE7498A93 /* Pods-UrpayCards_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Example.debug.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9AA689D4BE2744137003A5CB /* Pods-UrpayCards_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Example.release.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AD9BC5AB59954E3FEBD70ED7 /* Pods_UrpayCards_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2E3D6D72FC6A2A6FA75C2D /* Pods_UrpayCards_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92E422728894F2E1F71BEA20 /* Pods-UrpayCards_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Example.debug.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A78146FF6C8B7C9E3CB5B7B2 /* Pods_UrpayCards_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrpayCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C595D22CAD6D3B00B0BEB3 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		C1C60E122CAECA2300EC75AF /* UrpayCards_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UrpayCards_Example.entitlements; sourceTree = "<group>"; };
 		C1C60E132CAECA3C00EC75AF /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
-		D34289F404C59CA700FBCDBB /* Pods-UrpayCards_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Tests/Pods-UrpayCards_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF87F0C2782FF476D4C4F45E /* Pods-UrpayCards_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Tests.release.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Tests/Pods-UrpayCards_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F7052FADF4C3F1C57213271D /* Pods-UrpayCards_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrpayCards_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UrpayCards_Tests/Pods-UrpayCards_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				C1C60E142CAECA3C00EC75AF /* PassKit.framework in Frameworks */,
 				C1F76A7B2CD8C0250006BFA5 /* netfox in Frameworks */,
 				C13603EB2CD0E64900DBE730 /* netfox in Frameworks */,
-				3B017A3C39E441C45ED575CE /* Pods_UrpayCards_Example.framework in Frameworks */,
+				0CA6B8ECB831ACCA82265EE6 /* Pods_UrpayCards_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8131A838BA86FCD981E6D0A2 /* Pods_UrpayCards_Tests.framework in Frameworks */,
+				CB9AD1DD54388C32CE2E2AD8 /* Pods_UrpayCards_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +82,10 @@
 		1A85045EC3CFC97570FF99E4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7A4648464D02793EE7498A93 /* Pods-UrpayCards_Example.debug.xcconfig */,
-				9AA689D4BE2744137003A5CB /* Pods-UrpayCards_Example.release.xcconfig */,
-				D34289F404C59CA700FBCDBB /* Pods-UrpayCards_Tests.debug.xcconfig */,
-				0F16F668E48F52B72D9897DA /* Pods-UrpayCards_Tests.release.xcconfig */,
+				92E422728894F2E1F71BEA20 /* Pods-UrpayCards_Example.debug.xcconfig */,
+				39F4D2E019708868B17B82BB /* Pods-UrpayCards_Example.release.xcconfig */,
+				F7052FADF4C3F1C57213271D /* Pods-UrpayCards_Tests.debug.xcconfig */,
+				EF87F0C2782FF476D4C4F45E /* Pods-UrpayCards_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				C1C60E132CAECA3C00EC75AF /* PassKit.framework */,
-				AD9BC5AB59954E3FEBD70ED7 /* Pods_UrpayCards_Example.framework */,
-				AF2E3D6D72FC6A2A6FA75C2D /* Pods_UrpayCards_Tests.framework */,
+				A78146FF6C8B7C9E3CB5B7B2 /* Pods_UrpayCards_Example.framework */,
+				25800F69395309AED816CEEC /* Pods_UrpayCards_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,11 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "UrpayCards_Example" */;
 			buildPhases = (
-				A1C6B6BA2DD1CB18B95E3581 /* [CP] Check Pods Manifest.lock */,
+				73B4AD2AF8A9605363CBDAB5 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				12161BCEA3DF3DCF984B4C59 /* [CP] Embed Pods Frameworks */,
+				407B2187FCBB202EF23A50B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,7 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "UrpayCards_Tests" */;
 			buildPhases = (
-				CC99E774DB414C1D7350602E /* [CP] Check Pods Manifest.lock */,
+				2A50B17BBF98333E808871F6 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -280,7 +280,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12161BCEA3DF3DCF984B4C59 /* [CP] Embed Pods Frameworks */ = {
+		2A50B17BBF98333E808871F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UrpayCards_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407B2187FCBB202EF23A50B2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +321,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UrpayCards_Example/Pods-UrpayCards_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A1C6B6BA2DD1CB18B95E3581 /* [CP] Check Pods Manifest.lock */ = {
+		73B4AD2AF8A9605363CBDAB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,28 +337,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-UrpayCards_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC99E774DB414C1D7350602E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UrpayCards_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -496,7 +496,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4648464D02793EE7498A93 /* Pods-UrpayCards_Example.debug.xcconfig */;
+			baseConfigurationReference = 92E422728894F2E1F71BEA20 /* Pods-UrpayCards_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UrpayCards_Example.entitlements;
@@ -517,7 +517,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AA689D4BE2744137003A5CB /* Pods-UrpayCards_Example.release.xcconfig */;
+			baseConfigurationReference = 39F4D2E019708868B17B82BB /* Pods-UrpayCards_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UrpayCards_Example.entitlements;
@@ -538,7 +538,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D34289F404C59CA700FBCDBB /* Pods-UrpayCards_Tests.debug.xcconfig */;
+			baseConfigurationReference = F7052FADF4C3F1C57213271D /* Pods-UrpayCards_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3DWD24U3GX;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -566,7 +566,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F16F668E48F52B72D9897DA /* Pods-UrpayCards_Tests.release.xcconfig */;
+			baseConfigurationReference = EF87F0C2782FF476D4C4F45E /* Pods-UrpayCards_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3DWD24U3GX;
 				FRAMEWORK_SEARCH_PATHS = (
