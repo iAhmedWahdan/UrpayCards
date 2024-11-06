@@ -68,36 +68,31 @@ class AWToaster: UIView {
     
     @MainActor
     public static func toast(_ text: String, type: ToastType = .none) {
-            switch type {
-            case .success: UINotificationFeedbackGenerator().notificationOccurred(.success)
-            case .warning: UINotificationFeedbackGenerator().notificationOccurred(.warning)
-            case .error: UINotificationFeedbackGenerator().notificationOccurred(.error)
-            default: UINotificationFeedbackGenerator().notificationOccurred(.success)
-            }
-            
-            let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-            guard let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle"),
-                  let resourceBundle = Bundle(url: resourceBundleURL) else {
-                print("Error: Could not locate UrpayCardsResources bundle.")
-                return
-            }
-            DispatchQueue.main.async {
-                guard let view = resourceBundle.loadNibNamed("AWToaster", owner: nil, options: nil)?.first as? AWToaster else {
-                    fatalError("Can't load the AWToaster nib")
-                }
-                
-                guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else {
-                    return
-                }
-                
-                view.show(
-                    with: text.trimmingCharacters(in: .whitespacesAndNewlines),
-                    type: type,
-                    on: window
-                )
-            }
+        switch type {
+        case .success: UINotificationFeedbackGenerator().notificationOccurred(.success)
+        case .warning: UINotificationFeedbackGenerator().notificationOccurred(.warning)
+        case .error: UINotificationFeedbackGenerator().notificationOccurred(.error)
+        default: UINotificationFeedbackGenerator().notificationOccurred(.success)
         }
         
+        DispatchQueue.main.async {
+            guard let view = Bundle(for: AWToaster.self).loadNibNamed("AWToaster", owner: nil, options: nil)?.first as? AWToaster else {
+                // fatalError("Can't load the AMWToaster nib")
+                return
+            }
+            
+            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else {
+                return
+            }
+            
+            view.show(
+                with: text.trimmingCharacters(in: .whitespacesAndNewlines),
+                type: type,
+                on: window
+            )
+        }
+    }
+    
     
     private func show(with text: String, type: ToastType, on window: UIWindow) {
         guard !text.isEmpty else { return }

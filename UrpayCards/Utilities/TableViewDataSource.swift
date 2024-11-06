@@ -42,10 +42,10 @@ extension Bundle {
     }
     
     static var urpayCardsAssets: Bundle? {
-        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
-        if let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle") {
-            return Bundle(url: resourceBundleURL)
-        }
+//        let frameworkBundle = Bundle(for: UrpayCardsSDK.self)
+//        if let resourceBundleURL = frameworkBundle.url(forResource: "UrpayCardsResources", withExtension: "bundle") {
+//            return Bundle(url: resourceBundleURL)
+//        }
         return Bundle(for: UrpayCardsSDK.self)
     }
     
