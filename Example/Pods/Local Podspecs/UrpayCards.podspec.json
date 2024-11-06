@@ -1,6 +1,6 @@
 {
   "name": "UrpayCards",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "summary": "A framework for handling Urpay cards in iOS applications.",
   "description": "UrpayCards is a framework designed for iOS applications to handle card management.",
   "homepage": "https://github.com/iAhmedWahdan/UrpayCards",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/iAhmedWahdan/UrpayCards.git",
-    "tag": "0.4.7"
+    "tag": "0.4.8"
   },
   "platforms": {
     "ios": "13.0"
