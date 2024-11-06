@@ -15,7 +15,7 @@ class OptionCell: UITableViewCell {
     func configure(with option: OptionModel) {
         nameLabel.text = option.title
         
-        if let image = UIImage(named: option.imageName, in: .urpayCardsResources, compatibleWith: nil) {
+        if let image = UIImage(named: option.imageName, in: .urpayCardsAssets, compatibleWith: nil) {
             iconImageView.image = image
         } else {
             // Optional: You can log if the image is not found for debugging purposes
