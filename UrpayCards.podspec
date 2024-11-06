@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.4.4'
+  s.version          = '0.4.6'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
   s.description      = <<-DESC
   UrpayCards is a framework designed for iOS applications to handle card management.
