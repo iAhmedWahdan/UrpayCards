@@ -1,0 +1,264 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name UrpayCards
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AVFoundation
+import AudioToolbox
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import Network
+import PassKit
+import Security
+import Swift
+import SwiftUI
+import UIKit
+@_exported import UrpayCards
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency public func cancelSubscriptions()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension UrpayCards.BaseViewController : UIKit.UIViewControllerTransitioningDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func presentationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController?, source: UIKit.UIViewController) -> UIKit.UIPresentationController?
+}
+public enum JSONUtilityError : Swift.Int, Swift.Error {
+  case unsupportedType
+  case indexOutOfBounds
+  case elementTooDeep
+  case wrongType
+  case notExist
+  case invalidJSON
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UrpayCards.JSONUtilityError : Foundation.CustomNSError {
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+}
+public enum Type : Swift.Int {
+  case number, string, bool, array, dictionary, null, unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct JSON {
+  public init(data: Foundation.Data, options opt: Foundation.JSONSerialization.ReadingOptions = []) throws
+  public init(_ object: Any)
+  public init(parseJSON jsonString: Swift.String)
+  public var type: UrpayCards.`Type` {
+    get
+  }
+  public var error: UrpayCards.JSONUtilityError? {
+    get
+  }
+  public var object: Any {
+    get
+    set
+  }
+  public static var null: UrpayCards.JSON {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+  public var intValue: Swift.Int {
+    get
+  }
+  public var boolValue: Swift.Bool {
+    get
+  }
+  public var arrayValue: [UrpayCards.JSON] {
+    get
+  }
+  public var dictionaryValue: [Swift.String : UrpayCards.JSON] {
+    get
+  }
+  public var doubleValue: Swift.Double {
+    get
+  }
+  public subscript(key: Swift.String) -> UrpayCards.JSON {
+    get
+    set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LoadingSpinner : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public static let shared: UrpayCards.LoadingSpinner
+  @_Concurrency.MainActor @preconcurrency public var titleLabel: UIKit.UILabel
+  @_Concurrency.MainActor @preconcurrency public var subtitleLabel: UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency public var outerColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var innerColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var animating: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var title: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect = CGRect.zero)
+  @_Concurrency.MainActor @preconcurrency public class func show(title: Swift.String, animated: Swift.Bool = true) -> UrpayCards.LoadingSpinner
+  @_Concurrency.MainActor @preconcurrency public class func hide()
+  @_Concurrency.MainActor @preconcurrency public func updateFrame()
+  @_Concurrency.MainActor @preconcurrency public func addTapHandler(_ tap: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func clearTapHandler()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class NavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UrpayCards.NavigationController : UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, willShow viewController: UIKit.UIViewController, animated: Swift.Bool)
+}
+extension ObjectiveC.NSObject {
+  public var className: Swift.String {
+    get
+  }
+  public class var className: Swift.String {
+    get
+  }
+}
+public struct ThemeConfig {
+  public static let shared: UrpayCards.ThemeConfig
+  public var navigationBarColor: UIKit.UIColor?
+  public var navigationBarColor2: UIKit.UIColor?
+  public var backgroundColor: UIKit.UIColor?
+  public var backgroundColor2: UIKit.UIColor?
+  public var priamryColor: UIKit.UIColor?
+  public var secondaryColor: UIKit.UIColor?
+  public var titleTextColor: UIKit.UIColor
+  public var cardBackgroundColor: UIKit.UIColor?
+  public var navigationBarFont: UIKit.UIFont
+  public var navigationTitle: Swift.String
+  public init(navigationBarColor: UIKit.UIColor? = nil, navigationBarColor2: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, backgroundColor2: UIKit.UIColor? = nil, priamryColor: UIKit.UIColor? = nil, secondaryColor: UIKit.UIColor? = nil, titleTextColor: UIKit.UIColor = .white, cardBackgroundColor: UIKit.UIColor? = nil, navigationBarFont: UIKit.UIFont = UIFont.systemFont(ofSize: 17, weight: .bold), navigationTitle: Swift.String = "Urpay Cards")
+}
+public enum PanDirection : Swift.Int {
+  case up, down, left, right, even
+  public var isVertical: Swift.Bool {
+    get
+  }
+  public var isHorizontal: Swift.Bool {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIPanGestureRecognizer {
+  @_Concurrency.MainActor @preconcurrency public var direction: UrpayCards.PanDirection {
+    get
+  }
+}
+extension UIKit.UIScrollView {
+  @_Concurrency.MainActor @preconcurrency public var isAtTop: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var isAtBottom: Swift.Bool {
+    get
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public static func loadFromNib() -> Self
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func shake()
+  @_Concurrency.MainActor @preconcurrency public func wiggle()
+  @_Concurrency.MainActor @preconcurrency public func stopWiggling()
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func bounce(fromValue: CoreFoundation.CGFloat = 0.97, toValue: CoreFoundation.CGFloat = 1.03)
+}
+extension UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var isCircled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var masksToBounds: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var cornerRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var borderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var shadowOpacity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var shadowOffset: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var shadowColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var shadowRadius: Swift.Float {
+    @objc get
+    @objc set
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var isShown: Swift.Bool {
+    get
+    set
+  }
+}
+@_hasMissingDesignatedInitializers public class UrpayCardsSDK {
+  public static var urpayWindow: UIKit.UIWindow?
+  public static func getCardsStoryboard() -> UIKit.UIStoryboard
+  public static func startSession()
+  public static func stopSession()
+  public static func configureTheme(_ config: UrpayCards.ThemeConfig)
+  public static func configureApplePay(merchantId: Swift.String, currencyCode: Swift.String, countryCode: Swift.String)
+  public static func clearApplePayConfiguration()
+  @objc deinit
+}
+extension UrpayCards.JSONUtilityError : Swift.Equatable {}
+extension UrpayCards.JSONUtilityError : Swift.Hashable {}
+extension UrpayCards.JSONUtilityError : Swift.RawRepresentable {}
+extension UrpayCards.`Type` : Swift.Equatable {}
+extension UrpayCards.`Type` : Swift.Hashable {}
+extension UrpayCards.`Type` : Swift.RawRepresentable {}
+extension UrpayCards.PanDirection : Swift.Equatable {}
+extension UrpayCards.PanDirection : Swift.Hashable {}
+extension UrpayCards.PanDirection : Swift.RawRepresentable {}
