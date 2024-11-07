@@ -1,0 +1,11 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild archive -scheme YourSchemeName -configuration Release -sdk iphoneos -archivePath ./build/UrpayCards-iphoneos.xcarchive BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+User defaults from command line:
+    IDEArchivePathOverride = /Users/ahmedwahdan/Documents/UrpayCards/build/UrpayCards-iphoneos.xcarchive
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Build settings from command line:
+    BUILD_LIBRARY_FOR_DISTRIBUTION = YES
+    SDKROOT = iphoneos18.1
+
