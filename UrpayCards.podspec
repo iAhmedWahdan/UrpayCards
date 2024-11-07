@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.5.3'
+  s.version          = '0.5.4'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
   s.description      = <<-DESC
     UrpayCards is a framework designed for iOS applications to handle card management.
@@ -33,15 +33,15 @@ Pod::Spec.new do |s|
   # Use a resource bundle to package resources separately
   s.resource_bundles = {
     'UrpayCardsResources' => [
-      'UrpayCards/**/*.xcassets',
-      'UrpayCards/**/*.{xib,storyboard,png,jpg,svg,pdf,json}'
+      'UrpayCards.xcframework/**/*.xcassets',
+      'UrpayCards.xcframework/**/*.{xib,storyboard,png,jpg,svg,pdf,json}'
     ]
-  }
+  } 
 
-  # Expose source files conditionally
+  # Expose source files conditionally for development or hide for production
   if ENV['DEV_POD'] == 'true'
     s.source_files = 'UrpayCards/**/*.{swift,xib,storyboard}'
   else
-    s.source_files = 'UrpayCards/**/*.{swift}'
+    s.source_files = [] # Empty for production to hide code
   end
 end

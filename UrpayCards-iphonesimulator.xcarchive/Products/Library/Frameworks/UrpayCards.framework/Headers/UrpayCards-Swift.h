@@ -354,8 +354,6 @@ SWIFT_CLASS("_TtC10UrpayCards20NavigationController")
 
 
 
-
-
 @class UIColor;
 
 @interface UIView (SWIFT_EXTENSION(UrpayCards))
