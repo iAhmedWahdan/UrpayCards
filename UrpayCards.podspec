@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UrpayCards'
-  s.version          = '0.5.2'
+  s.version          = '0.5.3'
   s.summary          = 'A framework for handling Urpay cards in iOS applications.'
   s.description      = <<-DESC
     UrpayCards is a framework designed for iOS applications to handle card management.
@@ -19,10 +19,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/iAhmedWahdan/UrpayCards.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '13.0'
-  s.vendored_frameworks = 'build/Universal/UrpayCards.framework'
+  s.vendored_frameworks = 'UrpayCards.xcframework'
   s.swift_versions = ['5.0']
 
-  # Configure build settings to exclude arm64 for the simulator and other potential conflicts
+  # Exclude arm64 from the simulator to prevent architecture conflicts
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'ONLY_ACTIVE_ARCH' => 'NO',

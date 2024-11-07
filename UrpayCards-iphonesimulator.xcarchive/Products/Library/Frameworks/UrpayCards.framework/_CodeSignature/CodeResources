@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/UrpayCards-Swift.h</key>
 		<data>
-		/UMPj6w219SfKm742x+f1cl5bqI=
+		o/UtPpQjQLonPn/hs1Y5lqdYHdA=
 		</data>
 		<key>Headers/UrpayCards-umbrella.h</key>
 		<data>
@@ -35,26 +35,6 @@
 		<key>Info.plist</key>
 		<data>
 		xApUwQ3O2fSx0QKxr7qx/U/coCc=
-		</data>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
-		<data>
-		R7DA8tEiLEGg58m0M5sZfRbvJxA=
-		</data>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		OhUBCgGLtL5zgR12Za684efQ6ks=
-		</data>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		cX6R3TjS6LuDNx/Q23ufVVxst6k=
-		</data>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		OhUBCgGLtL5zgR12Za684efQ6ks=
-		</data>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		WIOht+a32eP0XI703LMtVY/A28s=
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -74,7 +54,7 @@
 		</data>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qTe0wFJiuM603AlZ08LdRj9N1x4=
+		YF+b+UsA28VFdCN51MtdLjjbxDU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -262,7 +242,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pY+1Dqwd7TYfqh4P0cykFumwsCTODnNNJYAZbkGkHE4=
+			1/PgTKea49fcLiNGDyl5ZgMKcs0LjZYVP7kPmd7u5ok=
 			</data>
 		</dict>
 		<key>Headers/UrpayCards-umbrella.h</key>
@@ -270,41 +250,6 @@
 			<key>hash2</key>
 			<data>
 			3NX5yokiGPrlGgchj3lK1MgXkY6iFJtscSWWpJR+67Y=
-			</data>
-		</dict>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/3FcqhGmX08swW3oz7q+CjEUrkCPyCW4Zcv9xSJuj0U=
-			</data>
-		</dict>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UxxUcC8YAtDlaEnlTNY5Nb85fodHsoNTvXKiTEY1n1k=
-			</data>
-		</dict>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tRAal5jWUNyTw5q/Ye8QaMo/IQmto7i/NODkmW0Fsu0=
-			</data>
-		</dict>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UxxUcC8YAtDlaEnlTNY5Nb85fodHsoNTvXKiTEY1n1k=
-			</data>
-		</dict>
-		<key>Modules/UrpayCards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZvRBvId/7DIdzxYjdQb2/XE8hoCHZ+HTU9SSDSaUmeI=
 			</data>
 		</dict>
 		<key>Modules/UrpayCards.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -339,7 +284,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ls6yVmnhA7qKImCK/X/cA4ehsXXqVdqmmmFOtyxs/Js=
+			4hdjM5jPscN1WzXwLppf+uOEOsSWTffBjjOmJ4Ye+JE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
